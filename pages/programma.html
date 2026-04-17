@@ -72,7 +72,7 @@
                     </div>
                     <div class="px-4 py-3">
                         <p class="font-bold text-slate-800 leading-snug" x-text="event.title"></p>
-                        <p x-show="event.description" class="text-sm text-slate-500 mt-1 leading-relaxed" x-text="event.description"></p>
+                        <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
                     </div>
                 </div>
             </template>
@@ -127,16 +127,11 @@
                                             <span class="inline-block mb-1.5 text-sm font-bold text-sky-600 bg-sky-50 rounded px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
                                             <p class="font-semibold text-slate-800 leading-snug" x-text="talk.title"></p>
                                             <template x-if="talk.authors && talk.authors.length">
-                                                <div class="mt-2 flex flex-col gap-1.5">
+                                                <div class="mt-2 flex flex-col leading-0">
                                                     <template x-for="(author, ai) in talk.authors" :key="ai">
-                                                        <div class="flex items-center gap-2">
-                                                            <div class="h-6 w-6 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center shrink-0">
-                                                                <span class="text-[9px] font-black uppercase leading-none"
-                                                                    x-text="author.name.split(' ').filter(w => w.match(/^[A-Z]/)).slice(0,2).map(w => w[0]).join('')">
-                                                                </span>
-                                                            </div>
+                                                        <div class="flex items-center">
                                                             <div class="min-w-0">
-                                                                <span class="text-sm font-semibold text-slate-700"
+                                                                <span class="text-sm font-semibold text-slate-400"
                                                                     x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
                                                                 <template x-if="author.affiliation">
                                                                     <span class="text-sm text-slate-400 ml-1" x-text="'· ' + author.affiliation"></span>
@@ -163,7 +158,7 @@
                                 </div>
                                 <div class="px-4 py-3">
                                     <p class="font-bold text-slate-800 leading-snug" x-text="event.title"></p>
-                                    <p x-show="event.description" class="text-sm text-slate-500 mt-1 leading-relaxed" x-text="event.description"></p>
+                                    <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
                                 </div>
                             </div>
                         </template>
@@ -197,16 +192,11 @@
                                             <span class="inline-block mb-1.5 text-sm font-bold text-sky-600 bg-sky-50 rounded px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
                                             <p class="font-semibold text-slate-800 leading-snug" x-text="talk.title"></p>
                                             <template x-if="talk.authors && talk.authors.length">
-                                                <div class="mt-2 flex flex-col gap-1.5">
+                                                <div class="mt-2 flex flex-col leading-0">
                                                     <template x-for="(author, ai) in talk.authors" :key="ai">
-                                                        <div class="flex items-center gap-2">
-                                                            <div class="h-6 w-6 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center shrink-0">
-                                                                <span class="text-[9px] font-black uppercase leading-none"
-                                                                    x-text="author.name.split(' ').filter(w => w.match(/^[A-Z]/)).slice(0,2).map(w => w[0]).join('')">
-                                                                </span>
-                                                            </div>
+                                                        <div class="flex items-center">
                                                             <div class="min-w-0">
-                                                                <span class="text-sm font-semibold text-slate-700"
+                                                                <span class="text-sm font-semibold text-slate-400"
                                                                     x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
                                                                 <template x-if="author.affiliation">
                                                                     <span class="text-sm text-slate-400 ml-1" x-text="'· ' + author.affiliation"></span>
@@ -233,7 +223,7 @@
                                 </div>
                                 <div class="px-4 py-3">
                                     <p class="font-bold text-slate-800 leading-snug" x-text="event.title"></p>
-                                    <p x-show="event.description" class="text-sm text-slate-500 mt-1 leading-relaxed" x-text="event.description"></p>
+                                    <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
                                 </div>
                             </div>
                         </template>
