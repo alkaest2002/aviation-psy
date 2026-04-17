@@ -1,0 +1,230 @@
+{
+    "day1": {
+        "date": "27/10/2026",
+        "type": "invite-only",
+        "events": [
+            {
+                "time": "14:30 - 15:30",
+                "title": "Accoglienza invitati",
+                "description": null
+            },
+            {
+                "time": "15:30 - 19:30",
+                "title": "Evento culturale",
+                "description": "Visita guidata alla mostra permanente della Veneranda Biblioteca Ambrosiana"
+            },
+            {
+                "time": "19:30 - 20:30",
+                "title": "Tavola rotonda",
+                "description": "Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare."
+            },
+            {
+                "time": "20:30 - 22:00",
+                "title": "Cena di gala",
+                "description": null
+            }
+        ]
+    },
+    "day2-first-part": {
+        "date": "28/10/2026",
+        "time": "08:00 - 11:40",
+        "type": "public",
+        "events": [
+            {
+                "time": "08:00 - 08:50",
+                "title": "Registrazione partecipanti",
+                "description": null
+            },
+            {
+                "time": "08:50 - 09:20",
+                "title": "Saluti Autorità",
+                "description": null
+            },
+            {
+                "time": "09:20 - 09:50",
+                "title": "Lectio Magistralis",
+                "description": null
+            },
+            {
+                "time": "09:50 - 10:45",
+                "title": "Panel 1 — In depth Knowledge",
+                "talks": [
+                    {
+                        "time": "09:50 - 10:05",
+                        "title": "Psicologia dell'aviazione: formare i professionisti del cielo, tra evidenza scientifica e pratica operativa",
+                        "authors": [
+                            {
+                                "name": "De Mattei V.",
+                                "affiliation": "Ordine Psicologi Lombardia · Università San Raffaele Milano",
+                                "role": "Prof."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "10:05 - 10:20",
+                        "title": "Definire gli standard professionali dello psicologo dell'aviazione",
+                        "authors": [
+                            {
+                                "name": "Furia A.",
+                                "affiliation": "ENAC",
+                                "role": "Dott."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "10:20 - 10:35",
+                        "title": "Aviation Psychology: traiettorie tematiche nella letteratura scientifica. Un approccio di topic extraction modelling mediante BERTopic",
+                        "authors": [
+                            {
+                                "name": "Calanna P.",
+                                "affiliation": "IMA Milano",
+                                "role": "Ten. Col."
+                            },
+                            {
+                                "name": "Buonaiuto G.",
+                                "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
+                                "role": "Cap."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "10:35 - 10:45",
+                        "title": "Question time panel",
+                        "authors": []
+                    }
+                ]
+            },
+            {
+                "time": "10:45 - 11:40",
+                "title": "Panel 2 — Research",
+                "talks": [
+                    {
+                        "time": "10:45 - 11:00",
+                        "title": "Esiti del questionario OSES-2: La percezione della Safety Culture e della Fatica Operazionale nei reparti di volo",
+                        "authors": [
+                            {
+                                "name": "Tarantino",
+                                "affiliation": null,
+                                "role": "Gen."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "11:00 - 11:15",
+                        "title": "TBD",
+                        "authors": [
+                            {
+                                "name": "Piccardi L.",
+                                "affiliation": "Università Sapienza Roma",
+                                "role": "Prof."
+                            },
+                            {
+                                "name": "Verde P.",
+                                "affiliation": "RMAS Pratica di Mare",
+                                "role": "Col."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "11:15 - 11:30",
+                        "title": "Stimolazione transcranica nei piloti militari: una proposta di ricerca",
+                        "authors": [
+                            {
+                                "name": "Silvestri",
+                                "affiliation": null,
+                                "role": null
+                            }
+                        ]
+                    },
+                    {
+                        "time": "11:30 - 11:40",
+                        "title": "Question time panel",
+                        "authors": []
+                    }
+                ]
+            }
+        ]
+    },
+    "day2-second-part": {
+        "date": "28/10/2026",
+        "time": "11:40 - 14:10",
+        "type": "public",
+        "events": [
+            {
+                "time": "11:40 - 12:00",
+                "title": "Pausa caffè",
+                "description": null
+            },
+            {
+                "time": "12:00 - 13:10",
+                "title": "Panel 3 — Applications",
+                "talks": [
+                    {
+                        "time": "12:00 - 12:15",
+                        "title": "Titolo provvisorio per possibile contributo neuroscienze",
+                        "authors": [
+                            {
+                                "name": "Bruno G.",
+                                "affiliation": "Università Sapienza Roma",
+                                "role": "Prof."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "12:15 - 12:30",
+                        "title": "Lo psicologo dell'aviazione nei trasporti medici umanitari da aree di conflitto",
+                        "authors": [
+                            {
+                                "name": "Palermo I.",
+                                "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
+                                "role": "Cap."
+                            },
+                            {
+                                "name": "D'Angelo A.",
+                                "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
+                                "role": "Cap."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "12:30 - 12:45",
+                        "title": "Il ruolo dello psicologo nella revisione del profilo professionale dei piloti militari",
+                        "authors": [
+                            {
+                                "name": "Giua E.",
+                                "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
+                                "role": "Cap."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "12:45 - 13:00",
+                        "title": "Il Fattore umano nelle evacuazioni mediche aeree con pazienti a disabilità non motoria",
+                        "authors": [
+                            {
+                                "name": "Ceci V.",
+                                "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
+                                "role": "Cap."
+                            },
+                            {
+                                "name": "Busà A.",
+                                "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
+                                "role": "STen."
+                            }
+                        ]
+                    },
+                    {
+                        "time": "13:00 - 13:10",
+                        "title": "Question time panel",
+                        "authors": []
+                    }
+                ]
+            },
+            {
+                "time": "13:10 - 14:10",
+                "title": "Conclusione convegno + ECM",
+                "description": null
+            }
+        ]
+    }
+}

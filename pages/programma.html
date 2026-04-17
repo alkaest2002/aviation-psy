@@ -4,51 +4,253 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informazioni Utili · III Convegno di Psicologia dell'Aviazione</title>
+    <title>Programma · III Convegno di Psicologia dell'Aviazione</title>
     <meta name="description"
         content="III Convegno di Psicologia dell'Aviazione - Milano, 27 e 28 ottobre 2026. Iscrizioni entro 31/08/2026." />
     <link rel="stylesheet" href="/src/style.css" />
+    <script src="/src/main.js" type="module"></script>
 </head>
 
 <body class="min-h-screen bg-slate-100 antialiased">
+<main class="flex flex-col min-h-screen">
 
-    <main class="flex flex-col min-h-screen">
-
-        <!-- ── Hero ─────────────────────────────────────────── -->
-        <header class="bg-sky-900 px-6 pt-10 pb-10">
-
-            <p class="font-semibold tracking-[0.18em] uppercase text-sky-200">
-                III Convegno
-            </p>
-            <h1 class="text-3xl font-black tracking-tight text-white leading-tight mb-3">
-                Psicologia dell'Aviazione
-            </h1>
-            <div class="mt-6 flex flex-col text-sm text-sky-100">
-                <span>27–28 ottobre 2026 · Milano</span>
-                <span>ECM · Psicologi, Medici, AME</span>
-            </div>
-        </header>
-
-        <!-- ── Content ───────────────────────────────────────── -->
-        <div class="flex-1 flex flex-col px-6 pt-8 pb-12 gap-3">
-            <a href="/index.html"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide uppercase mb-6 active:opacity-70 transition-opacity">
-                <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4">
-                    <path d="M13 8H3M7 4l-4 4 4 4" />
-                </svg>
-                Home
-            </a>
-            <p class="text-gray-600">Programma: pagina in costruzione</p>
+    <!-- ── Hero ──────────────────────────────────────────────── -->
+    <header class="bg-sky-900 px-6 pt-10 pb-10">
+        <p class="font-semibold tracking-[0.18em] uppercase text-sky-200">III Convegno</p>
+        <h1 class="text-3xl font-black tracking-tight text-white leading-tight mb-3">
+            Psicologia dell'Aviazione
+        </h1>
+        <div class="mt-6 flex flex-col text-sm text-sky-100">
+            <span>27–28 ottobre 2026 · Milano</span>
+            <span>ECM · Psicologi, Medici, AME</span>
         </div>
+    </header>
 
-        <!-- ── Footer ────────────────────────────────────────── -->
-        <footer class="px-6 pb-10 text-center">
-            <p class="text-[11px] text-slate-600 tracking-wide uppercase">
-                © 2026 · Tutti i diritti riservati
-            </p>
-        </footer>
+    <!-- ── Content ───────────────────────────────────────────── -->
+    <div class="flex-1 flex flex-col px-6 pt-8 pb-12 gap-8" x-data="program" x-cloak>
 
-    </main>
+        <!-- back -->
+        <a href="/index.html"
+            class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide uppercase active:opacity-70 transition-opacity text-sky-800">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4">
+                <path d="M13 8H3M7 4l-4 4 4 4" />
+            </svg>
+            Home
+        </a>
 
+        <!-- ══════════════════════════════════════════════════════
+             DAY 1
+        ══════════════════════════════════════════════════════ -->
+        <section class="flex flex-col gap-4">
+
+            <!-- day header -->
+            <div class="flex items-center gap-3">
+                <div class="flex flex-col items-center justify-center bg-sky-900 text-white rounded-xl w-12 h-12 shrink-0 shadow-md">
+                    <span class="text-[10px] font-bold uppercase tracking-widest leading-none text-sky-300">OTT</span>
+                    <span class="text-xl font-black leading-none">27</span>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400">Giorno 1</p>
+                    <h2 class="text-base font-bold text-slate-800" x-text="day1.date"></h2>
+                </div>
+                <span class="ml-auto inline-flex items-center gap-1 rounded-full bg-amber-100 text-amber-800 text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 shrink-0">
+                    <svg class="h-3 w-3" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z"/>
+                    </svg>
+                    Su invito
+                </span>
+            </div>
+
+            <!-- events -->
+            <template x-for="(event, i) in day1.events" :key="i">
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+                    <div class="bg-sky-50 border-b border-sky-100 px-4 py-2 flex items-center gap-2">
+                        <svg class="h-3.5 w-3.5 text-sky-400 shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z"/>
+                        </svg>
+                        <span class="text-xs font-bold text-sky-700 tracking-wide" x-text="event.time"></span>
+                    </div>
+                    <div class="px-4 py-3">
+                        <p class="text-sm font-bold text-slate-800 leading-snug" x-text="event.title"></p>
+                        <p x-show="event.description" class="text-xs text-slate-500 mt-1 leading-relaxed" x-text="event.description"></p>
+                    </div>
+                </div>
+            </template>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+             DAY 2
+        ══════════════════════════════════════════════════════ -->
+        <section class="flex flex-col gap-6">
+
+            <!-- day header -->
+            <div class="flex items-center gap-3">
+                <div class="flex flex-col items-center justify-center bg-sky-900 text-white rounded-xl w-12 h-12 shrink-0 shadow-md">
+                    <span class="text-[10px] font-bold uppercase tracking-widest leading-none text-sky-300">OTT</span>
+                    <span class="text-xl font-black leading-none">28</span>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-400">Giorno 2</p>
+                    <h2 class="text-base font-bold text-slate-800" x-text="day2Part1.date"></h2>
+                </div>
+                <span class="ml-auto inline-flex items-center gap-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 shrink-0">
+                    <svg class="h-3 w-3" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z"/>
+                    </svg>
+                    Pubblico
+                </span>
+            </div>
+
+            <!-- ── first half ── -->
+            <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-2">
+                    <div class="h-px flex-1 bg-slate-200"></div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 px-2" x-text="day2Part1.time"></span>
+                    <div class="h-px flex-1 bg-slate-200"></div>
+                </div>
+
+                <template x-for="(event, i) in day2Part1.events" :key="i">
+                    <div>
+                        <!-- panel card -->
+                        <template x-if="event.talks">
+                            <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+                                <div class="bg-sky-900 px-4 py-3 flex items-center gap-2">
+                                    <svg class="h-3.5 w-3.5 text-sky-300 shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                                        <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z"/>
+                                    </svg>
+                                    <span class="text-xs font-black text-white tracking-wide uppercase" x-text="event.title"></span>
+                                    <span class="ml-auto text-[10px] font-bold text-sky-300 shrink-0" x-text="event.time"></span>
+                                </div>
+                                <div class="divide-y divide-slate-100">
+                                    <template x-for="(talk, ti) in event.talks" :key="ti">
+                                        <div class="px-4 py-3">
+                                            <span class="inline-block mb-1.5 text-[10px] font-bold text-sky-600 bg-sky-50 rounded px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
+                                            <p class="text-sm font-semibold text-slate-800 leading-snug" x-text="talk.title"></p>
+                                            <template x-if="talk.authors && talk.authors.length">
+                                                <div class="mt-2 flex flex-col gap-1.5">
+                                                    <template x-for="(author, ai) in talk.authors" :key="ai">
+                                                        <div class="flex items-center gap-2">
+                                                            <div class="h-6 w-6 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center shrink-0">
+                                                                <span class="text-[9px] font-black uppercase leading-none"
+                                                                    x-text="author.name.split(' ').filter(w => w.match(/^[A-Z]/)).slice(0,2).map(w => w[0]).join('')">
+                                                                </span>
+                                                            </div>
+                                                            <div class="min-w-0">
+                                                                <span class="text-xs font-semibold text-slate-700"
+                                                                    x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
+                                                                <template x-if="author.affiliation">
+                                                                    <span class="text-[10px] text-slate-400 ml-1" x-text="'· ' + author.affiliation"></span>
+                                                                </template>
+                                                            </div>
+                                                        </div>
+                                                    </template>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+
+                        <!-- plain event card -->
+                        <template x-if="!event.talks">
+                            <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+                                <div class="bg-sky-50 border-b border-sky-100 px-4 py-2 flex items-center gap-2">
+                                    <svg class="h-3.5 w-3.5 text-sky-400 shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                                        <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z"/>
+                                    </svg>
+                                    <span class="text-xs font-bold text-sky-700 tracking-wide" x-text="event.time"></span>
+                                </div>
+                                <div class="px-4 py-3">
+                                    <p class="text-sm font-bold text-slate-800 leading-snug" x-text="event.title"></p>
+                                    <p x-show="event.description" class="text-xs text-slate-500 mt-1 leading-relaxed" x-text="event.description"></p>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+            </div>
+
+            <!-- ── second half ── -->
+            <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-2">
+                    <div class="h-px flex-1 bg-slate-200"></div>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 px-2" x-text="day2Part2.time"></span>
+                    <div class="h-px flex-1 bg-slate-200"></div>
+                </div>
+
+                <template x-for="(event, i) in day2Part2.events" :key="i">
+                    <div>
+                        <!-- panel card -->
+                        <template x-if="event.talks">
+                            <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+                                <div class="bg-sky-900 px-4 py-3 flex items-center gap-2">
+                                    <svg class="h-3.5 w-3.5 text-sky-300 shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                                        <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z"/>
+                                    </svg>
+                                    <span class="text-xs font-black text-white tracking-wide uppercase" x-text="event.title"></span>
+                                    <span class="ml-auto text-[10px] font-bold text-sky-300 shrink-0" x-text="event.time"></span>
+                                </div>
+                                <div class="divide-y divide-slate-100">
+                                    <template x-for="(talk, ti) in event.talks" :key="ti">
+                                        <div class="px-4 py-3">
+                                            <span class="inline-block mb-1.5 text-[10px] font-bold text-sky-600 bg-sky-50 rounded px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
+                                            <p class="text-sm font-semibold text-slate-800 leading-snug" x-text="talk.title"></p>
+                                            <template x-if="talk.authors && talk.authors.length">
+                                                <div class="mt-2 flex flex-col gap-1.5">
+                                                    <template x-for="(author, ai) in talk.authors" :key="ai">
+                                                        <div class="flex items-center gap-2">
+                                                            <div class="h-6 w-6 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center shrink-0">
+                                                                <span class="text-[9px] font-black uppercase leading-none"
+                                                                    x-text="author.name.split(' ').filter(w => w.match(/^[A-Z]/)).slice(0,2).map(w => w[0]).join('')">
+                                                                </span>
+                                                            </div>
+                                                            <div class="min-w-0">
+                                                                <span class="text-xs font-semibold text-slate-700"
+                                                                    x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
+                                                                <template x-if="author.affiliation">
+                                                                    <span class="text-[10px] text-slate-400 ml-1" x-text="'· ' + author.affiliation"></span>
+                                                                </template>
+                                                            </div>
+                                                        </div>
+                                                    </template>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+
+                        <!-- plain event card -->
+                        <template x-if="!event.talks">
+                            <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+                                <div class="bg-sky-50 border-b border-sky-100 px-4 py-2 flex items-center gap-2">
+                                    <svg class="h-3.5 w-3.5 text-sky-400 shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                                        <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z"/>
+                                    </svg>
+                                    <span class="text-xs font-bold text-sky-700 tracking-wide" x-text="event.time"></span>
+                                </div>
+                                <div class="px-4 py-3">
+                                    <p class="text-sm font-bold text-slate-800 leading-snug" x-text="event.title"></p>
+                                    <p x-show="event.description" class="text-xs text-slate-500 mt-1 leading-relaxed" x-text="event.description"></p>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- ── Footer ────────────────────────────────────────────── -->
+    <footer class="px-6 pb-10 text-center">
+        <p class="text-[11px] text-slate-600 tracking-wide uppercase">
+            © 2026 · Tutti i diritti riservati
+        </p>
+    </footer>
+
+</main>
 </body>
 </html>
