@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+[x-cloak] {
+  display: none !important;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+}
