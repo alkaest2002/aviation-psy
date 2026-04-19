@@ -50,7 +50,7 @@
         </header>
 
         <!-- ── Content ───────────────────────────────────────────── -->
-        <div class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-8" x-data="program" x-cloak>
+        <div class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-8">
 
             <a href="/index.html"
                 class="inline-flex items-center gap-1.5 text-sm font-semibold tracking-wide uppercase active:opacity-70 transition-opacity text-sky-800">
@@ -80,7 +80,7 @@
                     </span>
                 </div>
 
-                <template x-for="(event, i) in day1.events" :key="i">
+                <template x-for="(event, i) in $store.programStore['day1'].events" :key="i">
                     <div class="bg-white border border-slate-100 shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden transition-shadow duration-200 hover:shadow-[0_2px_6px_rgba(15,23,42,0.08),0_10px_20px_rgba(15,23,42,0.08)]">
                         <div class="bg-slate-50 border-b border-slate-100 px-4 py-2.5 flex items-center gap-2">
                             <svg class="h-3.5 w-3.5 text-slate-400 shrink-0" viewBox="0 0 16 16" fill="currentColor">
@@ -106,7 +106,7 @@
                     </div>
                     <div>
                         <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Giorno 2</p>
-                        <h2 class="text-base font-bold text-slate-800" x-text="day2Part1.date"></h2>
+                        <h2 class="text-base font-bold text-slate-800" x-text="$store.programStore['day2-first-part'].date"></h2>
                     </div>
                     <span class="ml-auto inline-flex items-center gap-1 rounded-full bg-emerald-100 text-emerald-800 text-sm font-bold uppercase tracking-wide px-2.5 py-1 shrink-0 border border-emerald-200">
                         <svg class="h-3 w-3" viewBox="0 0 16 16" fill="currentColor">
@@ -118,7 +118,7 @@
 
                 <!-- first half -->
                 <div class="flex flex-col gap-5">
-                    <template x-for="(event, i) in day2Part1.events" :key="i">
+                    <template x-for="(event, i) in $store.programStore['day2-first-part'].events" :key="i">
                         <div>
                             <template x-if="event.talks">
                                 <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden transition-shadow duration-200 hover:shadow-[0_2px_6px_rgba(15,23,42,0.08),0_10px_20px_rgba(15,23,42,0.08)]">
@@ -174,7 +174,7 @@
 
                 <!-- second half -->
                 <div class="flex flex-col gap-5">
-                    <template x-for="(event, i) in day2Part2.events" :key="i">
+                    <template x-for="(event, i) in $store.programStore['day2-second-part'].events" :key="i">
                         <div>
                             <template x-if="event.talks">
                                 <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden transition-shadow duration-200 hover:shadow-[0_2px_6px_rgba(15,23,42,0.08),0_10px_20px_rgba(15,23,42,0.08)]">
