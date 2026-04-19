@@ -44,7 +44,7 @@ export const spa = () => ({
             const doc = new DOMParser().parseFromString(html, 'text/html');
             document.title = doc.title;
             if (push) history.pushState(0, '', url);
-            document.body.replaceWith(doc.body);
+            document.body.innerHTML = doc.body.innerHTML;
             scrollTo(0, 0);
             Alpine.initTree(document.body);
         } catch (e) {
