@@ -1,4 +1,5 @@
 export const spa = () => ({
+    
     init() {
         this.onClick = e => {
             const a = e.target.closest('a[href]');
@@ -23,6 +24,5 @@ export const spa = () => ({
         document.title = doc.title;
         document.body.replaceWith(doc.body);
         if (push) history.pushState(0, '', url);
-        Alpine.initTree(document.body);
     },
 })
