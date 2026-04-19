@@ -64,11 +64,16 @@
                     <span>Locandina</span>
                 </div>
                 <svg
-                    x-show="!isLoading"
+                    x-show="!isLoading || href.indexOf('/locandina.pdf') === -1"
                     class="h-4 w-4 text-slate-600" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5 text-slate-600 animate-spin" x-show="isLoading" />
+                <img 
+                    src="/i-spinner.svg" 
+                    alt="spinner" 
+                    class="h-5 w-5 text-slate-600 animate-spin" 
+                    x-show="isLoading && href.indexOf('/locandina.pdf') !== -1" 
+                />
             </a>
 
             <a 
@@ -80,11 +85,16 @@
                     <span>Programma</span>
                 </div>
                 <svg 
-                    x-show="!isLoading"
+                    x-show="!isLoading || href.indexOf('/pages/programma.html') === -1"
                     class="h-4 w-4 text-slate-600" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5 text-slate-600 animate-spin" x-show="isLoading" />
+                <img 
+                    src="/i-spinner.svg" 
+                    alt="spinner" 
+                    class="h-5 w-5 text-slate-600 animate-spin" 
+                    x-show="isLoading && href.indexOf('/pages/programma.html') !== -1" 
+                />
             </a>
 
             <a 
@@ -96,11 +106,16 @@
                     <span>Informazioni</span>
                 </div>
                 <svg 
-                    x-show="!isLoading"
+                    x-show="!isLoading || href.indexOf('/pages/info.html') === -1"
                     class="h-4 w-4 text-slate-600" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5 text-slate-600 animate-spin" x-show="isLoading" />
+                <img 
+                    src="/i-spinner.svg" 
+                    alt="spinner" 
+                    class="h-5 w-5 text-slate-600 animate-spin" 
+                    x-show="isLoading && href.indexOf('/pages/info.html') !== -1" 
+                />
 
             <a 
                 href="/pages/iscrizione.html"
@@ -111,11 +126,16 @@
                     <span>Iscrizione</span>
                 </div>
                 <svg 
-                    x-show="!isLoading"
+                    x-show="!isLoading || href.indexOf('/pages/iscrizione.html') === -1"
                     class="h-4 w-4 text-slate-600" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5 text-slate-600 animate-spin" x-show="isLoading" />
+                <img 
+                    src="/i-spinner.svg" 
+                    alt="spinner" 
+                    class="h-5 w-5 text-slate-600 animate-spin" 
+                    x-show="isLoading && href.indexOf('/pages/iscrizione.html') !== -1" 
+                />
             </a>
 
             <a 
@@ -127,11 +147,16 @@
                     <span>Sponsor</span>
                 </div>
                 <svg 
-                    x-show="!isLoading"
+                    x-show="!isLoading || href.indexOf('/pages/sponsor.html') === -1"
                     class="h-4 w-4 text-slate-600" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5 text-slate-600 animate-spin" x-show="isLoading" />
+                <img 
+                    src="/i-spinner.svg" 
+                    alt="spinner" 
+                    class="h-5 w-5 text-slate-600 animate-spin" 
+                    x-show="isLoading && href.indexOf('/pages/sponsor.html') !== -1" 
+                />
             </a>
 
             <a 
@@ -143,11 +168,16 @@
                     <span>Privacy</span>
                 </div>
                 <svg 
-                    x-show="!isLoading"
+                    x-show="!isLoading || href.indexOf('/pages/privacy.html') === -1"
                     class="h-4 w-4 text-slate-600" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5 text-slate-600 animate-spin" x-show="isLoading" />
+                <img 
+                    src="/i-spinner.svg" 
+                    alt="spinner" 
+                    class="h-5 w-5 text-slate-600 animate-spin" 
+                    x-show="isLoading && href.indexOf('/pages/privacy.html') !== -1" 
+                />
             </a>
 
         </nav>
