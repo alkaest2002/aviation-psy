@@ -3,9 +3,9 @@ export const spa = () => ({
     init() {
         this.onClick = e => {
             const a = e.target.closest('a[href]');
-            this.href = a?.href;
             if (!a || a.origin !== location.origin || a.target || e.metaKey
                 || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+            this.href = a.href ?? "/";
             e.preventDefault();
             this.go(a.href, true);
         };
