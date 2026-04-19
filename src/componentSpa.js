@@ -17,12 +17,19 @@ export const spa = () => ({
         removeEventListener('popstate', this.onPop);
     },
 
+    isLoading: false,
+
     async go(url, push) {
-        console.log(`Navigating to ${url} (push: ${push})`);
-        const html = await fetch(url, { headers: { 'X-Requested-With': 'fetch' } }).then(r => r.text());
-        const doc = new DOMParser().parseFromString(html, 'text/html');
-        document.title = doc.title;
-        document.body.replaceWith(doc.body);
-        if (push) history.pushState(0, '', url);
+        if (this.isLoading) return;
+        this.isLoading = true;
+        try {
+            const html = await fetch(url, { headers: { 'X-Requested-With': 'fetch' } }).then(r => r.text());
+            const doc = new DOMParser().parseFromString(html, 'text/html');
+            document.title = doc.title;
+            document.body.replaceWith(doc.body);
+            if (push) history.pushState(0, '', url);
+        } finally {
+            this.isLoading = false;
+        }
     },
 })
