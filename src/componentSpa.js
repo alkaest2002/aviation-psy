@@ -3,10 +3,10 @@ export const spa = () => ({
     init() {
         this.onClick = e => {
             const a = e.target.closest('a[href]');
+            this.href = a?.href;
             if (!a || a.origin !== location.origin || a.target || e.metaKey
                 || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
             e.preventDefault();
-            this.href = a.href;
             this.go(a.href, true);
         };
         this.onPop = () => this.go(location.href, false);
@@ -25,7 +25,6 @@ export const spa = () => ({
     controller: null,
 
     clearAll() {
-        this.controller?.abort();
         this.controller = null;
         this.href = null;
         this.isLoading = false;
