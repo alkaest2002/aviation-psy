@@ -16,7 +16,11 @@
     <main class="flex flex-col min-h-dvh bg-slate-200">
 
         <!-- ── Hero ─────────────────────────────────────────── -->
-        <header class="relative overflow-hidden bg-sky-900 px-6 md:px-12 lg:px-24 pt-12 pb-12">
+        <header
+            x-data
+            @click="() => location.href = '/index.html'"
+            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 lg:px-24 pt-12 pb-12 hover:cursor-pointer"
+        >
             <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl">
             </div>
             <div class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl">
