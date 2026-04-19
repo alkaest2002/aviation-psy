@@ -16,8 +16,7 @@
     <main class="flex flex-col min-h-dvh bg-slate-200">
 
         <!-- ── Hero ─────────────────────────────────────────── -->
-        <header
-            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 lg:px-24 pt-12 pb-12">
+        <header class="relative overflow-hidden bg-sky-900 px-6 md:px-12 lg:px-24 pt-12 pb-12">
             <!-- subtle background accents -->
             <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl">
             </div>
@@ -56,20 +55,32 @@
 
         <!-- ── Content ───────────────────────────────────────── -->
         <div class="flex-1 flex flex-col px-6 md:px-12 lg:px-24 pt-8 pb-12 gap-3">
+            
+            <!-- back -->
             <a href="/index.html"
-                class="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide uppercase mb-6 active:opacity-70 transition-opacity">
+                class="inline-flex items-center gap-1.5 text-sm font-semibold tracking-wide uppercase active:opacity-70 transition-opacity text-sky-800">
                 <svg class="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4">
                     <path d="M13 8H3M7 4l-4 4 4 4" />
                 </svg>
                 Home
             </a>
+
             <p class="text-gray-600">Iscrizione: pagina in costruzione</p>
+            <div class="mt-4 border-l-2 border-sky-300 pl-3">
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    La pagina di iscrizione reindirizza a un sito esterno
+                    (<strong>[NOME PIATTAFORMA]</strong>) che gestisce
+                    autonomamente la raccolta dei dati e il processo di iscrizione.
+                    Il Titolare di questo sito non ha accesso né controllo
+                    sui dati raccolti dalla piattaforma esterna.
+                </p>
+            </div>
         </div>
 
         <!-- ── Footer ────────────────────────────────────────── -->
         <footer class="px-6 md:px-12 lg:px-24 pb-10 text-center">
-            <p class="text-[14px] text-slate-600 tracking-wide uppercase">
-                © 2026 · Tutti i diritti riservati
+            <p class="text-[14px] text-slate-600 tracking-wide">
+                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html" class="text-sky-700 underline-offset-2">Privacy policy</a>
             </p>
         </footer>
 
