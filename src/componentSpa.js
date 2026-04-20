@@ -6,7 +6,7 @@ export const spa = () => ({
 
     init() {
         this.onClick = e => {
-            const a = e.target.closest('a[href]');
+            const a = e.target.closest("a[href]");
             if (!a || a.origin !== location.origin || a.target || e.metaKey
                 || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
             this.href = a.href ?? "/";
@@ -14,13 +14,13 @@ export const spa = () => ({
             this.go(a.href, true);
         };
         this.onPop = () => this.go(location.href, false);
-        addEventListener('click', this.onClick, true);
-        addEventListener('popstate', this.onPop);
+        addEventListener("click", this.onClick, true);
+        addEventListener("popstate", this.onPop);
     },
 
     destroy() {
-        removeEventListener('click', this.onClick, true);
-        removeEventListener('popstate', this.onPop);
+        removeEventListener("click", this.onClick, true);
+        removeEventListener("popstate", this.onPop);
         this.clearAll();
     },
 
@@ -31,17 +31,17 @@ export const spa = () => ({
         try {
             const res = await fetch(url, {
                 signal: controller.signal,
-                headers: { 'X-Requested-With': 'fetch' }
+                headers: { "X-Requested-With": "fetch" }
             });
             const html = await res.text();
-            const doc = new DOMParser().parseFromString(html, 'text/html');
+            const doc = new DOMParser().parseFromString(html, "text/html");
             document.title = doc.title;
-            if (push) history.pushState(0, '', url);
+            if (push) history.pushState(0, "", url);
             document.body.innerHTML = doc.body.innerHTML;
             scrollTo(0, 0);
             Alpine.initTree(document.body);
         } catch (e) {
-            if (e.name !== 'AbortError') throw e;
+            if (e.name !== "AbortError") throw e;
         } finally {
             if (this.controller === controller) this.clearAll();
         }
@@ -49,7 +49,7 @@ export const spa = () => ({
 
     shouldShowSpinner() {
         return this.isLoading
-            && this.href?.includes(this.$el.closest('a').getAttribute('href'));
+            && this.href?.includes(this.$el.closest("a").getAttribute("href"));
     },
 
     shouldShowRegularIcon() {
