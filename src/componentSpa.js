@@ -48,14 +48,12 @@ export const spa = () => ({
     },
 
     shouldShowSpinner() {
-        return this.isLoading 
-            && this.href 
-            && this.href.indexOf(this.$el.closest('a').getAttribute('href')) !== -1;
+        return this.isLoading
+            && this.href?.includes(this.$el.closest('a').getAttribute('href'));
     },
 
     shouldShowRegularIcon() {
-        return !this.isLoading 
-            || this.href.indexOf(this.$el.closest('a').getAttribute('href')) === -1;
+        return !this.shouldShowSpinner();
     },
 
     clearAll() {
