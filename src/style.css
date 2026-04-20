@@ -20,3 +20,15 @@ body {
 body {
   @apply text-slate-900 antialiased;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+        background-color: #f8fafc;
+        color: #1e293b;
+    }
+}
+
+* {
+    forced-color-adjust: none;
+}
