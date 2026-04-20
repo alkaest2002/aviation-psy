@@ -4,22 +4,17 @@
         "type": "invite-only",
         "events": [
             {
-                "time": "14:30 - 15:30",
+                "time": "18:00 - 18:30",
                 "title": "Accoglienza invitati",
                 "description": null
             },
             {
-                "time": "15:30 - 19:30",
-                "title": "Evento culturale",
-                "description": "Visita guidata alla mostra permanente della Veneranda Biblioteca Ambrosiana"
-            },
-            {
-                "time": "19:30 - 20:30",
+                "time": "18:30 - 19:30",
                 "title": "Tavola rotonda",
                 "description": "Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare."
             },
             {
-                "time": "20:30 - 22:00",
+                "time": "19:30 - 22:00",
                 "title": "Cena di gala",
                 "description": null
             }
