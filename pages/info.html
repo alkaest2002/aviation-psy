@@ -12,7 +12,7 @@
     <script src="/src/main.js" type="module"></script>
 </head>
 
-<body class="min-h-dvh w-full overflow-x-hidden bg-slate-50 antialiased text-slate-800" x-data="spa" x-cloak>
+<body class="min-h-dvh w-full overflow-x-hidden bg-slate-100 antialiased text-slate-800" x-data="spa" x-cloak>
 
     <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
 
@@ -67,20 +67,23 @@
                 Home
             </a>
 
-            <!-- ══ DAY 1 ══ -->
+            <!-- ══ DAY 27 ══ -->
             <section class="flex flex-col gap-4">
 
                 <div class="flex items-center gap-3">
-                    <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-12 h-12 shrink-0 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
+                    <div
+                        class="flex flex-col items-center justify-center bg-sky-900 text-white w-12 h-12 shrink-0 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
                         <span class="text-sm font-bold uppercase tracking-widest leading-none text-sky-300">OTT</span>
                         <span class="text-xl font-black leading-none">27</span>
                     </div>
                     <div>
                         <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Giorno 1</p>
                     </div>
-                    <span class="ml-auto inline-flex items-center gap-1 rounded-full bg-amber-100 text-amber-800 text-sm font-bold uppercase tracking-wide px-2.5 py-1 shrink-0 border border-amber-200">
+                    <span
+                        class="ml-auto inline-flex items-center gap-1 rounded-full bg-amber-100 text-amber-800 text-sm font-bold uppercase tracking-wide px-2.5 py-1 shrink-0 border border-amber-200">
                         <svg class="h-3 w-3" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z" />
+                            <path
+                                d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z" />
                         </svg>
                         Su invito
                     </span>
@@ -90,7 +93,8 @@
                     class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
                     <div class="divide-y divide-slate-100">
 
-                        <div class="bg-slate-50 border-b border-slate-100 px-4 py-2.5 flex items-center gap-2">
+                        <!-- Luogo -->
+                        <div class="bg-slate-100 border-b border-slate-100 px-4 py-2.5 flex items-center gap-2">
                             <svg class="h-3.5 w-3.5 text-slate-400 shrink-0 mt-0.5" viewBox="0 0 16 16"
                                 fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd"
@@ -100,7 +104,6 @@
                             <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">Luogo</span>
                         </div>
 
-                        <!-- Address -->
                         <div class="p-5 flex items-start gap-3">
                             <div>
                                 <p class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Comando Squadra
@@ -121,33 +124,42 @@
                             </div>
                         </div>
 
-                        <!-- Access note -->
-                        <div class="bg-sky-100 border-slate-100 px-4 py-2.5 flex items-center gap-2">
-                            <svg class="h-3.5 w-3.5 text-sky-800 shrink-0" viewBox="0 0 16 16" fill="currentColor"
-                                aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-2.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0V6a.75.75 0 0 1 .75-.75ZM8 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span class="text-sm text-sky-800">Portare documento d'identità valido.</span>
+                        <!-- Dress code -->
+                        <div class="bg-slate-100 border-t border-slate-100 px-4 py-2.5">
+                            <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">Dress code · Cena
+                                di Gala</span>
+                        </div>
+
+                        <div class="px-4 py-3">
+                            <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Civili</span>
+                            <p class="text-sm font-semibold text-slate-700">Abito da sera</p>
+                            <p class="text-sm text-slate-500 mt-0.5">Abito scuro per gli uomini; abito elegante o da
+                                cocktail per le donne.</p>
+                        </div>
+
+                        <div class="px-4 py-3">
+                            <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Militari</span>
+                            <p class="text-sm font-semibold text-slate-700">Uniforme ordinaria</p>
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <!-- ══ DAY 2 ══ -->
+            <!-- ══ DAY 28 ══ -->
             <section class="flex flex-col gap-4">
 
                 <div class="flex items-center gap-3">
-                    <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-12 h-12 shrink-0 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
+                    <div
+                        class="flex flex-col items-center justify-center bg-sky-900 text-white w-12 h-12 shrink-0 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
                         <span class="text-sm font-bold uppercase tracking-widest leading-none text-sky-300">OTT</span>
                         <span class="text-xl font-black leading-none">28</span>
                     </div>
                     <div>
                         <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Giorno 2</p>
                     </div>
-                    <span class="ml-auto inline-flex items-center gap-1 rounded-full bg-emerald-100 text-emerald-800 text-sm font-bold uppercase tracking-wide px-2.5 py-1 shrink-0 border border-emerald-200">
+                    <span
+                        class="ml-auto inline-flex items-center gap-1 rounded-full bg-emerald-100 text-emerald-800 text-sm font-bold uppercase tracking-wide px-2.5 py-1 shrink-0 border border-emerald-200">
                         <svg class="h-3 w-3" viewBox="0 0 16 16" fill="currentColor">
                             <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z" />
                         </svg>
@@ -159,7 +171,8 @@
                     class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
                     <div class="divide-y divide-slate-100">
 
-                        <div class="bg-slate-50 border-b border-slate-100 px-4 py-2.5 flex items-center gap-2">
+                        <!-- Luogo -->
+                        <div class="bg-slate-100 border-b border-slate-100 px-4 py-2.5 flex items-center gap-2">
                             <svg class="h-3.5 w-3.5 text-slate-400 shrink-0 mt-0.5" viewBox="0 0 16 16"
                                 fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd"
@@ -169,10 +182,10 @@
                             <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">Luogo</span>
                         </div>
 
-                        <!-- Address -->
                         <div class="p-5 flex items-start gap-3">
                             <div>
-                                <p class="text-sm font-semibold text-slate-500 uppercase">Veneranda Biblioteca Ambrosiana</p>
+                                <p class="text-sm font-semibold text-slate-500 uppercase">Veneranda Biblioteca
+                                    Ambrosiana</p>
                                 <p class="text-sm text-slate-500">Piazza Pio XI, 2</p>
                                 <p class="text-sm text-slate-500">20123 Milano (MI)</p>
                                 <div class="mt-3 flex flex-wrap gap-x-3 gap-y-1">
@@ -201,111 +214,28 @@
                             </div>
                         </div>
 
-                    </div>
-                </div>
-            </section>
-
-            <!-- ══ DRESS CODE ══ -->
-
-            <!-- Cena di gala — day 27 only -->
-            <section class="flex flex-col gap-4">
-
-                <div class="flex items-center gap-3">
-                    <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-12 h-12 shrink-0 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
-                        <span class="text-sm font-bold uppercase tracking-widest leading-none text-sky-300">OTT</span>
-                        <span class="text-xl font-black leading-none">27</span>
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Dress code</p>
-                        <h2 class="text-base font-bold text-slate-800">Cena di Gala</h2>
-                    </div>
-                    <span class="ml-auto inline-flex items-center gap-1 rounded-full bg-amber-100 text-amber-800 text-sm font-bold uppercase tracking-wide px-2.5 py-1 shrink-0 border border-amber-200">
-                        <svg class="h-3 w-3" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z" />
-                        </svg>
-                        Su invito
-                    </span>
-                </div>
-
-                <div
-                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
-                    <div class="divide-y divide-slate-100">
-
-                        <div class="px-4 py-3">
-                            <div class="flex items-center gap-2 mb-1">
-                                <span
-                                    class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Civili</span>
-                            </div>
-                            <p class="text-sm font-semibold text-slate-700">Abito da sera</p>
-                            <p class="text-sm text-slate-500 mt-0.5">Abito scuro per gli uomini; abito elegante o da cocktail per le donne.</p>
+                        <!-- Dress code -->
+                        <div class="bg-slate-100 border-t border-slate-100 px-4 py-2.5">
+                            <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">Dress code ·
+                                Congresso</span>
                         </div>
 
                         <div class="px-4 py-3">
-                            <div class="flex items-center gap-2 mb-1">
-                                <span
-                                    class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Militari</span>
-                            </div>
-                            <p class="text-sm font-semibold text-slate-700">Uniforme ordinaria</p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Lavori congressuali — days 27+28 -->
-            <section class="flex flex-col gap-4">
-
-                <div class="flex items-center gap-5">
-                    <!-- dual badge 27+28 -->
-                    <div class="flex shrink-0 gap-1">
-                        <div
-                            class="flex flex-col items-center justify-center bg-sky-900 text-white w-12 h-12 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
-                            <span
-                                class="text-sm font-bold uppercase tracking-widest leading-none text-sky-300">OTT</span>
-                            <span class="text-xl font-black leading-none">27</span>
-                        </div>
-                        <div
-                            class="flex flex-col items-center justify-center bg-sky-900 text-white w-12 h-12 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
-                            <span
-                                class="text-sm font-bold uppercase tracking-widest leading-none text-sky-300">OTT</span>
-                            <span class="text-xl font-black leading-none">28</span>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="text-sm font-semibold uppercase tracking-widest text-slate-400">Dress code</p>
-                        <h2 class="text-base font-bold text-slate-800">Lavori Congressuali</h2>
-                    </div>
-                    <span class="ml-auto inline-flex items-center gap-1 rounded-full bg-emerald-100 text-emerald-800 text-sm font-bold uppercase tracking-wide px-2.5 py-1 shrink-0 border border-emerald-200">
-                        <svg class="h-3 w-3" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z" />
-                        </svg>
-                        Pubblico
-                    </span>
-                </div>
-
-                <div
-                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
-                    <div class="divide-y divide-slate-100">
-
-                        <div class="px-4 py-3">   
                             <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Civili</span>
                             <p class="text-sm font-semibold text-slate-700">Suggerito business casual</p>
-                            <p class="text-sm text-slate-500 mt-0.5">Abito con giacca, camicia; cravatta facoltativa. Evitare jeans, sneakers o abbigliamento sportivo.</p>
+                            <p class="text-sm text-slate-500 mt-0.5">Abito con giacca, camicia; cravatta facoltativa.
+                                Evitare jeans, sneakers o abbigliamento sportivo.</p>
                         </div>
 
                         <div class="px-4 py-3">
-                            <div class="flex items-center gap-2 mb-1">
-                                <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Militari ·
-                                    Partecipanti</span>
-                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Militari ·
+                                Partecipanti</span>
                             <p class="text-sm font-semibold text-slate-700">Uniforme di servizio</p>
                         </div>
 
                         <div class="px-4 py-3">
-                            <div class="flex items-center gap-2 mb-1">
-                                <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Militari ·
-                                    Relatori</span>
-                            </div>
+                            <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Militari ·
+                                Relatori</span>
                             <p class="text-sm font-semibold text-slate-700">Uniforme ordinaria</p>
                         </div>
 
