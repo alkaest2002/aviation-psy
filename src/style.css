@@ -22,13 +22,13 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: light;
-        background-color: #f8fafc;
-        color: #1e293b;
-    }
+  :root {
+    color-scheme: light;
+    background-color: var(--color-slate-50);
+    color: var(--color-slate-800);
+  }
 }
 
 * {
-    forced-color-adjust: none;
+  forced-color-adjust: none;
 }
