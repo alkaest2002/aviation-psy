@@ -1,5 +1,9 @@
 export const spa = () => ({
 
+    isLoading: false,
+    href: null,
+    controller: null,
+
     init() {
         this.onClick = e => {
             const a = e.target.closest('a[href]');
@@ -18,16 +22,6 @@ export const spa = () => ({
         removeEventListener('click', this.onClick, true);
         removeEventListener('popstate', this.onPop);
         this.clearAll();
-    },
-
-    isLoading: false,
-    href: null,
-    controller: null,
-
-    clearAll() {
-        this.controller = null;
-        this.href = null;
-        this.isLoading = false;
     },
 
     async go(url, push) {
@@ -51,5 +45,22 @@ export const spa = () => ({
         } finally {
             if (this.controller === controller) this.clearAll();
         }
+    },
+
+    shouldShowSpinner() {
+        return this.isLoading 
+            && this.href 
+            && this.href.indexOf(this.$el.closest('a').getAttribute('href')) !== -1;
+    },
+
+    shouldShowRegularIcon() {
+        return !this.isLoading 
+            || this.href.indexOf(this.$el.closest('a').getAttribute('href')) === -1;
+    },
+
+    clearAll() {
+        this.controller = null;
+        this.href = null;
+        this.isLoading = false;
     },
 })
