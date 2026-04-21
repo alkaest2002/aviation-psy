@@ -52,7 +52,7 @@
         </header>
 
         <!-- ── Content ───────────────────────────────────────── -->
-        <div class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-8">
+        <div class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-8" x-data="map">
 
             <!-- Back link -->
             <a href="/index.html"
@@ -104,10 +104,12 @@
                                     Aerea · 1^ R.A.</p>
                                 <p class="text-slate-500">Piazza Ermete Novelli, 1</p>
                                 <p class="text-slate-500">20129 Milano (MI)</p>
-                                <a href="https://maps.google.com/?q=Piazza+Ermete+Novelli+1,+20129+Milano"
+                                <a 
+                                    :href="mapUrl('Piazza Ermete Novelli 1, 20129 Milano')"
+                                    x-text="mapLabel"
                                     target="_blank" rel="noopener noreferrer"
-                                    class="mt-3 inline-flex items-center gap-1 font-semibold text-sky-700 active:opacity-70 transition-opacity underline-offset-2 underline">
-                                    apri in maps
+                                    class="mt-3 inline-flex items-center gap-1 font-semibold text-sky-700 active:opacity-70 transition-opacity underline-offset-2 underline"
+                                >
                                     <svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" stroke="currentColor"
                                         stroke-width="2.2" aria-hidden="true">
                                         <path
@@ -173,10 +175,13 @@
                                 <p class="text-slate-500">Piazza Pio XI, 2</p>
                                 <p class="text-slate-500">20123 Milano (MI)</p>
                                 <div class="mt-3 flex flex-wrap gap-x-3 gap-y-1">
-                                    <a href="https://maps.google.com/?q=Piazza+Pio+XI+2,+20123+Milano" target="_blank"
+                                    <a 
+                                        :href="mapUrl('Piazza Pio XI 2, 20123 Milano')"
+                                        x-text="mapLabel"
+                                        target="_blank"
                                         rel="noopener noreferrer"
-                                        class="inline-flex items-center gap-1 font-semibold text-sky-700 active:opacity-70 transition-opacity underline-offset-2 underline">
-                                        apri in maps
+                                        class="inline-flex items-center gap-1 font-semibold text-sky-700 active:opacity-70 transition-opacity underline-offset-2 underline"
+                                    >
                                         <svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" stroke="currentColor"
                                             stroke-width="2.2" aria-hidden="true">
                                             <path
