@@ -17,33 +17,36 @@
     <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
 
         <!-- ── Hero ─────────────────────────────────────────── -->
-        <header
-            x-data="header"
-            x-bind="homeLink"
-            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer"
-        >
-            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl"></div>
-            <div class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl"></div>
+        <header x-data="header" x-bind="homeLink"
+            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer">
+            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl">
+            </div>
+            <div
+                class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl">
+            </div>
 
-            <div class="relative w-full min-w-0">
-                <p class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
+            <div class="relative w-full">
+                <p
+                    class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
                     III Convegno
                 </p>
-
-                <h1 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-sky-500 leading-tight">
+                <h1 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-white leading-tight">
                     Psicologia dell'Aviazione
                 </h1>
-
-                <div class="mt-6 grid gap-2 text-sm text-sky-100/95">
+                <div class="mt-6 grid gap-2 text-sky-100/95">
                     <span class="inline-flex items-center gap-2">
-                        <svg class="h-4 w-4 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                            <path d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
+                        <svg class="h-4 w-4 text-sky-300 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
                         </svg>
                         27–28 ottobre 2026 · Milano
                     </span>
                     <span class="inline-flex items-center gap-2">
-                        <svg class="h-4 w-4 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                            <path d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
+                        <svg class="h-4 w-4 text-sky-300 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
                         </svg>
                         ECM · Psicologi, Medici, AME
                     </span>
@@ -74,11 +77,11 @@
 
             <!-- 1. Titolare -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
-                <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <div class="px-4 py-3 flex items-center gap-2border-b border-slate-200">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">1. Titolare del Trattamento</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">1. Titolare del Trattamento</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed">
@@ -99,10 +102,10 @@
             <!-- 2. Tipologia di sito -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">2. Tipologia di Sito</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">2. Tipologia di Sito</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed mb-3">
@@ -131,10 +134,10 @@
             <!-- 3. Dati raccolti -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">3. Dati Raccolti</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">3. Dati Raccolti</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed">
@@ -147,10 +150,10 @@
             <!-- 4. Cookie -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">4. Cookie</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">4. Cookie</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed mb-3">
@@ -168,10 +171,10 @@
             <!-- 5. Risorse esterne -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">5. Risorse Esterne</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">5. Risorse Esterne</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed">
@@ -185,10 +188,10 @@
             <!-- 6. GitHub Pages -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">6. Hosting · GitHub Pages</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">6. Hosting · GitHub Pages</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed mb-4">
@@ -237,10 +240,10 @@
             <!-- 7. Base giuridica -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">7. Base Giuridica del Trattamento</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">7. Base Giuridica del Trattamento</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed">
@@ -256,10 +259,10 @@
             <!-- 8. Conservazione -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">8. Periodo di Conservazione</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">8. Periodo di Conservazione</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed">
@@ -273,10 +276,10 @@
             <!-- 9. Diritti -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">9. Diritti dell'Interessato</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">9. Diritti dell'Interessato</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed mb-3">
@@ -297,10 +300,10 @@
             <!-- 10. Garante -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">10. Diritto di Reclamo</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">10. Diritto di Reclamo</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed mb-4">
@@ -321,10 +324,10 @@
             <!-- 11. Modifiche -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
-                    <svg class="h-3.5 w-3.5 text-sky-500 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-black text-sky-500 tracking-wide uppercase">11. Modifiche alla Presente Informativa</span>
+                    <span class="text-sm font-black text-sky-700 tracking-wide uppercase">11. Modifiche alla Presente Informativa</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed">
