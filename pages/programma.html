@@ -83,14 +83,11 @@
 
                 <template x-for="(event, i) in $store.programStore['day1'].events" :key="i">
                     <div class="bg-white border border-slate-100 shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden transition-shadow duration-200 hover:shadow-[0_2px_6px_rgba(15,23,42,0.08),0_10px_20px_rgba(15,23,42,0.08)]">
-                        <div class="bg-white border-b border-slate-200 px-4 py-2.5 flex items-center gap-2">
-                            <svg class="h-3.5 w-3.5 text-slate-400 shrink-0" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z" />
-                            </svg>
-                            <span class="text-sm font-semibold text-slate-700 tracking-wide" x-text="event.time"></span>
+                        <div class="bg-white border-b border-slate-300 px-4 py-2.5 flex items-center gap-2">
+                            <span class="text-sm font-semibold text-sky-700 tracking-wide" x-text="event.time"></span>
                         </div>
                         <div class="px-4 py-3">
-                            <p class="font-bold text-slate-800 leading-snug" x-text="event.title"></p>
+                            <p class="font-bold leading-snug" x-text="event.title"></p>
                             <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
                         </div>
                     </div>
@@ -123,14 +120,14 @@
                         <div>
                             <template x-if="event.talks">
                                 <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden transition-shadow duration-200 hover:shadow-[0_2px_6px_rgba(15,23,42,0.08),0_10px_20px_rgba(15,23,42,0.08)]">
-                                    <div class="px-4 py-3 flex items-center gap-2 bg-white border-b border-slate-200">
+                                    <div class="px-4 py-3 flex items-center gap-2 bg-white border-b border-slate-300">
                                         <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                             <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                                         </svg>
                                         <span class="text-sm font-black text-sky-700 tracking-wide uppercase" x-text="event.title"></span>
                                         <span class="ml-auto text-sm font-bold text-sky-700 shrink-0" x-text="event.time"></span>
                                     </div>
-                                    <div class="divide-y divide-slate-100">
+                                    <div class="divide-y divide-slate-200">
                                         <template x-for="(talk, ti) in event.talks" :key="ti">
                                             <div class="px-4 py-3">
                                                 <span class="inline-block mb-1.5 text-sm font-bold text-sky-700 bg-sky-50 border border-sky-100 px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
@@ -157,10 +154,7 @@
 
                             <template x-if="!event.talks">
                                 <div class="bg-white border border-slate-100 shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden transition-shadow duration-200 hover:shadow-[0_2px_6px_rgba(15,23,42,0.08),0_10px_20px_rgba(15,23,42,0.08)]">
-                                    <div class="border-b border-slate-200 px-4 py-2.5 flex items-center gap-2">
-                                        <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
-                                            <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z" />
-                                        </svg>
+                                    <div class="border-b border-slate-300 px-4 py-2.5 flex items-center gap-2">
                                         <span class="text-sm font-semibold text-sky-700 tracking-wide" x-text="event.time"></span>
                                     </div>
                                     <div class="px-4 py-3">
@@ -179,7 +173,7 @@
                         <div>
                             <template x-if="event.talks">
                                 <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden transition-shadow duration-200 hover:shadow-[0_2px_6px_rgba(15,23,42,0.08),0_10px_20px_rgba(15,23,42,0.08)]">
-                                    <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-200">
+                                    <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
                                         <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                             <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                                         </svg>
@@ -213,14 +207,11 @@
 
                             <template x-if="!event.talks">
                                 <div class="bg-white border border-slate-100 shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden transition-shadow duration-200 hover:shadow-[0_2px_6px_rgba(15,23,42,0.08),0_10px_20px_rgba(15,23,42,0.08)]">
-                                    <div class="bg-white border-b border-slate-200 px-4 py-2.5 flex items-center gap-2">
-                                        <svg class="h-3.5 w-3.5 text-slate-400 shrink-0" viewBox="0 0 16 16" fill="currentColor">
-                                            <path d="M8 2a6 6 0 1 0 0 12A6 6 0 0 0 8 2Zm0 1.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9ZM7.25 5v3.5l2.75 1.65.5-.84-2.25-1.35V5h-1Z" />
-                                        </svg>
-                                        <span class="text-sm font-semibold text-slate-700 tracking-wide" x-text="event.time"></span>
+                                    <div class="bg-white border-b border-slate-300 px-4 py-2.5 flex items-center gap-2">
+                                        <span class="text-sm font-semibold text-sky-700 tracking-wide" x-text="event.time"></span>
                                     </div>
                                     <div class="px-4 py-3">
-                                        <p class="font-bold text-slate-800 leading-snug" x-text="event.title"></p>
+                                        <p class="font-bold leading-snug" x-text="event.title"></p>
                                         <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
                                     </div>
                                 </div>
