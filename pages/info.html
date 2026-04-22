@@ -87,7 +87,10 @@
                             <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                                 <path d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
                             </svg>
-                            <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">In programma</span>
+                            <span
+                                x-text="$store.programStore.day1StartEnd" 
+                                class="text-sm font-semibold text-slate-700 tracking-wide uppercase">
+                            </span>
                         </div>
                         <a href="/pages/programma.html#day1"
                             class="inline-flex items-center gap-1 text-xs font-semibold text-sky-700 underline underline-offset-2 active:opacity-70 transition-opacity shrink-0">
@@ -95,11 +98,7 @@
                         </a>
                     </div>
 
-                    <div class="px-4 py-4 flex flex-col gap-2">
-                        <div class="flex items-center gap-2">
-                            <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
-                            <span class="text-sm text-slate-700">Accoglienza invitati</span>
-                        </div>
+                    <div class="px-4 py-4 flex flex-col gap-1.5">
                         <div class="flex items-center gap-2">
                             <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
                             <span class="text-sm text-slate-700">Evento culturale</span>
@@ -179,7 +178,10 @@
                             <svg class="h-3.5 w-3.5 text-sky-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                                 <path d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
                             </svg>
-                            <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">In programma</span>
+                            <span
+                                x-text="$store.programStore.day2StartEnd" 
+                                class="text-sm font-semibold text-slate-700 tracking-wide uppercase">
+                            </span>
                         </div>
                         <a 
                             href="/pages/programma.html#day2"
