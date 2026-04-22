@@ -2,6 +2,7 @@
 
 :root {
   color-scheme: light only;
+  --anchor-offset: 10px;
 }
 
 [x-cloak] {
@@ -31,4 +32,12 @@ body {
 
 * {
   forced-color-adjust: none;
+}
+
+[id] {
+  scroll-margin-top: var(--anchor-offset);
+}
+
+[name] {
+  scroll-margin-top: var(--anchor-offset);
 }

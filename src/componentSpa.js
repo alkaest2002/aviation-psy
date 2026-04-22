@@ -38,12 +38,38 @@ export const spa = () => ({
             document.title = doc.title;
             if (push) history.pushState(0, "", url);
             document.body.innerHTML = doc.body.innerHTML;
-            scrollTo(0, 0);
             Alpine.initTree(document.body);
+            this.scrollToHashOrTop(url);
         } catch (e) {
             if (e.name !== "AbortError") throw e;
         } finally {
             if (this.controller === controller) this.clearAll();
+        }
+    },
+
+    scrollToHashOrTop(url) {
+        const hash = new URL(url, location.origin).hash;
+
+        if (!hash) {
+            scrollTo(0, 0);
+            return;
+        }
+
+        // decode in case of encoded IDs in URL
+        const id = decodeURIComponent(hash.slice(1));
+        const targetById = document.getElementById(id);
+
+        // Fallback to name anchors for legacy markup
+        const targetByName = !targetById
+            ? document.querySelector(`[name="${CSS.escape(id)}"]`)
+            : null;
+
+        const target = targetById || targetByName;
+
+        if (target) {
+            target.scrollIntoView({ block: "start" });
+        } else {
+            scrollTo(0, 0);
         }
     },
 
