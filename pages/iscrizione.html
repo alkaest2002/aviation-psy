@@ -17,16 +17,17 @@
     <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
 
         <!-- ── Hero ─────────────────────────────────────────── -->
-        <header 
-            x-data="header"
-            x-bind="homeLink"
-            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer"
-        >
-            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl"></div>
-            <div class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl"></div>
+        <header x-data="header" x-bind="homeLink"
+            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer">
+            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl">
+            </div>
+            <div
+                class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl">
+            </div>
 
             <div class="relative w-full">
-                <p class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
+                <p
+                    class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
                     III Convegno
                 </p>
 
@@ -36,14 +37,18 @@
 
                 <div class="mt-6 grid gap-2 text-sm text-sky-100/95">
                     <span class="inline-flex items-center gap-2">
-                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                            <path d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
                         </svg>
                         27 e 28 ottobre 2026 · Milano
                     </span>
                     <span class="inline-flex items-center gap-2">
-                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                            <path d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
                         </svg>
                         ECM · Psicologi, Medici, AME
                     </span>
@@ -52,8 +57,8 @@
         </header>
 
         <!-- ── Content ───────────────────────────────────────── -->
-        <div class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-6">
-            
+        <div class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-8">
+
             <!-- Back link -->
             <a href="/index.html"
                 class="inline-flex items-center gap-1.5 font-semibold tracking-wide uppercase active:opacity-70 transition-opacity text-sky-800">
@@ -64,31 +69,135 @@
                 Home
             </a>
 
-            <!-- section label -->
-            <div>
-                <p class="text-xs font-bold tracking-[0.18em] uppercase text-slate-400 mb-1">Iscrizione</p>
-                <div class="h-0.5 w-8 bg-sky-400"></div>
-            </div>
+            <!-- ══ ISCRIZIONE ══ -->
+            <section class="flex flex-col gap-4">
 
-            <p class="text-gray-600">Pagina in costruzione, torna a trovarci!</p>
-            <div class="mt-4">
-                <p class="text-sm text-slate-600 leading-relaxed">
-                    Quando pront, la pagina di iscrizione reindirizzerà a un sito esterno
-                    che gestirà autonomamente la raccolta dei dati e il processo di iscrizione.
-                    Il Titolare di questo sito non avrà accesso né controllo
-                    sui dati raccolti dalla piattaforma esterna.
-                </p>
-            </div>
+                <!-- Dates card -->
+                <div
+                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+
+                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
+                        <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
+                        </svg>
+                        <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">Periodo di
+                            iscrizione</span>
+                    </div>
+
+                    <div class="px-4 py-4 flex flex-col gap-3">
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-col gap-0.5">
+                                <span
+                                    class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Apertura</span>
+                                <span x-text="$store.programStore.registration.start_date"
+                                    class="text-sm font-semibold text-slate-800"></span>
+                            </div>
+                            <div class="flex flex-col gap-0.5">
+                                <span
+                                    class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Chiusura</span>
+                                <span x-text="$store.programStore.registration.end_date"
+                                    class="text-sm font-semibold text-slate-800"></span>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-500 leading-relaxed border-t border-slate-100 pt-3">
+                            Le iscrizioni chiuderanno al raggiungimento del numero massimo di partecipanti o alla data
+                            di chiusura, se precedente.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Fee + capacity card -->
+                <div
+                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+
+                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
+                        <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
+                        </svg>
+                        <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">Quota di iscrizione e posti</span>
+                    </div>
+
+                    <div class="px-4 pt-3 pb-2">
+                        <span class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Quota di
+                            partecipazione</span>
+                        <p x-text="$store.programStore.registration.fee.regular.amount"
+                            class="text-sm font-semibold text-slate-800 mt-0.5"></p>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <span class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Posti
+                            disponibili</span>
+                        <p x-text="$store.programStore.registration.maxParticipants"
+                            class="text-sm font-semibold text-slate-800 mt-0.5"></p>
+                    </div>
+
+                </div>
+
+                <!-- Reminder card -->
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden"
+                    x-data="calendarReminder">
+
+                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
+                        <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
+                        </svg>
+                        <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">Promemoria</span>
+                    </div>
+
+                    <div class="px-4 py-4 flex flex-col gap-3">
+                        <div class="flex items-center gap-2">
+                            <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                            <span class="text-sm text-slate-700">Non perdere l'apertura delle iscrizioni</span>
+                        </div>
+                        <button @click="downloadCalendarICS"
+                            class="self-start inline-flex items-center gap-1.5 text-sm font-semibold text-sky-700 underline underline-offset-2 active:opacity-70 transition-opacity hover:cursor-pointer">
+                            <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                                stroke-width="2.2" aria-hidden="true">
+                                <path d="M8 2v8m0 0-3-3m3 3 3-3M3 13h10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Scarica promemoria (.ics)
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Disclaimer card -->
+                <div
+                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+
+                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
+                        <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
+                        </svg>
+                        <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">Nota sulla
+                            privacy</span>
+                    </div>
+
+                    <div class="px-4 py-4">
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            La pagina di iscrizione reindirizzerà a un sito esterno che gestirà autonomamente
+                            la raccolta dei dati e il processo di iscrizione. Il Titolare di questo sito non avrà
+                            accesso né controllo sui dati raccolti dalla piattaforma esterna.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
         </div>
 
         <!-- ── Footer ────────────────────────────────────────── -->
         <footer class="px-6 md:px-12 pb-10 text-center" x-data x-cloak>
             <p class="text-[14px] text-slate-600 tracking-wide">
-                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html" class="text-sky-700 underline-offset-2">Privacy policy</a>
+                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html"
+                    class="text-sky-700 underline-offset-2">Privacy policy</a>
             </p>
         </footer>
 
     </main>
 
 </body>
+
 </html>
