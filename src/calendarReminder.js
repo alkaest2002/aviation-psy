@@ -62,7 +62,8 @@ export const calendarReminder = () => ({
             ? `DTEND;VALUE=DATE:${dtEnd}`
             : `DTEND:${dtEnd}`;
 
-        return [
+        
+        const icsLines = [
             "BEGIN:VCALENDAR",
             "VERSION:2.0",
             "PRODID:-//AVIATIONPSY//EN",
@@ -80,6 +81,9 @@ export const calendarReminder = () => ({
             "END:VEVENT",
             "END:VCALENDAR",
         ].join("\r\n");
+
+        console.log("[calendarReminder] Generated ICS:\n", icsLines);
+        return icsLines;
     },
 
     _buildAlarm() {
