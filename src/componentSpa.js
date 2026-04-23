@@ -98,11 +98,12 @@ export const spa = () => ({
         }
 
         const id = decodeURIComponent(hash.slice(1));
-        const target =
-            document.getElementById(id) ??
-            document.querySelector(`[name="${CSS.escape(id)}"]`);
+        const target = document.getElementById(id) 
+            ?? document.querySelector(`[name="${CSS.escape(id)}"]`);
 
-        target ? target.scrollIntoView({ block: "start" }) : scrollTo(0, 0);
+        target 
+            ? target.scrollIntoView({ block: "start" }) 
+            : scrollTo(0, 0);
     },
 
     _abortNavigation() {
