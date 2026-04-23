@@ -6,7 +6,7 @@ export const calendarReminder = () => ({
     description: "Evento di registrazione per il III Convegno di Psicologia dell'Aviazione",
     location: "Milano, Italia",
     start: Alpine.store("programStore").registration.start_date,
-    end:   Alpine.store("programStore").registration.start_date,
+    end: Alpine.store("programStore").registration.start_date,
     filename: "reminder.ics",
 
     // All-day: true  → uses DATE format, spans the whole day
@@ -25,11 +25,11 @@ export const calendarReminder = () => ({
         }
 
         try {
-            const ics  = this._buildIcs();
+            const ics = this._buildIcs();
             const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-            const url  = URL.createObjectURL(blob);
-            const a    = document.createElement("a");
-            a.href     = url;
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
             a.download = this.filename;
             a.click();
             this.$nextTick(() => URL.revokeObjectURL(url));
@@ -50,7 +50,7 @@ export const calendarReminder = () => ({
         }
 
         const dtStart = this.allDay ? this._fmtDate(start) : this._fmtDateTime(start);
-        const dtEnd   = this.allDay ? this._fmtDate(end)   : this._fmtDateTime(end);
+        const dtEnd = this.allDay ? this._fmtDate(end)   : this._fmtDateTime(end);
 
         // DTSTART;VALUE=DATE:20260915  ← all-day syntax
         // DTSTART:20260915T100000Z     ← datetime syntax
@@ -109,7 +109,7 @@ export const calendarReminder = () => ({
                 /^(\d{2})\/(\d{2})\/(\d{4})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?$/
             );
             if (ddmmyyyy) {
-                const [, dd, mm, yyyy, hh = "00", min = "00", ss = "00"] = ddmmyyyy;
+                const [, dd, mm, yyyy, hh = "08", min = "00", ss = "00"] = ddmmyyyy;
                 return new Date(`${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}Z`);
             }
             return new Date(date);
