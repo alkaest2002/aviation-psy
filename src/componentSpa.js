@@ -44,49 +44,48 @@ export const spa = () => ({
     },
 
     async _go(url, push) {
+        
         this._abortNavigation();
-
         const controller = this.controller = new AbortController();
         this.href = url;
         this.isLoading = true;
 
-        const doSwap = async () => {
-            try {
-                const res = await fetch(url, {
-                    signal: controller.signal,
-                    headers: { "X-Requested-With": "fetch" },
-                });
+        try {
+            const res = await fetch(url, {
+                signal: controller.signal,
+                headers: { "X-Requested-With": "fetch" },
+            });
 
-                if (!res.ok) throw new Error(`Navigation failed: ${res.status} ${res.statusText}`);
+            if (!res.ok) throw new Error(`Navigation failed: ${res.status} ${res.statusText}`);
 
-                const html = await res.text();
-                const doc = new DOMParser().parseFromString(html, "text/html");
-                const incoming = doc.body.innerHTML;
+            const html = await res.text();
+            const doc = new DOMParser().parseFromString(html, "text/html");
 
-                document.title = doc.title;
-                push && history.pushState({ url }, "", url);
+            document.title = doc.title;
+            push && history.pushState({ url }, "", url);
 
-                Alpine.destroyTree(document.body);
-                document.body.innerHTML = incoming;
-                Alpine.initTree(document.body);
+            const currentMain  = this.$el.querySelector(":scope > main");
+            const incomingMain = doc.querySelector("main");
 
-                this._scrollToHashOrTop(url);
-
-            } catch (e) {
-                if (e.name === "AbortError") return;
-                this.$dispatch("spa-error", { url, error: e });
+            // If we can't find a <main> in either the current or incoming document, do a full navigation.
+            if (!currentMain || !incomingMain) {
                 location.assign(url);
-            } finally {
-                if (this.controller === controller) this._clearAll();
+                return;
             }
-        };
 
-        // Use View Transitions when supported, plain swap otherwise
-        if (document.startViewTransition) {
-            document.startViewTransition(() => doSwap());
-        } else {
-            await doSwap();
-        }
+            Alpine.destroyTree(currentMain);
+            currentMain.innerHTML = incomingMain.innerHTML;
+            Alpine.initTree(currentMain);
+
+            this._scrollToHashOrTop(url);
+
+        } catch (e) {
+            if (e.name === "AbortError") return;
+            this.$dispatch("spa-error", { url, error: e });
+            location.assign(url);
+        } finally {
+            if (this.controller === controller) this._clearAll();
+        }  
     },
 
     _scrollToHashOrTop(url) {

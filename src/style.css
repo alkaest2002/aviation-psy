@@ -41,14 +41,3 @@ body {
 [name] {
   scroll-margin-top: var(--anchor-offset);
 }
-
-@keyframes fade-in  { from { opacity: 0; } }
-@keyframes fade-out { to   { opacity: 0; } }
-
-::view-transition-old(root) {
-    animation: 0ms;
-}
-
-::view-transition-new(root) {
-    animation: 250ms ease-out fade-in;
-}
