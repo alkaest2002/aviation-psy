@@ -5,16 +5,16 @@ export const calendarReminder = () => ({
     title: "Registrazione Aviation Psy 2026, Milano, Italia",
     description: "Evento di registrazione per il III Convegno di Psicologia dell'Aviazione",
     location: "Milano, Italia",
-    start: Alpine.store("programStore").registration.start_date,
-    end: Alpine.store("programStore").registration.start_date,
-    filename: "reminder.ics",
+    start: `${Alpine.store("programStore").registration.start_date} 08:00:00`, // 8am local time
+    end: `${Alpine.store("programStore").registration.start_date} 09:00:00`, // 9am local time
+    filename: "aviation_psy_milano_2026_reminder.ics",
 
     // All-day: true  → uses DATE format, spans the whole day
     // All-day: false → uses DATETIME format (UTC)
-    allDay: true,
+    allDay: false,
 
     // Alarm offset in minutes before the event
-    // 0   = at the time of the event (start of day for all-day)
+    // 0 = at the time of the event (start of day for all-day)
     // 480 = 8 hours before (e.g. 8am notification for a 4pm event)
     alarmMinutes: 0,
 
@@ -114,7 +114,6 @@ export const calendarReminder = () => ({
             }
             return new Date(date);
         }
-
         return new Date(date);
     },
 
@@ -133,8 +132,8 @@ export const calendarReminder = () => ({
     _escape(str) {
         return String(str)
             .replace(/\\/g, "\\\\")
-            .replace(/;/g,  "\\;")
-            .replace(/,/g,  "\\,")
+            .replace(/;/g, "\\;")
+            .replace(/,/g, "\\,")
             .replace(/\n/g, "\\n");
     },
 });
