@@ -1,7 +1,7 @@
 {
     "registration": {
-        "start_date": "03/08/2026",
-        "end_date": "15/09/2026",
+        "startDate": "03/08/2026",
+        "endDate": "30/09/2026",
         "fee": {
             "earlyBird": {
                 "amount": "0,00 EUR",
@@ -13,7 +13,11 @@
             }
         },
         "maxParticipants": 100,
-        "note": "La registrazione al convegno è obbligatoria per partecipare agli eventi. I posti sono limitati, si consiglia di registrarsi il prima possibile."
+        "currentParticipants": 30,
+        "ecm": {
+            "amount": 5,
+            "validFor": ["Medici", "Psicologi", "AME"]
+        }
     },
     "day1": {
         "date": "27/10/2026",

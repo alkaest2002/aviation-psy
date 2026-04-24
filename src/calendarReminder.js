@@ -5,8 +5,8 @@ export const calendarReminder = () => ({
     title: "Registrazione Aviation Psy 2026, Milano, Italia",
     description: "Evento di registrazione per il III Convegno di Psicologia dell'Aviazione",
     location: "Milano, Italia",
-    start: `${Alpine.store("programStore").registration.start_date} 08:00:00`, // 8am local time
-    end: `${Alpine.store("programStore").registration.start_date} 09:00:00`, // 9am local time
+    start: `${Alpine.store("programStore").registration.startDate} 08:00:00`, // 8am local time
+    end: `${Alpine.store("programStore").registration.startDate} 09:00:00`, // 9am local time
     filename: "aviation_psy_milano_2026_reminder.ics",
 
     // All-day: true  → uses DATE format, spans the whole day
