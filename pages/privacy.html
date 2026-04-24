@@ -17,7 +17,7 @@
     <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
 
         <!-- ── Hero ─────────────────────────────────────────── -->
-        <header 
+        <header
             x-data="header"
             x-bind="homeLink"
             class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer"
@@ -114,15 +114,6 @@
                         <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Funzioni di e-commerce</li>
                         <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Sistemi di commento o newsletter</li>
                     </ul>
-                    <div class="border-l-2 border-sky-300 pl-3">
-                        <p class="text-sm text-slate-600 leading-relaxed">
-                            La pagina di iscrizione reindirizza a un sito esterno
-                            che gestisce autonomamente la raccolta dei dati e il
-                            processo di iscrizione. Il Titolare di questo sito non
-                            ha accesso né controllo sui dati raccolti dalla
-                            piattaforma esterna.
-                        </p>
-                    </div>
                 </div>
             </section>
 
@@ -163,30 +154,13 @@
                 </div>
             </section>
 
-            <!-- 5. Risorse esterne -->
+            <!-- 5. GitHub Pages -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
                     <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
-                    <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">5. Risorse Esterne</span>
-                </div>
-                <div class="px-5 py-5 min-w-0">
-                    <p class="text-sm text-slate-700 leading-relaxed">
-                        Tutte le risorse utilizzate da questo sito (font, immagini,
-                        fogli di stile, script) sono ospitate direttamente sul server.
-                        Non vengono effettuate chiamate a server o servizi di terze parti.
-                    </p>
-                </div>
-            </section>
-
-            <!-- 6. GitHub Pages -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
-                <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                        <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
-                    </svg>
-                    <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">6. Hosting · GitHub Pages</span>
+                    <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">5. Hosting · GitHub Pages</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed mb-4">
@@ -197,7 +171,10 @@
                         GitHub Inc.<br>
                         88 Colin P. Kelly Jr. Street<br>
                         San Francisco, CA 94107 · USA<br>
-                        <span class="text-slate-400">(di proprietà di Microsoft Corporation)</span>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                            class="text-sky-700 underline underline-offset-2 break-all">
+                            www.github.com
+                        </a>
                     </div>
                     <p class="text-sm text-slate-700 leading-relaxed mb-3">
                         In quanto provider di hosting, GitHub può raccogliere
@@ -212,9 +189,9 @@
                     </ul>
                     <p class="text-sm text-slate-700 leading-relaxed mb-4">
                         Tali dati sono trattati esclusivamente da GitHub Inc. per
-                        finalità tecniche e di sicurezza. Il Titolare di questo sito
-                        <strong>non ha accesso a questi dati</strong> e non li
-                        utilizza in alcun modo.
+                        finalità tecniche e di sicurezza. Il Titolare di questo
+                        sito <strong>non ha accesso a questi dati</strong> e non
+                        li utilizza in alcun modo.
                     </p>
                     <p class="text-sm text-slate-700 leading-relaxed mb-4">
                         Il trasferimento di dati verso gli Stati Uniti avviene nel
@@ -224,7 +201,65 @@
                     <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
                         target="_blank" rel="noopener noreferrer"
                         class="inline-flex items-center gap-1.5 text-sm text-sky-700 underline underline-offset-2 break-all">
-                        Privacy Statement di GitHub
+                        Informativa Privacy di GitHub
+                        <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 3H3v10h10v-3M9 2h5v5M14 2 8 8" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 6. Procedura di iscrizione -->
+            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+                <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                        <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
+                    </svg>
+                    <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">6. Procedura di Iscrizione · Provider Esterno</span>
+                </div>
+                <div class="px-5 py-5 min-w-0">
+                    <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                        La procedura di iscrizione al convegno è gestita interamente
+                        da un provider esterno e indipendente:
+                    </p>
+
+                    <div class="border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-600 mb-4">
+                        <strong class="text-slate-700">Achelois S.r.l.</strong><br>
+                        Sede legale: Via Larga, 8 · 20122 Milano<br>
+                        Sede operativa: Via Residenza Portici 2, Milano2 · Segrate (MI)<br>
+                        P. IVA e C.F. 08655300963<br>
+                        <a href="https://www.achelois.eu" target="_blank" rel="noopener noreferrer"
+                            class="text-sky-700 underline underline-offset-2 break-all">
+                            www.achelois.eu
+                        </a>
+                    </div>
+
+                    <p class="text-sm text-slate-700 leading-relaxed mb-3">
+                        Cliccando sul pulsante di iscrizione presente su questo
+                        sito, l'utente viene reindirizzato alla piattaforma di
+                        Achelois, che opera come <strong>titolare autonomo del
+                        trattamento</strong> dei dati raccolti durante il processo
+                        di iscrizione. I dati che possono essere richiesti dalla
+                        piattaforma esterna includono, a titolo esemplificativo:
+                    </p>
+
+                    <ul class="text-sm text-slate-700 space-y-1.5 mb-4">
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati anagrafici (nome, cognome)</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Indirizzo e-mail</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Qualifica professionale e ordine di appartenenza</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati di pagamento (ove previsto)</li>
+                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati necessari all'attribuzione dei crediti ECM</li>
+                    </ul>
+
+                    <p class="text-sm text-slate-700 leading-relaxed mb-3">
+                        Si invita l'utente a prendere visione dell'informativa
+                        sulla privacy di Achelois prima di procedere con la
+                        compilazione del modulo di iscrizione:
+                    </p>
+
+                    <a href="https://www.achelois.eu/privacy-cookie-policy/" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1.5 text-sm text-sky-700 underline underline-offset-2 break-all">
+                        Informativa Privacy di Achelois
                         <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M6 3H3v10h10v-3M9 2h5v5M14 2 8 8" />
                         </svg>
@@ -241,13 +276,70 @@
                     <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase">7. Base Giuridica del Trattamento</span>
                 </div>
                 <div class="px-5 py-5 min-w-0">
-                    <p class="text-sm text-slate-700 leading-relaxed">
-                        I dati tecnici eventualmente registrati da GitHub Pages sono
-                        trattati sulla base del <strong>legittimo interesse</strong>
-                        del provider ai sensi dell'Art. 6(1)(f) del GDPR, per
-                        garantire la sicurezza e il corretto funzionamento del
-                        servizio di hosting.
+                    <p class="text-sm text-slate-700 leading-relaxed mb-4">
+                        I trattamenti di dati personali connessi a questo sito si
+                        articolano come segue:
                     </p>
+
+                    <!-- GitHub Pages -->
+                    <div class="mb-5">
+                        <p class="text-xs font-bold tracking-[0.15em] uppercase text-slate-400 mb-2">
+                            Dati tecnici · GitHub Pages
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            I dati tecnici di navigazione eventualmente registrati
+                            da GitHub Inc. in qualità di provider di hosting sono
+                            trattati sulla base del <strong>legittimo interesse</strong>
+                            del provider ai sensi dell'<strong>Art. 6(1)(f) GDPR</strong>,
+                            al fine di garantire la sicurezza e il corretto
+                            funzionamento dell'infrastruttura. Il Titolare di questo
+                            sito non ha accesso a tali dati né li utilizza per
+                            alcuna finalità.
+                        </p>
+                    </div>
+
+                    <div class="h-px bg-slate-100 mb-5"></div>
+
+                    <!-- Achelois -->
+                    <div>
+                        <p class="text-xs font-bold tracking-[0.15em] uppercase text-slate-400 mb-2">
+                            Dati di iscrizione · Achelois
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed mb-3">
+                            I dati personali raccolti durante la procedura di
+                            iscrizione al convegno sono trattati esclusivamente
+                            da <strong>Achelois</strong>, titolare autonomo del
+                            trattamento, sulla base delle seguenti basi giuridiche:
+                        </p>
+                        <ul class="text-sm text-slate-700 space-y-2 mb-4">
+                            <li class="flex items-start gap-2">
+                                <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>
+                                <span>
+                                    <strong>Esecuzione di un contratto (Art. 6(1)(b) GDPR)</strong>
+                                    — trattamento necessario per l'iscrizione all'evento
+                                    e l'erogazione dei relativi servizi
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>
+                                <span>
+                                    <strong>Obbligo legale (Art. 6(1)(c) GDPR)</strong>
+                                    — trattamento necessario per l'attribuzione dei
+                                    crediti ECM e gli adempimenti normativi connessi
+                                    alla formazione professionale in ambito sanitario
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>
+                                <span>
+                                    <strong>Consenso (Art. 6(1)(a) GDPR)</strong>
+                                    — per eventuali trattamenti facoltativi quali
+                                    comunicazioni promozionali o profilazione, ove
+                                    espressamente richiesto da Achelois
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -262,8 +354,9 @@
                 <div class="px-5 py-5 min-w-0">
                     <p class="text-sm text-slate-700 leading-relaxed">
                         Il Titolare non conserva alcun dato personale. Per i dati
-                        tecnici raccolti da GitHub Inc., si rimanda alla loro
-                        informativa indicata al punto 6.
+                        tecnici raccolti da <span class="font-semibold">GitHub Pages</span> si rimanda alla
+                        loro informativa. Per i dati di iscrizione
+                        trattati da <span class="font-semibold">Achelois</span> si rimanda alla loro informativa.
                     </p>
                 </div>
             </section>
@@ -289,10 +382,17 @@
                         <li class="flex items-start gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span><span><strong>Portabilità (Art. 20)</strong> — ricevere i propri dati in formato strutturato e leggibile</span></li>
                         <li class="flex items-start gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span><span><strong>Opposizione (Art. 21)</strong> — opporsi al trattamento dei propri dati</span></li>
                     </ul>
+                    <div class="border-l-2 border-slate-200 pl-3">
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Per l'esercizio dei diritti relativi ai propri dati, l'utente dovrà rivolgersi
+                            direttamente a <span class="font-semibold">GitHub</span> o <span class="font-semibold">Achelois</span> tramite i recapiti indicati
+                            nella loro informativa sulla privacy.
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <!-- 10. Garante -->
+            <!-- 10. Reclamo -->
             <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
                     <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -305,7 +405,7 @@
                         L'utente ha il diritto di proporre reclamo al Garante per
                         la Protezione dei Dati Personali:
                     </p>
-                    <div class="border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-600">
+                    <div class="py-1 text-sm text-slate-600">
                         Garante per la protezione dei dati personali<br>
                         Piazza Venezia, 11 · 00187 Roma (RM)<br>
                         <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer"
@@ -334,8 +434,8 @@
                 </div>
             </section>
 
-            <div class="border-l-10 border-sky-700 bg-sky-50 px-5 py-4 shadow-lg">
-                <p class="text-sm text-slate-500 leading-relaxed ">
+            <div class="border-l-4 border-sky-700 bg-sky-50 px-5 py-4 shadow-sm">
+                <p class="text-sm text-slate-500 leading-relaxed">
                     Questa informativa è redatta in conformità al
                     <strong>Regolamento UE 2016/679 (GDPR)</strong> e al
                     <strong>D.Lgs. 196/2003</strong> come modificato dal
