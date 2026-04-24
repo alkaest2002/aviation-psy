@@ -86,7 +86,7 @@
                             <span class="text-sm font-semibold text-slate-700 tracking-wide" x-text="event.time"></span>
                         </div>
                         <div class="px-4 py-3">
-                            <p class="font-semibold leading-snug" x-text="event.title"></p>
+                            <p class="font-semibold text-slate-700 leading-snug" x-text="event.title"></p>
                             <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
                         </div>
                     </div>
@@ -118,13 +118,13 @@
                                             <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                                         </svg>
                                         <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase" x-text="event.title"></span>
-                                        <span class="ml-auto text-sm font-bold text-slate-700 shrink-0" x-text="event.time"></span>
+                                        <span class="ml-auto text-sm font-bold text-slate-500 shrink-0" x-text="event.time"></span>
                                     </div>
                                     <div class="divide-y divide-slate-200">
                                         <template x-for="(talk, ti) in event.talks" :key="ti">
                                             <div class="px-4 py-3">
                                                 <span class="inline-block mb-1.5 text-sm font-bold text-slate-700 bg-slate-100 border border-slate-200 px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
-                                                <p class="font-semibold text-slate-800 leading-snug" x-text="talk.title"></p>
+                                                <p class="font-semibold leading-snug" x-text="talk.title"></p>
                                                 <template x-if="talk.authors && talk.authors.length">
                                                     <div class="mt-2 flex flex-col leading-0">
                                                         <template x-for="(author, ai) in talk.authors" :key="ai">
@@ -132,7 +132,7 @@
                                                                 <div class="min-w-0">
                                                                     <span class="text-sm font-semibold text-slate-500" x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
                                                                     <template x-if="author.affiliation">
-                                                                        <span class="text-sm text-slate-400 ml-1" x-text="'· ' + author.affiliation"></span>
+                                                                        <span class="text-sm text-slate-500 ml-1" x-text="'· ' + author.affiliation"></span>
                                                                     </template>
                                                                 </div>
                                                             </div>
@@ -154,7 +154,7 @@
                                         <span class="text-sm font-semibold text-slate-700 tracking-wide" x-text="event.time"></span>
                                     </div>
                                     <div class="px-4 py-3">
-                                        <p class="font-semibold text-slate-800 leading-snug" x-text="event.title"></p>
+                                        <p class="font-semibold text-slate-700 leading-snug" x-text="event.title"></p>
                                         <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@
                                         <template x-for="(talk, ti) in event.talks" :key="ti">
                                             <div class="px-4 py-3">
                                                 <span class="inline-block mb-1.5 text-sm font-bold text-slate-700 bg-slate-100 border border-slate-200 px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
-                                                <p class="font-semibold text-slate-800 leading-snug" x-text="talk.title"></p>
+                                                <p class="font-semibold text-slate-700 leading-snug" x-text="talk.title"></p>
                                                 <template x-if="talk.authors && talk.authors.length">
                                                     <div class="mt-2 flex flex-col leading-0">
                                                         <template x-for="(author, ai) in talk.authors" :key="ai">
@@ -188,7 +188,7 @@
                                                                 <div class="min-w-0">
                                                                     <span class="text-sm font-semibold text-slate-500" x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
                                                                     <template x-if="author.affiliation">
-                                                                        <span class="text-sm text-slate-400 ml-1" x-text="'· ' + author.affiliation"></span>
+                                                                        <span class="text-sm text-slate-500 ml-1" x-text="'· ' + author.affiliation"></span>
                                                                     </template>
                                                                 </div>
                                                             </div>
@@ -210,7 +210,7 @@
                                         <span class="text-sm font-semibold text-slate-700 tracking-wide" x-text="event.time"></span>
                                     </div>
                                     <div class="px-4 py-3">
-                                        <p class="font-semibold leading-snug" x-text="event.title"></p>
+                                        <p class="font-semibold text-slate-700 leading-snug" x-text="event.title"></p>
                                         <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
                                     </div>
                                 </div>

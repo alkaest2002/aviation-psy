@@ -91,20 +91,20 @@
                                 <span
                                     class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Apertura</span>
                                 <span x-text="$store.programStore.registration.startDate"
-                                    class="text-sm font-semibold text-slate-800"></span>
+                                    class="font-semibold"></span>
                             </div>
                             <div class="flex flex-col gap-0.5">
                                 <span
                                     class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Chiusura</span>
                                 <span x-text="$store.programStore.registration.endDate"
-                                    class="text-sm font-semibold text-slate-800"></span>
+                                    class="font-semibold"></span>
                             </div>
                         </div>
                         <div class="px-5 py-3 border-t border-slate-200 bg-slate-50 flex items-center gap-2">
                             <svg class="h-3.5 w-3.5 text-slate-400 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
                                 <path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1Zm0 1.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM8 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 8 5Zm0 6a.875.875 0 1 1 0 1.75A.875.875 0 0 1 8 11Z"/>
                             </svg>
-                            <p class="text-[12px] text-slate-500 leading-snug">
+                            <p class="text-sm text-slate-500 leading-snug">
                                  Le iscrizioni chiuderanno al raggiungimento del numero massimo di partecipanti o alla data di chiusura, se precedente.
                             </p>
                         </div>
@@ -129,12 +129,12 @@
                         <span class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Quota di
                             partecipazione</span>
                         <p x-text="$store.programStore.registration.fee.regular.amount"
-                            class="text-sm font-semibold text-slate-800 mt-0.5"></p>
+                            class="font-semibold text-slate-800 mt-0.5"></p>
                     </div>
                     <div class="px-4 pb-4">
                         <span class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Posti
                             disponibili</span>
-                        <p class="text-sm font-semibold text-slate-800 mt-0.5">
+                        <p class="font-semibold text-slate-800 mt-0.5">
                             <span x-text="$store.programStore.registration.maxParticipants - $store.programStore.registration.currentParticipants"></span> /
                             <span x-text="$store.programStore.registration.maxParticipants"></span>
                         </p>
@@ -155,10 +155,6 @@
                     </div>
 
                     <div class="px-4 py-4 flex flex-col gap-3">
-                        <div class="flex items-center gap-2">
-                            <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
-                            <span class="text-sm text-slate-700">Non perdere l'apertura delle iscrizioni</span>
-                        </div>
                         <button @click="downloadCalendarICS"
                             class="self-start inline-flex items-center gap-1.5 text-sm font-semibold text-sky-700 underline underline-offset-2 active:opacity-70 transition-opacity hover:cursor-pointer">
                             <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor"
@@ -186,7 +182,7 @@
                     </div>
 
                     <div class="px-4 py-4">
-                        <p class="text-sm text-slate-500 leading-relaxed">
+                        <p class="leading-relaxed">
                             La pagina di iscrizione reindirizzerà a un sito esterno che gestirà autonomamente
                             la raccolta dei dati e il processo di iscrizione.
                         </p>
