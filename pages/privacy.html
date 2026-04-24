@@ -224,20 +224,22 @@
                     </p>
 
                     <div class="border border-slate-300 bg-slate-50 px-4 py-3 text-sm text-slate-600 mb-4">
-                        <span class="font-semibold">Achelois</span><br>
-                        Sede legale: Via Larga, 8 · 20122 Milano<br>
-                        Sede operativa: Via Residenza Portici 2, Milano2 · Segrate (MI)<br>
-                        P. IVA e C.F. 08655300963<br>
-                        <a href="https://www.achelois.eu" target="_blank" rel="noopener noreferrer"
+                        <p class="font-semibold" x-text="$store.programStore.externalProvider.name"></p>
+                        <p x-html="$store.programStore.externalProvider.address"></p>
+                        <a 
+                            :href="$store.programStore.externalProvider.website" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
                             class="text-sky-700 underline underline-offset-2 break-all">
-                            www.achelois.eu
+                            <span x-text="$store.programStore.externalProvider.website"></span>
                         </a>
                     </div>
 
                     <p class="text-sm text-slate-700 leading-relaxed mb-3">
                         Cliccando sul pulsante di iscrizione presente su questo
                         sito, l'utente viene reindirizzato alla piattaforma di
-                        <span class="font-semibold">Achelois</span>, che opera come <span class="font-semibold">titolare autonomo del
+                        <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span>, che opera come 
+                        <span class="font-semibold">titolare autonomo del
                         trattamento</span> dei dati raccolti durante il processo
                         di iscrizione. I dati che possono essere richiesti dalla
                         piattaforma esterna includono, a titolo esemplificativo:
@@ -253,13 +255,17 @@
 
                     <p class="text-sm text-slate-700 leading-relaxed mb-3">
                         Si invita l'utente a prendere visione dell'informativa
-                        sulla privacy di <span class="font-semibold">Achelois</span> prima di procedere con la
+                        sulla privacy di <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span> prima di procedere con la
                         compilazione del modulo di iscrizione:
                     </p>
 
-                    <a href="https://www.achelois.eu/privacy-cookie-policy/" target="_blank" rel="noopener noreferrer"
+                    <a 
+                        :href="$store.programStore.externalProvider.privacy" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
                         class="inline-flex items-center gap-1.5 text-sm text-sky-700 underline underline-offset-2 break-all">
-                        Informativa Privacy di <span class="font-semibold">Achelois</span>
+                        Informativa Privacy di <span class="font-semibold" x-text="$store.programStore.externalProvider.name">
+                        </span>
                         <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M6 3H3v10h10v-3M9 2h5v5M14 2 8 8" />
                         </svg>
@@ -300,15 +306,15 @@
 
                     <div class="h-px bg-slate-100 mb-5"></div>
 
-                    <!-- Achelois -->
+                    <!-- External provider -->
                     <div>
                         <p class="text-xs font-bold tracking-[0.15em] uppercase text-slate-400 mb-2">
-                            Dati di iscrizione · Achelois
+                            Dati di iscrizione · <span x-text="$store.programStore.externalProvider.name"></span>
                         </p>
                         <p class="text-sm text-slate-700 leading-relaxed mb-3">
                             I dati personali raccolti durante la procedura di
                             iscrizione al convegno sono trattati esclusivamente
-                            da <span class="font-semibold">Achelois</span>, titolare autonomo del
+                            da <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span>, titolare autonomo del
                             trattamento, sulla base delle seguenti basi giuridiche:
                         </p>
                         <ul class="text-sm text-slate-700 space-y-2 mb-4">
@@ -335,7 +341,7 @@
                                     Consenso (art. 6 par. 1 lettera a)
                                     — per eventuali trattamenti facoltativi quali
                                     comunicazioni promozionali o profilazione, ove
-                                    espressamente richiesto da <span class="font-semibold">Achelois</span>
+                                    espressamente richiesto da <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span>
                                 </span>
                             </li>
                         </ul>
@@ -356,7 +362,7 @@
                         Il Titolare non conserva alcun dato personale. Per i dati
                         tecnici raccolti da <span class="font-semibold">GitHub Inc.</span> si rimanda alla
                         loro informativa. Per i dati di iscrizione
-                        trattati da <span class="font-semibold">Achelois</span> si rimanda alla loro informativa.
+                        trattati da <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span> si rimanda alla loro informativa.
                     </p>
                 </div>
             </section>
@@ -384,7 +390,7 @@
                     <div class="border-l-2 border-slate-200 pl-3">
                         <p class="text-sm text-slate-500 leading-relaxed">
                             Per l'esercizio dei diritti relativi ai propri dati, l'utente dovrà rivolgersi
-                            direttamente a <span class="font-semibold">GitHub Inc.</span> o <span class="font-semibold">Achelois</span> tramite i recapiti indicati
+                            direttamente a <span class="font-semibold">GitHub Inc.</span> o <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span> tramite i recapiti indicati
                             nella loro informativa sulla privacy.
                         </p>
                     </div>

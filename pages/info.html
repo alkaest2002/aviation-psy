@@ -309,10 +309,15 @@
                             </svg>
                             <p class="text-[12px] text-slate-500 leading-snug">
                                 L'accreditamento ECM è gestito dal provider esterno
-                                <strong class="text-slate-600">Achelois</strong> <a href="https://www.achelois.eu" target="_blank" rel="noopener noreferrer"
-                            class="text-sky-700 underline underline-offset-2 break-all">
-                            www.achelois.eu
-                        </a>.
+                                <strong class="text-slate-600" x-text="$store.programStore.externalProvider.name"></strong>
+                                <a 
+                                    :href="$store.programStore.externalProvider.website" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="text-sky-700 underline underline-offset-2 break-all"
+                                    >
+                                        <span x-text="$store.programStore.externalProvider.website"></span>
+                                </a>.
                                 Per informazioni sull'accreditamento contattare direttamente il provider.
                             </p>
                         </div>
