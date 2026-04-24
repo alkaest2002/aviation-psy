@@ -12,7 +12,7 @@
     <script src="/src/main.js" type="module"></script>
 </head>
 
-<body class="min-h-dvh w-full overflow-x-hidden bg-slate-100 antialiased text-slate-800" x-data="spa" x-cloak>
+<body class="min-h-dvh w-full overflow-x-hidden" x-data="spa" x-cloak>
     <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
 
         <!-- ── Hero ──────────────────────────────────────────────── -->
@@ -83,11 +83,11 @@
                             <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                 <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                             </svg>
-                            <span class="text-sm font-semibold text-slate-700 tracking-wide" x-text="event.time"></span>
+                            <span class="text-sm font-semibold  tracking-wide" x-text="event.time"></span>
                         </div>
                         <div class="px-4 py-3">
-                            <p class="font-semibold text-slate-700 leading-snug" x-text="event.title"></p>
-                            <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
+                            <p class="font-semibold  leading-snug" x-text="event.title"></p>
+                            <p x-show="event.description" class="text-sm  mt-1" x-text="event.description"></p>
                         </div>
                     </div>
                 </template>
@@ -117,22 +117,22 @@
                                         <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                             <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                                         </svg>
-                                        <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase" x-text="event.title"></span>
-                                        <span class="ml-auto text-sm font-bold text-slate-500 shrink-0" x-text="event.time"></span>
+                                        <span class="text-sm font-semibold  tracking-wide uppercase" x-text="event.title"></span>
+                                        <span class="ml-auto text-sm font-bold  shrink-0" x-text="event.time"></span>
                                     </div>
                                     <div class="divide-y divide-slate-200">
                                         <template x-for="(talk, ti) in event.talks" :key="ti">
                                             <div class="px-4 py-3">
-                                                <span class="inline-block mb-1.5 text-sm font-bold text-slate-700 bg-slate-100 border border-slate-200 px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
+                                                <span class="inline-block mb-1.5 text-sm font-bold  bg-slate-100 border border-slate-200 px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
                                                 <p class="font-semibold leading-snug" x-text="talk.title"></p>
                                                 <template x-if="talk.authors && talk.authors.length">
-                                                    <div class="mt-2 flex flex-col leading-0">
+                                                    <div class="mt-2 flex flex-col leading-0 text-sm text-slate-500">
                                                         <template x-for="(author, ai) in talk.authors" :key="ai">
                                                             <div class="flex items-center">
                                                                 <div class="min-w-0">
-                                                                    <span class="text-sm font-semibold text-slate-500" x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
+                                                                    <span class="text-sm font-semibold " x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
                                                                     <template x-if="author.affiliation">
-                                                                        <span class="text-sm text-slate-500 ml-1" x-text="'· ' + author.affiliation"></span>
+                                                                        <span class="text-sm  ml-1" x-text="'· ' + author.affiliation"></span>
                                                                     </template>
                                                                 </div>
                                                             </div>
@@ -151,11 +151,11 @@
                                         <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                             <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                                         </svg>
-                                        <span class="text-sm font-semibold text-slate-700 tracking-wide" x-text="event.time"></span>
+                                        <span class="text-sm font-semibold  tracking-wide" x-text="event.time"></span>
                                     </div>
                                     <div class="px-4 py-3">
-                                        <p class="font-semibold text-slate-700 leading-snug" x-text="event.title"></p>
-                                        <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
+                                        <p class="font-semibold  leading-snug" x-text="event.title"></p>
+                                        <p x-show="event.description" class="text-sm  mt-1" x-text="event.description"></p>
                                     </div>
                                 </div>
                             </template>
@@ -173,22 +173,22 @@
                                         <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                             <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                                         </svg>
-                                        <span class="text-sm font-semibold text-slate-700 tracking-wide uppercase" x-text="event.title"></span>
-                                        <span class="ml-auto text-sm font-bold text-slate-700 shrink-0" x-text="event.time"></span>
+                                        <span class="text-sm font-semibold  tracking-wide uppercase" x-text="event.title"></span>
+                                        <span class="ml-auto text-sm font-bold  shrink-0" x-text="event.time"></span>
                                     </div>
                                     <div class="divide-y divide-slate-100">
                                         <template x-for="(talk, ti) in event.talks" :key="ti">
                                             <div class="px-4 py-3">
-                                                <span class="inline-block mb-1.5 text-sm font-bold text-slate-700 bg-slate-100 border border-slate-200 px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
-                                                <p class="font-semibold text-slate-700 leading-snug" x-text="talk.title"></p>
+                                                <span class="inline-block mb-1.5 text-sm font-bold  bg-slate-100 border border-slate-200 px-1.5 py-0.5 leading-none" x-text="talk.time"></span>
+                                                <p class="font-semibold  leading-snug" x-text="talk.title"></p>
                                                 <template x-if="talk.authors && talk.authors.length">
-                                                    <div class="mt-2 flex flex-col leading-0">
+                                                    <div class="mt-2 flex flex-col leading-0 text-sm text-slate-500">
                                                         <template x-for="(author, ai) in talk.authors" :key="ai">
                                                             <div class="flex items-center">
                                                                 <div class="min-w-0">
-                                                                    <span class="text-sm font-semibold text-slate-500" x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
+                                                                    <span class="text-sm font-semibold " x-text="author.role ? author.role + ' ' + author.name : author.name"></span>
                                                                     <template x-if="author.affiliation">
-                                                                        <span class="text-sm text-slate-500 ml-1" x-text="'· ' + author.affiliation"></span>
+                                                                        <span class="text-sm  ml-1" x-text="'· ' + author.affiliation"></span>
                                                                     </template>
                                                                 </div>
                                                             </div>
@@ -207,11 +207,11 @@
                                         <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                             <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                                         </svg>
-                                        <span class="text-sm font-semibold text-slate-700 tracking-wide" x-text="event.time"></span>
+                                        <span class="text-sm font-semibold  tracking-wide" x-text="event.time"></span>
                                     </div>
                                     <div class="px-4 py-3">
-                                        <p class="font-semibold text-slate-700 leading-snug" x-text="event.title"></p>
-                                        <p x-show="event.description" class="text-sm text-slate-500 mt-1" x-text="event.description"></p>
+                                        <p class="font-semibold  leading-snug" x-text="event.title"></p>
+                                        <p x-show="event.description" class="text-sm  mt-1" x-text="event.description"></p>
                                     </div>
                                 </div>
                             </template>
@@ -224,7 +224,7 @@
 
         <!-- ── Footer ────────────────────────────────────────── -->
         <footer class="px-6 md:px-12 pb-10 text-center" x-data x-cloak>
-            <p class="text-[14px] text-slate-600 tracking-wide">
+            <p class="text-[14px]  tracking-wide">
                 © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html" class="text-sky-700 underline-offset-2">Privacy policy</a>
             </p>
         </footer>
