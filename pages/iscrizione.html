@@ -130,8 +130,10 @@
                     <div class="px-4 pb-4">
                         <span class="text-[11px] font-semibold uppercase tracking-wide text-slate-400">Posti
                             disponibili</span>
-                        <p x-text="$store.programStore.registration.maxParticipants"
-                            class="text-sm font-semibold text-slate-800 mt-0.5"></p>
+                        <p class="text-sm font-semibold text-slate-800 mt-0.5">
+                            <span x-text="$store.programStore.registration.maxParticipants - $store.programStore.registration.currentParticipants"></span> /
+                            <span x-text="$store.programStore.registration.maxParticipants"></span>
+                        </p>
                     </div>
 
                 </div>
@@ -182,8 +184,7 @@
                     <div class="px-4 py-4">
                         <p class="text-sm text-slate-500 leading-relaxed">
                             La pagina di iscrizione reindirizzerà a un sito esterno che gestirà autonomamente
-                            la raccolta dei dati e il processo di iscrizione. Il Titolare di questo sito non avrà
-                            accesso né controllo sui dati raccolti dalla piattaforma esterna.
+                            la raccolta dei dati e il processo di iscrizione.
                         </p>
                     </div>
 

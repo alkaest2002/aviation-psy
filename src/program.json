@@ -19,7 +19,7 @@
             }
         },
         "maxParticipants": 100,
-        "currentParticipants": 30,
+        "currentParticipants": 35,
         "ecm": {
             "amount": 5,
             "validFor": ["Medici", "Psicologi", "AME"]
