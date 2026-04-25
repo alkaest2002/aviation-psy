@@ -19,11 +19,6 @@ export const calendarReminder = () => ({
     alarmMinutes: 0,
 
     downloadCalendarICS() {
-        if (!this.start || !this.end || !this.title) {
-            console.warn("[calendarReminder] title, start and end are required");
-            return;
-        }
-
         try {
             const ics = this._buildIcs();
             const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
@@ -39,7 +34,7 @@ export const calendarReminder = () => ({
     },
 
     _buildIcs() {
-        const uid   = `registrazione@aviation-psy.com`;
+        const uid   = "registrazione@aviation-psy.com";
         const start = this._parseDate(this.start);
         const end   = this._parseDate(this.end);
 
@@ -50,7 +45,7 @@ export const calendarReminder = () => ({
         }
 
         const dtStart = this.allDay ? this._fmtDate(start) : this._fmtDateTime(start);
-        const dtEnd = this.allDay ? this._fmtDate(end)   : this._fmtDateTime(end);
+        const dtEnd = this.allDay ? this._fmtDate(end) : this._fmtDateTime(end);
 
         // DTSTART;VALUE=DATE:20260915  ← all-day syntax
         // DTSTART:20260915T100000Z     ← datetime syntax
@@ -106,8 +101,11 @@ export const calendarReminder = () => ({
 
     // Parse DD/MM/YYYY (with optional time) or ISO strings into a Date
     _parseDate(date) {
+
+        // If it's already a Date object, return a new Date instance (to avoid mutations)
         if (date instanceof Date) return new Date(date);
 
+        // Try DD/MM/YYYY format first (with optional time)
         if (typeof date === "string") {
             const ddmmyyyy = date.match(
                 /^(\d{2})\/(\d{2})\/(\d{4})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?$/
@@ -118,6 +116,8 @@ export const calendarReminder = () => ({
             }
             return new Date(date);
         }
+        
+        // For other types (e.g. timestamp), try to create a Date directly
         return new Date(date);
     },
 
