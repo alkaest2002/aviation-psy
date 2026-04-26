@@ -6,6 +6,7 @@ export const spa = () => ({
     listenerController: null,
 
     init() {
+        
         this.onClick = e => {
             const a = e.target.closest("a[href]");
             if (!a || a.origin !== location.origin || a.target || e.metaKey
@@ -51,6 +52,7 @@ export const spa = () => ({
         this.isLoading = true;
 
         try {
+            
             const res = await fetch(url, {
                 signal: controller.signal,
                 headers: { "X-Requested-With": "fetch" },
@@ -67,7 +69,6 @@ export const spa = () => ({
             const currentMain  = this.$el.querySelector(":scope > main");
             const incomingMain = doc.querySelector("main");
 
-            // If we can't find a <main> in either the current or incoming document, do a full navigation.
             if (!currentMain || !incomingMain) {
                 location.assign(url);
                 return;
@@ -84,7 +85,7 @@ export const spa = () => ({
             this.$dispatch("spa-error", { url, error: e });
             location.assign(url);
         } finally {
-            if (this.controller === controller) this._clearAll();
+            (this.controller === controller) && this._clearAll();
         }  
     },
 

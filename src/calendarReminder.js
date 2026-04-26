@@ -1,21 +1,16 @@
-import Alpine from "alpinejs";
+// calendarReminder.js
 
 export const calendarReminder = () => ({
 
     title: "Registrazione Aviation Psy 2026, Milano, Italia",
     description: "Evento di registrazione per il III Convegno di Psicologia dell'Aviazione",
     location: "Milano, Italia",
-    start: `${Alpine.store("programStore").registration.startDate} 08:00:00`, // 8am local time
-    end: `${Alpine.store("programStore").registration.startDate} 09:00:00`, // 9am local time
+    start: `${Alpine.store("programStore").registration.startDate} 08:00:00`,
+    end: `${Alpine.store("programStore").registration.startDate} 09:00:00`,
     filename: "aviation_psy_milano_2026_reminder.ics",
+    timezone: "Europe/Rome",
 
-    // All-day: true  → uses DATE format, spans the whole day
-    // All-day: false → uses DATETIME format (UTC)
     allDay: false,
-
-    // Alarm offset in minutes before the event
-    // 0 = at the time of the event (start of day for all-day)
-    // 480 = 8 hours before (e.g. 8am notification for a 4pm event)
     alarmMinutes: 0,
 
     downloadCalendarICS() {
@@ -38,32 +33,27 @@ export const calendarReminder = () => ({
         const start = this._parseDate(this.start);
         const end   = this._parseDate(this.end);
 
-        // For all-day events the end date must be the *next* day
-        // per the iCal spec — otherwise some apps collapse it
         if (this.allDay) {
             end.setDate(end.getDate() + 1);
         }
 
-        const dtStart = this.allDay ? this._fmtDate(start) : this._fmtDateTime(start);
-        const dtEnd = this.allDay ? this._fmtDate(end) : this._fmtDateTime(end);
-
-        // DTSTART;VALUE=DATE:20260915  ← all-day syntax
-        // DTSTART:20260915T100000Z     ← datetime syntax
+        // Use TZID for local time instead of UTC "Z" suffix
         const dtStartLine = this.allDay
-            ? `DTSTART;VALUE=DATE:${dtStart}`
-            : `DTSTART:${dtStart}`;
+            ? `DTSTART;VALUE=DATE:${this._fmtDate(start)}`
+            : `DTSTART;TZID=${this.timezone}:${this._fmtDateTimeLocal(start)}`;
 
         const dtEndLine = this.allDay
-            ? `DTEND;VALUE=DATE:${dtEnd}`
-            : `DTEND:${dtEnd}`;
+            ? `DTEND;VALUE=DATE:${this._fmtDate(end)}`
+            : `DTEND;TZID=${this.timezone}:${this._fmtDateTimeLocal(end)}`;
 
-        
         const icsLines = [
             "BEGIN:VCALENDAR",
             "VERSION:2.0",
             "PRODID:-//AVIATIONPSY//EN",
             "CALSCALE:GREGORIAN",
             "METHOD:PUBLISH",
+            // Embed the timezone definition so all clients handle DST correctly
+            ...this._buildTimezone(),
             "BEGIN:VEVENT",
             `UID:${uid}`,
             `DTSTAMP:${this._fmtDateTime(new Date())}`,
@@ -81,11 +71,31 @@ export const calendarReminder = () => ({
         return icsLines;
     },
 
+    _buildTimezone() {
+        // VTIMEZONE block for Europe/Rome
+        // Covers both standard time (CET, UTC+1) and daylight time (CEST, UTC+2)
+        return [
+            "BEGIN:VTIMEZONE",
+            `TZID:${this.timezone}`,
+            "BEGIN:STANDARD",
+            "DTSTART:19701025T030000",
+            "RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10",
+            "TZOFFSETFROM:+0200",
+            "TZOFFSETTO:+0100",
+            "TZNAME:CET",
+            "END:STANDARD",
+            "BEGIN:DAYLIGHT",
+            "DTSTART:19700329T020000",
+            "RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3",
+            "TZOFFSETFROM:+0100",
+            "TZOFFSETTO:+0200",
+            "TZNAME:CEST",
+            "END:DAYLIGHT",
+            "END:VTIMEZONE",
+        ];
+    },
+
     _buildAlarm() {
-        // Negative duration = before the event
-        // -PT0M  = at the event
-        // -PT30M = 30 minutes before
-        // -PT8H  = 8 hours before
         const trigger = this.alarmMinutes === 0
             ? "-PT0M"
             : `-PT${this.alarmMinutes}M`;
@@ -99,35 +109,47 @@ export const calendarReminder = () => ({
         ];
     },
 
-    // Parse DD/MM/YYYY (with optional time) or ISO strings into a Date
+    // Parse DD/MM/YYYY (with optional time) — NO Z suffix, keeps local time
     _parseDate(date) {
-
-        // If it's already a Date object, return a new Date instance (to avoid mutations)
         if (date instanceof Date) return new Date(date);
 
-        // Try DD/MM/YYYY format first (with optional time)
         if (typeof date === "string") {
             const ddmmyyyy = date.match(
                 /^(\d{2})\/(\d{2})\/(\d{4})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?$/
             );
             if (ddmmyyyy) {
                 const [, dd, mm, yyyy, hh = "08", min = "00", ss = "00"] = ddmmyyyy;
-                return new Date(`${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}Z`);
+                // No Z → local time, interpreted relative to TZID in the ICS
+                return new Date(`${yyyy}-${mm}-${dd}T${hh}:${min}:${ss}`);
             }
             return new Date(date);
         }
-        
-        // For other types (e.g. timestamp), try to create a Date directly
+
         return new Date(date);
     },
 
-    // 20260915T100000Z  ← datetime
+    // 20261027T080000  ← local datetime, NO Z (paired with TZID)
+    _fmtDateTimeLocal(date) {
+        if (isNaN(date)) throw new Error(`[calendarReminder] invalid date: ${date}`);
+        const pad = n => String(n).padStart(2, "0");
+        return [
+            date.getFullYear(),
+            pad(date.getMonth() + 1),
+            pad(date.getDate()),
+            "T",
+            pad(date.getHours()),
+            pad(date.getMinutes()),
+            pad(date.getSeconds()),
+        ].join("");
+    },
+
+    // 20261027T060000Z ← UTC, used only for DTSTAMP
     _fmtDateTime(date) {
         if (isNaN(date)) throw new Error(`[calendarReminder] invalid date: ${date}`);
         return date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
     },
 
-    // 20260915  ← date only (all-day)
+    // 20261027 ← date only (all-day)
     _fmtDate(date) {
         if (isNaN(date)) throw new Error(`[calendarReminder] invalid date: ${date}`);
         return date.toISOString().split("T")[0].replace(/-/g, "");
