@@ -13,32 +13,35 @@ const _extractAuthors = (events = []) =>
         ...(event.talks ?? []).flatMap(talk => talk.authors ?? [])
     ]);
 
+const _timeRange = (events) => {
+    return `dalle ${events.at(0).time.split(" - ")[0]} `
+        + `alle ${events.at(-1).time.split(" - ")[1]}`;
+};
+
+const _parseDate = (ddmmyyyy) => {
+    const [d, m, y] = ddmmyyyy.split("/").map(Number);
+    const date = new Date(y, m - 1, d);
+    const fmt = (opts) => new Intl.DateTimeFormat("it-IT", opts).format(date);
+    return {
+        day: fmt({ day: "numeric" }),
+        month: fmt({ month: "short" }).replace(".", "").toUpperCase(),
+        weekday: fmt({ weekday: "short" }).replace(".", "").toLowerCase(),
+    };
+};
+
+
 // ── Store factory ────────────────────────────────────────────────
 export const programStore = () => ({
 
     ...programJSON,
 
     // ── Private helpers ──────────────────────────────────────────
-    _timeRange(events) {
-        return `dalle ${events.at(0).time.split(" - ")[0]} `
-             + `alle ${events.at(-1).time.split(" - ")[1]}`;
-    },
 
     _dayEvents(...keys) {
         return keys.flatMap(key => this[key].events);
     },
 
     // Parses "DD/MM/YYYY" → { day, month, weekday } display strings
-    _parseDate(ddmmyyyy) {
-        const [d, m, y] = ddmmyyyy.split("/").map(Number);
-        const date = new Date(y, m - 1, d);
-        const fmt = (opts) => new Intl.DateTimeFormat("it-IT", opts).format(date);
-        return {
-            day:     fmt({ day: "numeric" }),
-            month:   fmt({ month: "short" }).replace(".", "").toUpperCase(),
-            weekday: fmt({ weekday: "short" }).replace(".", "").toLowerCase(),
-        };
-    },
 
     // ── Getters ──────────────────────────────────────────────────
     get day1StartEnd() {
