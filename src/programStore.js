@@ -45,7 +45,7 @@ export const programStore = () => ({
 
     // ── Getters ──────────────────────────────────────────────────
     get day1StartEnd() {
-        return this._timeRange(this._dayEvents("day1"));
+        return _timeRange(this._dayEvents("day1"));
     },
 
     get day1Events() {
@@ -53,11 +53,11 @@ export const programStore = () => ({
     },
 
     get day1Parsed() {
-        return this._parseDate(this.day1.date);
+        return _parseDate(this.day1.date);
     },
 
     get day2StartEnd() {
-        return this._timeRange(this._dayEvents("day2-first-part", "day2-second-part"));
+        return _timeRange(this._dayEvents("day2-first-part", "day2-second-part"));
     },
 
     get day2Events() {
@@ -65,7 +65,7 @@ export const programStore = () => ({
     },
 
     get day2Parsed() {
-        return this._parseDate(this["day2-first-part"].date);
+        return _parseDate(this["day2-first-part"].date);
     },
 
     get allAuthors() {
