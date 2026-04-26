@@ -27,54 +27,77 @@
     },
     "day1": {
         "date": "27/10/2026",
+        "time": null,
         "type": "invite-only",
         "events": [
             {
                 "time": "18:00 - 18:30",
                 "title": "Accoglienza invitati",
-                "description": null
+                "description": null,
+                "authors": null,
+                "talks": null
             },
             {
                 "time": "18:30 - 19:30",
                 "title": "Tavola rotonda",
-                "description": "Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare."
+                "description": "Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare.",
+                "authors": null,
+                "talks": null
             },
             {
                 "time": "19:30 - 22:00",
                 "title": "Cena di gala",
-                "description": null
+                "description": null,
+                "authors": null,
+                "talks": null
             }
         ]
     },
     "day2-first-part": {
         "date": "28/10/2026",
-        "time": "08:00 - 11:40",
+        "time": null,
         "type": "public",
         "events": [
             {
                 "time": "08:00 - 08:50",
                 "title": "Registrazione partecipanti",
-                "description": null
+                "description": null,
+                "authors": null,
+                "talks": null
             },
             {
                 "time": "08:50 - 09:20",
                 "title": "Saluti Autorità",
-                "description": null
+                "description": null,
+                "authors": null,
+                "talks": null
             },
             {
                 "time": "09:20 - 09:50",
                 "title": "Lectio Magistralis",
-                "description": null
+                "description": null,
+                "authors": [
+                    {
+                        "title": "Prof.ssa",
+                        "name": "di Mattei V. E.",
+                        "affiliation": "Ordine Psicologi Lombardia",
+                        "role": "Presidente"
+                    }
+                ],
+                "talsk": null
             },
             {
-                "time": "09:50 - 10:45",
+                "time": null,
                 "title": "Panel 1 — Knowledge",
+                "description": null,
+                "authors": null,
                 "talks": [
                     {
                         "time": "09:50 - 10:05",
                         "title": "Psicologia dell'aviazione: formare i professionisti del cielo, tra evidenza scientifica e pratica operativa",
                         "authors": [
                             {
+                                "title": "",
                                 "name": "Autore da definire",
                                 "affiliation": "Università San Raffaele Milano",
                                 "role": ""
@@ -86,9 +109,10 @@
                         "title": "Definire gli standard professionali dello psicologo dell'aviazione",
                         "authors": [
                             {
+                                "title": "Dott.",
                                 "name": "Furia A.",
                                 "affiliation": "ENAC",
-                                "role": "Dott."
+                                "role": "Responsabile AMS"
                             }
                         ]
                     },
@@ -97,70 +121,82 @@
                         "title": "Aviation Psychology: traiettorie tematiche nella letteratura scientifica. Un approccio di topic extraction modelling mediante BERTopic",
                         "authors": [
                             {
+                                "title": "Ten. Col.",
                                 "name": "Calanna P.",
                                 "affiliation": "IMA Milano",
-                                "role": "Ten. Col."
+                                "role": "Capo Sezione Psicologia Clinica"
                             },
                             {
+                                "title": "Magg.",    
                                 "name": "Buonaiuto G.",
                                 "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
-                                "role": "Cap."
+                                "role": "Capo Sezione"
                             }
                         ]
                     },
                     {
                         "time": "10:35 - 10:45",
                         "title": "Question time panel",
-                        "authors": []
+                        "authors": null
                     }
                 ]
             },
             {
-                "time": "10:45 - 11:40",
+                "time": null,
                 "title": "Panel 2 — Research",
+                "description": null,
+                "authors": null,
                 "talks": [
                     {
                         "time": "10:45 - 11:00",
                         "title": "Esiti del questionario OSES-2: La percezione della Safety Culture e della Fatica Operazionale nei reparti di volo",
+                        "description": null,
                         "authors": [
                             {
+                                "title": "Gen.",
                                 "name": "Tarantino P.",
                                 "affiliation": null,
-                                "role": "Gen."
+                                "role": "Comandante Ispettorato Sicurezza Volo"
                             }
                         ]
                     },
                     {
                         "time": "11:00 - 11:15",
                         "title": "Titolo da definire per possibile contributo neuroscienze",
+                        "description": null,
                         "authors": [
                             {
+                                "title": "Prof.",
                                 "name": "Piccardi L.",
                                 "affiliation": "Università Sapienza Roma",
-                                "role": "Prof."
+                                "role": "Dipartimento di Psicologia"
                             },
                             {
+                                "title": "Col.",
                                 "name": "Verde P.",
                                 "affiliation": "RMAS Pratica di Mare",
-                                "role": "Col."
+                                "role": "Capo Reparto Medicina Aeronautica e Spaziale"
                             }
                         ]
                     },
                     {
                         "time": "11:15 - 11:30",
                         "title": "Stimolazione transcranica nei piloti militari: una proposta di ricerca",
+                        "description": null,
                         "authors": [
                             {
+                                "title": "Sten.",
                                 "name": "Silvestri M. C.",
                                 "affiliation": "Centro Psicologia AM · Ufficio Areale Sud",
-                                "role": "STen."
+                                "role": "Addetto Sezione Psicologia Clinica"
                             }
                         ]
                     },
                     {
                         "time": "11:30 - 11:40",
                         "title": "Question time panel",
-                        "authors": []
+                        "description": null,
+                        "authors": null
                     }
                 ]
             }
@@ -168,83 +204,101 @@
     },
     "day2-second-part": {
         "date": "28/10/2026",
-        "time": "11:40 - 14:10",
+        "time": null,
         "type": "public",
         "events": [
             {
                 "time": "11:40 - 12:00",
                 "title": "Pausa caffè",
-                "description": null
+                "description": null,
+                "authors": null,
+                "talks": null
             },
             {
-                "time": "12:00 - 13:10",
+                "time": null,
                 "title": "Panel 3 — Applications",
+                "description": null,
+                "authors": null,
                 "talks": [
                     {
                         "time": "12:00 - 12:15",
                         "title": "Titolo provvisorio per possibile contributo neuroscienze",
+                        "description": null,
                         "authors": [
                             {
+                                "title": "Prof.",
                                 "name": "Bruno G.",
                                 "affiliation": "Università Sapienza Roma",
-                                "role": "Prof."
+                                "role": "Dipartimento di Neuroscienze Umane"
                             }
                         ]
                     },
                     {
                         "time": "12:15 - 12:30",
                         "title": "Lo psicologo dell'aviazione nei trasporti medici umanitari da aree di conflitto",
+                        "description": null,
                         "authors": [
                             {
+                                "title": "Cap.",
                                 "name": "Palermo I.",
                                 "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
-                                "role": "Cap."
+                                "role": "Addetto"
                             },
                             {
+                                "title": "Cap.",
                                 "name": "D'Angelo A.",
                                 "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
-                                "role": "Cap."
+                                "role": "Addetto"
                             }
                         ]
                     },
                     {
                         "time": "12:30 - 12:45",
                         "title": "Il ruolo dello psicologo nella revisione del profilo professionale dei piloti militari",
+                        "description": null,
                         "authors": [
                             {
+                                "title": "Cap.",
                                 "name": "Giua E.",
                                 "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
-                                "role": "Cap."
+                                "role": "Addetto"
                             }
                         ]
                     },
                     {
                         "time": "12:45 - 13:00",
                         "title": "Il Fattore umano nelle evacuazioni mediche aeree con pazienti a disabilità non motoria",
+                        "description": null,
                         "authors": [
                             {
+                                "title": "Cap.",
                                 "name": "Ceci V.",
                                 "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
-                                "role": "Cap."
+                                "role": "Addetto"
                             },
                             {
+                                "title": "STen.",
                                 "name": "Busà A.",
                                 "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
-                                "role": "STen."
+                                "role": "Addetto"
                             }
                         ]
                     },
                     {
                         "time": "13:00 - 13:30",
                         "title": "Question time panel",
-                        "authors": []
+                        "description": null,
+                        "authors": null,
+                        "talks": null
                     }
                 ]
             },
             {
                 "time": "13:30 - 14:30",
                 "title": "Conclusione convegno + ECM",
-                "description": null
+                "description": null,
+                "authors": null,
+                "talks": null
             }
         ]
     }
