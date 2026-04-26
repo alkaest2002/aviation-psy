@@ -67,7 +67,6 @@ export const calendarReminder = () => ({
             "END:VCALENDAR",
         ].join("\r\n");
 
-        console.log("[calendarReminder] Generated ICS:\n", icsLines);
         return icsLines;
     },
 
