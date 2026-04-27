@@ -1,18 +1,5 @@
 import programJSON from "./program.json"
 
-// ── Pure helpers ─────────────────────────────────────────────────
-const _formatAuthor = ({ title = "", name = "", role = "", affiliation = "" }) =>
-    [title, name, role && `(${role})`, affiliation && `· ${affiliation}`]
-        .filter(Boolean)
-        .join(" ")
-        .trim();
-
-const _extractAuthors = (events = []) =>
-    events.flatMap(event => [
-        ...(event.authors ?? []),
-        ...(event.talks ?? []).flatMap(talk => talk.authors ?? [])
-    ]);
-
 const _timeRangeFromEvents = (events) => {
     return `${events.at(0).timeWindow.split(" - ")[0]} - ${events.at(-1).timeWindow.split(" - ")[1]}`;
 };
@@ -38,7 +25,6 @@ const _assertTimeWindow = (entity, computed) => {
         );
     }
 };
-
 
 // ── Store factory ────────────────────────────────────────────────
 export const programStore = () => ({
