@@ -227,11 +227,11 @@
                         <p class="font-semibold" x-text="$store.programStore.externalProvider.name"></p>
                         <p x-html="$store.programStore.externalProvider.address"></p>
                         <a 
-                            :href="$store.programStore.externalProvider.website" 
+                            :href="$store.programStore.externalProvider.websiteUrl" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             class="text-sky-700 underline underline-offset-2 break-all">
-                            <span x-text="$store.programStore.externalProvider.website"></span>
+                            <span x-text="$store.programStore.externalProvider.websiteUrl"></span>
                         </a>
                     </div>
 
@@ -260,7 +260,7 @@
                     </p>
 
                     <a 
-                        :href="$store.programStore.externalProvider.privacy" 
+                        :href="$store.programStore.externalProvider.privacyUrl" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         class="inline-flex items-center gap-1.5 text-sm text-sky-700 underline underline-offset-2 break-all">
@@ -390,7 +390,9 @@
                     <div class="border-l-2 border-slate-200 pl-3">
                         <p class="text-sm  leading-relaxed">
                             Per l'esercizio dei diritti relativi ai propri dati, l'utente dovrà rivolgersi
-                            direttamente a <span class="font-semibold">GitHub Inc.</span> o <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span> tramite i recapiti indicati
+                            direttamente a 
+                                <span class="font-semibold">GitHub Inc.</span> o 
+                                <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span> tramite i recapiti indicati
                             nella loro informativa sulla privacy.
                         </p>
                     </div>

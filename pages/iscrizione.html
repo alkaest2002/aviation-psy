@@ -187,12 +187,12 @@
 
                 </div>
 
-                <a href="#" target="_blank" rel="noopener noreferrer" @click.capture.prevent
+                <a :href="$store.programStore.externalProvider.registrationUrl" target="_blank" rel="noopener noreferrer" @click.capture.prevent
                     class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100 cursor-not-allowed text-slate-300">
                     <div class="flex gap-1 items-center">
                         <span class="">procedi con l'iscrizione</span>
                     </div>
-                    <svg class="h-4 w-4 " viewBox="0 0 16 16" fill="none"
+                    <svg class="h-4 w-4" viewBox="0 0 16 16" fill="none"
                         stroke="currentColor" stroke-width="2.2">
                         <path d="M3 8h10M9 4l4 4-4 4" />
                     </svg>

@@ -1,8 +1,9 @@
 {
     "externalProvider": {
         "name": "Achelois",
-        "website": "https://www.achelois.eu",
-        "privacy": "https://www.achelois.eu/privacy-cookie-policy/",
+        "websiteUrl": "https://www.achelois.eu",
+        "privacyUrl": "https://www.achelois.eu/privacy-cookie-policy/",
+        "registrationUrl": "https://www.achelois.eu/",
         "address": "Sede legale: Via Larga, 8 · 20122 Milano<br>Sede operativa: Via Residenza Portici 2, Milano2 · Segrate (MI)<br>P. IVA e C.F. 08655300963"
     },
     "registration": {
