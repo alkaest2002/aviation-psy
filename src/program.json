@@ -187,7 +187,7 @@
                         {
                             "timeWindow": "10:35 - 10:45",
                             "duration": 10,
-                            "title": "Question timeWindow panel",
+                            "title": "Question time panel",
                             "authors": null
                         }
                     ]
@@ -250,22 +250,22 @@
                         {
                             "timeWindow": "11:30 - 11:40",
                             "duration": 10,
-                            "title": "Question timeWindow panel",
+                            "title": "Question time panel",
                             "description": null,
                             "authors": null
-                        },
-                        {
-                            "timeWindow": "11:40 - 12:00",
-                            "duration": 20,
-                            "title": "Pausa caffè",
-                            "description": null,
-                            "authors": null,
-                            "talks": null
                         }
                     ]
                 },
                 {
-                    "timeWindow": null,
+                    "timeWindow":  "11:40 - 12:00",
+                    "duration": 20,
+                    "title": "Pausa caffè",
+                    "description": null,
+                    "authors": null,
+                    "talks": null   
+                },
+                {
+                    "timeWindow": "12:00 - 13:30",
                     "duration": 90,
                     "title": "Panel 3 — Applications",
                     "description": null,
@@ -342,7 +342,7 @@
                         {
                             "timeWindow": "13:00 - 13:30",
                             "duration": 30,
-                            "title": "Question timeWindow panel",
+                            "title": "Question time panel",
                             "description": null,
                             "authors": null,
                             "talks": null
