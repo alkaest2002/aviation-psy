@@ -1,5 +1,40 @@
 {
     "title": "III Convegno Nazionale di Psicologia dell'Aviazione",
+    "description": "Il III Convegno Nazionale di Psicologia dell'Aviazione è un appuntamento dedicato al confronto tra mondo accademico, istituzioni civili e realtà militari sui temi della psicologia aeronautica. L'evento approfondisce standard professionali, cultura della sicurezza, fattore umano, neuroscienze applicate al volo e impieghi operativi in contesti a rischio.",
+    "objectives": [
+        "Consolidare il dialogo tra ricerca scientifica e pratica operativa nel settore aeronautico.",
+        "Definire e condividere standard professionali dello psicologo dell'aviazione",
+        "Approfondire contributi innovativi della psicologia e delle neuroscienze in ambito aeronautico",
+        "Esplorare applicazioni pratiche dello psicologo dell'aviazione in contesti civili e militari",
+        "Valorizzare il ruolo dello psicologo nei contesti militari, sanitari e umanitari legati al volo",
+        "Favorire sinergie e convergenze strategiche tra mondo civile e militare"
+    ],
+    "recipients": [
+        "Psicologi",
+        "Psichiatri",
+        "Medici",
+        "AME (Aero Medical Examiner)",
+        "Infermieri",
+        "Piloti e personale di volo",
+        "Controllori del traffico aereo",
+        "Professionisti del settore aeronautico",
+        "Professionisti della sicurezza aerea",
+        "Ricercatori e specializzandi interessati alla psicologia dell'aviazione"
+    ],
+    "speakers" :{
+        "qualifications": [
+            "Professori universitari e ricercatori accademici",
+            "Psicologi dell'aviazione",
+            "Piloti militari e civili",
+            "Esperti di fattore umano e sicurezza aerea"
+        ]
+    },
+    "patronage": [
+        "Ministero della Difesa",
+        "Consiglio Nazionale dell'Ordine degli Psicologi (CNOP)",
+        "Ente Nazionale per l'Aviazione Civile (ENAC)",
+        "Comune di Milano"
+    ],
     "externalProvider": {
         "name": "Achelois",
         "websiteUrl": "https://www.achelois.eu",
