@@ -81,15 +81,6 @@ export const programStore = () => ({
         });
     },
 
-    // ── Getters ──────────────────────────────────────────────────
-    get day1Events() {
-        return this.days[0].events;
-    },
-
-    get day2Events() {
-        return this.days[1].events;
-    },
-
     getDateDay: (ddmmyyyy) => {
         const [d, m, y] = ddmmyyyy.split("/").map(Number);
         const date = new Date(y, m - 1, d);

@@ -99,7 +99,7 @@
                     </div>
 
                     <!-- Events — mix of simple cards and panel cards -->
-                    <template x-for="(event, i) in $store.programStore.day2Events" :key="i">
+                    <template x-for="(event, i) in day.events" :key="i">
                         <div>
 
                             <!-- Panel card — event has child talks -->
