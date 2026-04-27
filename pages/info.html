@@ -69,203 +69,107 @@
                 Home
             </a>
 
-            <!-- ══ DAY 27 ══ -->
-            <section class="flex flex-col gap-4">
+            <template x-for="(day, dayIndex) in $store.programStore.days" :key="dayIndex">
+                <section class="flex flex-col gap-4">
 
-                <!-- Day header -->
-                <div class="flex items-center gap-3">
-                    <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-16 h-18 shrink-0
+                    <!-- Day header -->
+                    <div class="flex items-center gap-3">
+                        <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-16 h-18 shrink-0
                                 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
-                        <span class="text-sm font-bold uppercase tracking-widest leading-none"
-                            x-text="$store.programStore.getDateMonth($store.programStore.days[0].date)"></span>
-                        <span class="text-xl font-semibold leading-none"
-                            x-text="$store.programStore.getDateDay($store.programStore.days[0].date)"></span>
-                        <span class="text-sm font-semibold leading-none"
-                            x-text="$store.programStore.getDateWeekday($store.programStore.days[0].date)"></span>
+                            <span class="text-sm font-bold uppercase tracking-widest leading-none"
+                                x-text="$store.programStore.getDateMonth(day.date)"></span>
+                            <span class="text-xl font-semibold leading-none"
+                                x-text="$store.programStore.getDateDay(day.date)"></span>
+                            <span class="text-sm font-semibold leading-none"
+                                x-text="$store.programStore.getDateWeekday(day.date)"></span>
+                        </div>
+                        <template x-if="day.type === 'invite-only'">
+                            <span
+                                class="ml-auto inline-flex items-center gap-1 rounded-full border border-amber-200
+                                bg-amber-100 px-2.5 py-1 text-sm font-bold uppercase tracking-wide text-amber-800 shrink-0">
+                                Su invito
+                            </span>
+                        </template>
+                        <template x-if="day.type === 'public'">
+                            <span
+                                class="ml-auto inline-flex items-center gap-1 rounded-full border border-emerald-200
+                                bg-emerald-100 px-2.5 py-1 text-sm font-bold uppercase tracking-wide text-emerald-800 shrink-0">
+                                Pubblico
+                            </span>
+                        </template>
                     </div>
-                    <span
-                        class="ml-auto inline-flex items-center gap-1 rounded-full border border-amber-200
-                               bg-amber-100 px-2.5 py-1 text-sm font-bold uppercase tracking-wide text-amber-800 shrink-0">
-                        Su invito
-                    </span>
-                </div>
 
-                <!-- Activities card -->
-                <div
-                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <!-- Activities card -->
+                    <div
+                        class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
 
-                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
-                        <div class="flex items-center gap-2">
+                        <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                            <div class="flex items-center gap-2">
+                                <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
+                                </svg>
+                                <span x-text="`Attività (${day.timeWindow})`"
+                                    class="text-sm font-semibold uppercase">
+                                </span>
+                            </div>
+                            <a :href="`/pages/programma.html#day${dayIndex+1}`"
+                                class="inline-flex items-center gap-1 text-xs font-semibold text-sky-700 underline underline-offset-2 active:opacity-70 transition-opacity shrink-0">
+                                vedi dettagli
+                            </a>
+                        </div>
+
+                        <div class="p-6 flex flex-col gap-1">
+                            <template x-for="(activity, activityIndex) in day.eventsBrief" :key="activityIndex">
+                                <div class="flex items-center gap-2">
+                                    <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                                    <span x-text="activity"></span>
+                                </div>
+                            </template>
+                        </div>
+
+                    </div>
+
+                    <!-- Venue + dress code card -->
+                    <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                        
+                        <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
                             <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                 <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                             </svg>
-                            <span x-text="$store.programStore.days[0].timeWindow"
-                                class="text-sm font-semibold uppercase">
-                            </span>
+                            <span class="text-sm font-semibold uppercase">Luogo dell'evento</span>
                         </div>
-                        <a href="/pages/programma.html#day1"
-                            class="inline-flex items-center gap-1 text-xs font-semibold text-sky-700 underline underline-offset-2 active:opacity-70 transition-opacity shrink-0">
-                            dettagli
-                        </a>
-                    </div>
 
-                    <div class="px-4 py-4 flex flex-col gap-2">
-                        <div class="flex items-center gap-2">
-                            <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
-                            <span>Evento culturale</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
-                            <span>Tavola rotonda</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
-                            <span>Cena di gala</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Venue + dress code card -->
-                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
-
-                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
-                        <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
-                        </svg>
-                        <span class="text-sm font-semibold uppercase">Luogo
-                            dell'evento</span>
-                    </div>
-
-                    <div class="p-5">
-                        <div class="mb-6">
-                            <p class="font-semibold leading-snug">Comando Squadra Aerea · 1^ R.A.</p>
-                            <p>Piazza Ermete Novelli, 1</p>
-                            <p>20129 Milano (MI)</p>
-                            <a :href="mapUrl('Piazza Ermete Novelli 1, 20129 Milano')" x-text="mapLabel" target="_blank"
-                                rel="noopener noreferrer"
-                                class="mt-3 inline-flex items-center gap-1 font-semibold text-sm text-sky-700 active:opacity-70 transition-opacity underline-offset-2 underline">
-                                <svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" stroke="currentColor"
-                                    stroke-width="2.2" aria-hidden="true">
-                                    <path d="M6 3H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3M9 2h5m0 0v5m0-5L7 10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="pb-2 text-slate-500 border-t border-slate-300 bg-slate-100 flex flex-col gap-2">
-                            <div class="pt-3 px-4 pb-2">
-                                <span class="text-sm font-semibold uppercase">Dress code civili</span>
-                                <p class="text-sm leading-snug">abito da sera</p>
+                        <div class="p-5">
+                            <div class="mb-6">
+                                <p class="font-semibold leading-snug" x-text="day.venue.name"></p>
+                                <p x-html="day.venue.address"></p>
+                                <a :href="mapUrl(day.venue.address)" x-text="mapLabel"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="mt-3 inline-flex items-center gap-1 font-semibold text-sm text-sky-700 active:opacity-70 transition-opacity underline-offset-2 underline">
+                                    <svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" aria-hidden="true">
+                                        <path
+                                            d="M6 3H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3M9 2h5m0 0v5m0-5L7 10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="px-4 pb-2">
-                                <span class="text-sm font-semibold uppercase">Dress code militari</span>
-                                <p class="text-sm leading-snug">uniforme ordinaria</p>
+                            <div class="p-3 text-slate-500 border-t border-slate-300 bg-slate-100 flex flex-col gap-2">
+                                <template x-for="(dressCode, dresscodeIndex) in day.dressCode" :key="dresscodeIndex">
+                                    <div>
+                                        <span class="text-sm font-semibold uppercase" x-text="dresscodeIndex"></span>
+                                        <p class="text-sm leading-snug" x-text="dressCode"></p>
+                                    </div>
+                                </template>
                             </div>
                         </div>
+
                     </div>
-
-                </div>
-            </section>
-
-            <!-- ══ DAY 28 ══ -->
-            <section class="flex flex-col gap-4">
-
-                <!-- Day header -->
-                <div class="flex items-center gap-3">
-                    <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-16 h-18 shrink-0
-                                shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
-                        <span class="text-sm font-bold uppercase tracking-widest leading-none"
-                            x-text="$store.programStore.getDateMonth($store.programStore.days[1].date)"></span>
-                        <span class="text-xl font-semibold leading-none"
-                            x-text="$store.programStore.getDateDay($store.programStore.days[1].date)"></span>
-                        <span class="text-sm font-semibold leading-none"
-                            x-text="$store.programStore.getDateWeekday($store.programStore.days[1].date)"></span>
-                    </div>
-                    <span
-                        class="ml-auto inline-flex items-center gap-1 rounded-full border border-emerald-200
-                               bg-emerald-100 px-2.5 py-1 text-sm font-bold uppercase tracking-wide text-emerald-800 shrink-0">
-                        Pubblico
-                    </span>
-                </div>
-
-                <!-- Activities card -->
-                <div
-                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
-
-                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
-                        <div class="flex items-center gap-2">
-                            <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
-                            </svg>
-                            <span x-text="$store.programStore.days[1].timeWindow"
-                                class="text-sm font-semibold uppercase">
-                            </span>
-                        </div>
-                        <a href="/pages/programma.html#day2"
-                            class="inline-flex items-center gap-1 text-xs font-semibold text-sky-700 underline underline-offset-2 active:opacity-70 transition-opacity shrink-0">
-                            dettagli
-                        </a>
-                    </div>
-
-                    <div class="px-4 py-4 flex flex-col gap-2">
-                        <div class="flex items-center gap-2">
-                            <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
-                            <span>Lavori congressuali</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Venue + dress code card -->
-                <div
-                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
-
-                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
-                        <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
-                        </svg>
-                        <span class="text-sm font-semibold uppercase">Luogo
-                            dell'evento</span>
-                    </div>
-
-                    <div class="p-5">
-                        <div class="mb-6">
-                            <p class="font-semibold leading-snug">Veneranda Biblioteca Ambrosiana</p>
-                            <p>Piazza Pio XI, 2</p>
-                            <p>20123 Milano (MI)</p>
-                            <a :href="mapUrl('Piazza Pio XI 2, 20123 Milano')" x-text="mapLabel" target="_blank"
-                                rel="noopener noreferrer"
-                                class="mt-3 inline-flex items-center gap-1 font-semibold text-sm text-sky-700 active:opacity-70 transition-opacity underline-offset-2 underline">
-                                <svg class="h-3 w-3" viewBox="0 0 16 16" fill="none" stroke="currentColor"
-                                    stroke-width="2.2" aria-hidden="true">
-                                    <path d="M6 3H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3M9 2h5m0 0v5m0-5L7 10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="pb-2 border-t text-slate-500 border-slate-300 bg-slate-100 flex flex-col gap-2">
-                            <div class="pt-3 px-4 pb-2 ">
-                            <span class="text-sm font-semibold uppercase">Dress code civili</span>
-                            <p class="text-sm leading-snug">suggerito business casual</p>
-                        </div>
-                        <div class="px-4 pb-2">
-                            <span class="text-sm font-semibold uppercase">Dress code militari ·
-                                Partecipanti</span>
-                            <p class="text-sm leading-snug">uniforme di servizio</p>
-                        </div>
-                        <div class="px-4 pb-2">
-                            <span class="text-sm font-semibold uppercase">Dress code militari ·
-                                Relatori</span>
-                            <p class="text-sm leading-snug">uniforme ordinaria</p>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </template>
 
             <!-- ══ ECM ══ -->
             <section class="flex flex-col gap-4">
-
                 <div
                     class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
 
@@ -283,16 +187,18 @@
                         <div class="flex items-center gap-4">
                             <div
                                 class="flex flex-col items-center justify-center bg-sky-50 border border-sky-200 rounded-lg w-16 h-16 shrink-0">
-                                <span class="text-2xl font-black text-sky-800 leading-none" x-text="$store.programStore.registration.ecm.amount"></span>
-                                <span class=" text-xs font-bold text-sky-600 uppercase leading-none mt-0.5">crediti</span>
+                                <span class="text-2xl font-black text-sky-800 leading-none"
+                                    x-text="$store.programStore.registration.ecm.amount"></span>
+                                <span
+                                    class=" text-xs font-bold text-sky-600 uppercase leading-none mt-0.5">crediti</span>
                             </div>
                             <div class="flex flex-col gap-1">
                                 <p class="leading-snug">
                                     Il convegno è accreditato ECM per le professioni sanitarie.
                                 </p>
                                 <p class="text-sm leading-snug">
-                                    I crediti vengono riconosciuti per la partecipazione alla giornata del <strong
-                                        class="font-semibold">28 ottobre</strong>.
+                                    Crediti riconosciuti per la partecipazione alla giornata del <strong
+                                        class="font-semibold" x-text="$store.programStore.days[1].date"></strong>.
                                 </p>
                             </div>
                         </div>
@@ -302,37 +208,35 @@
 
                         <!-- Info aggiuntive -->
                         <div class="flex flex-col gap-2">
-                            <div class="flex items-start gap-2">
-                                <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>
-                                <span>Valido per 
-                                    <span x-text="$store.programStore.registration.ecm.validFor.join(', ')"></span></span>
+                            <div class="flex items-center gap-2">
+                                <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                                <span>Valido per
+                                    <span
+                                        x-text="$store.programStore.registration.ecm.validFor.join(', ')"></span></span>
                             </div>
-                            <div class="flex items-start gap-2">
-                                <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>
-                                <span>Registrazione obbligatoria entro il 
-                                    <span class="font-bold" x-text="$store.programStore.registration.endDate"></span></span>
+                            <div class="flex items-center gap-2">
+                                <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                                <span>Registrazione obbligatoria entro il
+                                    <span class="font-bold"
+                                        x-text="$store.programStore.registration.endDate"></span></span>
                             </div>
                         </div>
 
-                        <div class="px-5 py-3 border-t text-slate-500 border-slate-300 bg-slate-100 flex items-center gap-2">
+                        <div
+                            class="px-5 py-3 border-t text-slate-500 border-slate-300 bg-slate-100 flex items-center gap-2">
                             <p class="text-sm leading-snug">
-                                L'accreditamento ECM è gestito dal provider esterno
-                                <a 
-                                    :href="$store.programStore.externalProvider.website" 
-                                    target="_blank" 
+                                L'accreditamento ECM è gestito da:
+                                <a :href="$store.programStore.externalProvider.website" target="_blank"
                                     rel="noopener noreferrer"
-                                    class="text-sky-700 underline underline-offset-2 break-all"
-                                    >
-                                        <span x-text="$store.programStore.externalProvider.website"></span>
+                                    class="text-sky-700 underline underline-offset-2 break-all">
+                                    <span x-text="$store.programStore.externalProvider.website"></span>
                                 </a>.
                             </p>
                         </div>
 
                     </div>
                 </div>
-
             </section>
-
         </div>
 
         <!-- ── Footer ────────────────────────────────────────── -->

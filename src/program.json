@@ -31,10 +31,23 @@
     },
     "days": [
         {
+            "type": "invite-only",
             "date": "27/10/2026",
             "startTime": "18:00",
             "timeWindow": "18:00 - 22:00",
-            "type": "invite-only",
+            "venue": {
+                "name": "Comando Squadra Aerea · 1^ R.A.",
+                "address": "Piazza Ermete Novelli, 1<br/>20129 Milano (MI)"
+            },
+            "dressCode": {
+                "dress code civili": "abito da sera",
+                "dress code militari": "uniforme ordinaria"
+            },
+            "eventsBrief": [
+                "Accoglienza invitati",
+                "Tavola rotonda",
+                "Cena di gala"
+            ],
             "events": [
                 {
                     "timeWindow": "18:00 - 18:30",
@@ -63,10 +76,28 @@
             ]
         },
         {
+            "type": "public",
             "date": "28/10/2026",
             "startTime": "08:00",
             "timeWindow": null,
-            "type": "public",
+            "venue": {
+                "name": "Veneranda Biblioteca Ambrosiana",
+                "address": "Piazza Pio XI, 2<br/>20123 Milano (MI)"
+            },
+            "dressCode": {
+                "dress code civili": "suggerito business casual",
+                "dress code militari · partecipanti": "uniforme di servizio",
+                "dress code militari · relatori": "uniforme ordinaria"
+            },
+            "eventsBrief": [
+                "Registrazione partecipanti",
+                "Saluti autorità",
+                "Lectio magistralis",
+                "Panel 1 — Knowledge",
+                "Panel 2 — Research",
+                "Panel 3 — Applications",
+                "Conclusione convegno + ECM"
+            ],
             "events": [
                 {
                     "timeWindow": "08:00 - 08:50",

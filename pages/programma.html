@@ -68,7 +68,7 @@
             </a>
 
             <!-- ══ DAYS ══════════════════════════════════════════ -->
-            <template x-for="(day, index) in $store.programStore.days">
+            <template x-for="(day, index) in $store.programStore.days" :key="index">
                 <section :id="`day${index+1}`" class="flex flex-col gap-5">
 
                     <!-- Day header -->
