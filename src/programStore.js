@@ -13,20 +13,30 @@ const _extractAuthors = (events = []) =>
         ...(event.talks ?? []).flatMap(talk => talk.authors ?? [])
     ]);
 
-const _timeRange = (events) => {
-    return `dalle ${events.at(0).time.split(" - ")[0]} `
-        + `alle ${events.at(-1).time.split(" - ")[1]}`;
+const _timeRangeFromEvents = (events) => {
+    return `${events.at(0).timeWindow.split(" - ")[0]} - ${events.at(-1).timeWindow.split(" - ")[1]}`;
 };
 
-const _parseDate = (ddmmyyyy) => {
-    const [d, m, y] = ddmmyyyy.split("/").map(Number);
-    const date = new Date(y, m - 1, d);
-    const fmt = (opts) => new Intl.DateTimeFormat("it-IT", opts).format(date);
-    return {
-        day: fmt({ day: "numeric" }),
-        month: fmt({ month: "short" }).replace(".", "").toUpperCase(),
-        weekday: fmt({ weekday: "short" }).replace(".", "").toLowerCase(),
-    };
+const _addMinutes = (hhmm, minutes) => {
+    const [h, m] = hhmm.split(":").map(Number);
+    const total = h * 60 + m + minutes;
+    const hh = String(Math.floor(total / 60)).padStart(2, "0");
+    const mm = String(total % 60).padStart(2, "0");
+    return `${hh}:${mm}`;
+};
+
+const _makeTimeWindow = (start, duration) =>
+    `${start} - ${_addMinutes(start, duration)}`;
+
+const _assertTimeWindow = (entity, computed) => {
+    if (entity.timeWindow !== null && entity.timeWindow !== computed) {
+        console.warn(
+            `[programStore] timeWindow mismatch:\n` +
+            `  found:    "${entity.timeWindow}"\n` +
+            `  computed: "${computed}"\n`,
+            entity
+        );
+    }
 };
 
 
@@ -35,43 +45,69 @@ export const programStore = () => ({
 
     ...programJSON,
 
-    // ── Private helpers ──────────────────────────────────────────
+    init() {
+        Object.values(this.days).forEach(day => {
 
-    _dayEvents(...keys) {
-        return keys.flatMap(key => this[key].events);
+            let cursor = day.startTime;
+
+            day.events.forEach(event => {
+                if (event.talks?.length) {
+
+                    let talkCursor = cursor;
+
+                    event.talks.forEach(talk => {
+                        const computed = _makeTimeWindow(talkCursor, talk.duration);
+                        _assertTimeWindow(talk, computed);
+                        talk.timeWindow = computed;
+                        talkCursor = _addMinutes(talkCursor, talk.duration);
+                    });
+
+                    const computed = `${cursor} - ${talkCursor}`;
+                    _assertTimeWindow(event, computed);
+                    event.timeWindow = computed;
+                    cursor = talkCursor;
+
+                } else {
+                    const computed = _makeTimeWindow(cursor, event.duration);
+                    _assertTimeWindow(event, computed);
+                    event.timeWindow = computed;
+                    cursor = _addMinutes(cursor, event.duration);
+                }
+            });
+
+            const computedDayWindow = `${day.startTime} - ${cursor}`;
+            _assertTimeWindow(day, computedDayWindow);
+            day.timeWindow = computedDayWindow;
+        });
     },
-
-    // Parses "DD/MM/YYYY" → { day, month, weekday } display strings
 
     // ── Getters ──────────────────────────────────────────────────
-    get day1StartEnd() {
-        return _timeRange(this._dayEvents("day1"));
-    },
-
     get day1Events() {
-        return this._dayEvents("day1");
-    },
-
-    get day1Parsed() {
-        return _parseDate(this.day1.date);
-    },
-
-    get day2StartEnd() {
-        return _timeRange(this._dayEvents("day2-first-part", "day2-second-part"));
+        return this.days[0].events;
     },
 
     get day2Events() {
-        return this._dayEvents("day2-first-part", "day2-second-part");
+        return this.days[1].events;
     },
 
-    get day2Parsed() {
-        return _parseDate(this["day2-first-part"].date);
+    getDateDay: (ddmmyyyy) => {
+        const [d, m, y] = ddmmyyyy.split("/").map(Number);
+        const date = new Date(y, m - 1, d);
+        const fmt = (opts) => new Intl.DateTimeFormat("it-IT", opts).format(date);
+        return fmt({ day: "numeric" });
     },
 
-    get allAuthors() {
-        const all = this._dayEvents("day1", "day2-first-part", "day2-second-part");
-        const unique = [...new Set(_extractAuthors(all).map(_formatAuthor))];
-        return unique.sort((a, b) => a.localeCompare(b));
+    getDateMonth: (ddmmyyyy) => {
+        const [d, m, y] = ddmmyyyy.split("/").map(Number);
+        const date = new Date(y, m - 1, d);
+        const fmt = (opts) => new Intl.DateTimeFormat("it-IT", opts).format(date);
+        return fmt({ month: "short" }).replace(".", "").toUpperCase();
     },
 
+    getDateWeekday: (ddmmyyyy) => {
+        const [d, m, y] = ddmmyyyy.split("/").map(Number);
+        const date = new Date(y, m - 1, d);
+        const fmt = (opts) => new Intl.DateTimeFormat("it-IT", opts).format(date);
+        return fmt({ weekday: "short" }).replace(".", "").toLowerCase();
+    },
 })

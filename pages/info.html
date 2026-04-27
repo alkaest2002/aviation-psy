@@ -77,11 +77,11 @@
                     <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-16 h-18 shrink-0
                                 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
                         <span class="text-sm font-bold uppercase tracking-widest leading-none"
-                            x-text="$store.programStore.day1Parsed.month"></span>
+                            x-text="$store.programStore.getDateMonth($store.programStore.days[0].date)"></span>
                         <span class="text-xl font-semibold leading-none"
-                            x-text="$store.programStore.day1Parsed.day"></span>
+                            x-text="$store.programStore.getDateDay($store.programStore.days[0].date)"></span>
                         <span class="text-sm font-semibold leading-none"
-                            x-text="$store.programStore.day1Parsed.weekday"></span>
+                            x-text="$store.programStore.getDateWeekday($store.programStore.days[0].date)"></span>
                     </div>
                     <span
                         class="ml-auto inline-flex items-center gap-1 rounded-full border border-amber-200
@@ -99,7 +99,7 @@
                             <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                 <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                             </svg>
-                            <span x-text="$store.programStore.day1StartEnd"
+                            <span x-text="$store.programStore.days[0].timeWindow"
                                 class="text-sm font-semibold uppercase">
                             </span>
                         </div>
@@ -175,11 +175,11 @@
                     <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-16 h-18 shrink-0
                                 shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)]">
                         <span class="text-sm font-bold uppercase tracking-widest leading-none"
-                            x-text="$store.programStore.day2Parsed.month"></span>
+                            x-text="$store.programStore.getDateMonth($store.programStore.days[1].date)"></span>
                         <span class="text-xl font-semibold leading-none"
-                            x-text="$store.programStore.day2Parsed.day"></span>
+                            x-text="$store.programStore.getDateDay($store.programStore.days[1].date)"></span>
                         <span class="text-sm font-semibold leading-none"
-                            x-text="$store.programStore.day2Parsed.weekday"></span>
+                            x-text="$store.programStore.getDateWeekday($store.programStore.days[1].date)"></span>
                     </div>
                     <span
                         class="ml-auto inline-flex items-center gap-1 rounded-full border border-emerald-200
@@ -197,7 +197,7 @@
                             <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
                                 <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                             </svg>
-                            <span x-text="$store.programStore.day2StartEnd"
+                            <span x-text="$store.programStore.days[1].timeWindow"
                                 class="text-sm font-semibold uppercase">
                             </span>
                         </div>
