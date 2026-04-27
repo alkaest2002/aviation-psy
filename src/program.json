@@ -31,6 +31,32 @@
             ]
         }
     },
+    "scientificCommittee": [
+        {
+            "title": "Col. CSArs",
+            "name": "Mastrorilli A.",
+            "affiliation": "Centro di Psicologia AM",
+            "role": "Direttore"
+        },
+        {
+            "title": "Ten. Col. CSArs",
+            "name": "Deiana S.",
+            "affiliation": "Centro di Psicologia AM",
+            "role": "Capo Ufficio Coordinamento"
+        },
+        {
+            "title": "Ten. Col. CSArs",
+            "name": "Calanna P.",
+            "affiliation": "IMA Milano",
+            "role": "Capo Sezione Psicologia Clinica"
+        },
+        {
+            "title": "Magg.",
+            "name": "Buonaiuto G.",
+            "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
+            "role": "Capo Sezione"
+        }
+    ],
     "days": [
         {
             "type": "invite-only",
