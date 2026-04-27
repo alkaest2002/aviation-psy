@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy · III Convegno di Psicologia dell'Aviazione</title>
     <meta name="color-scheme" content="light only">
-    <meta name="description"
-        content="Informativa sulla Privacy del III Convegno di Psicologia dell'Aviazione." />
+    <meta name="description" content="Informativa sulla Privacy del III Convegno di Psicologia dell'Aviazione." />
     <link rel="stylesheet" href="/src/style.css" />
     <script src="/src/main.js" type="module"></script>
 </head>
@@ -17,36 +16,50 @@
     <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
 
         <!-- ── Hero ─────────────────────────────────────────── -->
-        <header
-            x-data="header"
-            x-bind="homeLink"
-            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer"
-        >
-            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl"></div>
-            <div class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl"></div>
+        <header x-data="header" x-bind="homeLink"
+            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer">
+            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl">
+            </div>
+            <div
+                class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl">
+            </div>
 
             <div class="relative w-full">
-                <p class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
+                <p
+                    class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
                     III Convegno
                 </p>
 
-                <h1 class="mt-4 text-3xl md:text-4xl font-semibold tracking-tight text-white leading-tight">
+                <h1 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-white leading-tight">
                     Psicologia dell'Aviazione
                 </h1>
 
                 <div class="mt-6 grid gap-2 text-sm text-sky-100/95">
                     <span class="inline-flex items-center gap-2">
-                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                            <path d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
                         </svg>
                         27 e 28 ottobre 2026 · Milano
                     </span>
                     <span class="inline-flex items-center gap-2">
-                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                            <path d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
                         </svg>
                         ECM · professioni sanitarie
                     </span>
+                    <a href="mailto:aeropsy@am.difesa.it"
+                        class="inline-flex items-center gap-2 hover:text-white transition-colors" @click.stop>
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M2 4.5A1.5 1.5 0 0 1 3.5 3h9A1.5 1.5 0 0 1 14 4.5v.072l-6 3.6-6-3.6V4.5Zm0 1.742V11.5A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5V6.242l-5.724 3.434a.5.5 0 0 1-.552 0L2 6.242Z" />
+                        </svg>
+                        aeropsy@am.difesa.it
+                    </a>
                 </div>
             </div>
         </header>
@@ -71,9 +84,11 @@
             </div>
 
             <!-- 1. Titolare -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">1. Titolare del Trattamento</span>
@@ -95,9 +110,11 @@
             </section>
 
             <!-- 2. Tipologia di sito -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">2. Tipologia di Sito</span>
@@ -109,18 +126,27 @@
                         Non sono presenti:
                     </p>
                     <ul class="text-sm space-y-1.5 mb-4">
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Moduli di contatto o registrazione</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Aree riservate o sistemi di login</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Funzioni di e-commerce</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Sistemi di commento o newsletter</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Moduli di contatto o
+                            registrazione</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Aree riservate o sistemi di
+                            login</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Funzioni di e-commerce</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Sistemi di commento o
+                            newsletter</li>
                     </ul>
                 </div>
             </section>
 
             <!-- 3. Dati raccolti -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">3. Dati Raccolti</span>
@@ -134,9 +160,11 @@
             </section>
 
             <!-- 4. Cookie -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">4. Cookie</span>
@@ -146,18 +174,27 @@
                         Questo sito non utilizza cookie di alcun tipo:
                     </p>
                     <ul class="text-sm space-y-1.5">
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Nessun cookie tecnico</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Nessun cookie di profilazione</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Nessun cookie di terze parti</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Nessun cookie di analisi o tracciamento</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Nessun cookie tecnico</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Nessun cookie di
+                            profilazione</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Nessun cookie di terze parti
+                        </li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Nessun cookie di analisi o
+                            tracciamento</li>
                     </ul>
                 </div>
             </section>
 
             <!-- 5. GitHub Pages -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">5. Hosting · GitHub Pages</span>
@@ -181,11 +218,19 @@
                         automaticamente i seguenti dati tecnici:
                     </p>
                     <ul class="text-sm space-y-1.5 mb-4">
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Indirizzo IP del visitatore</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Tipo di browser e sistema operativo</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dispositivo utilizzato</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Pagine richieste e quantità di dati trasferiti</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Data e ora della visita</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Indirizzo IP del visitatore
+                        </li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Tipo di browser e sistema
+                            operativo</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dispositivo utilizzato</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Pagine richieste e quantità
+                            di dati trasferiti</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Data e ora della visita</li>
                     </ul>
                     <p class="text-sm leading-relaxed mb-4">
                         Tali dati sono trattati esclusivamente da <span class="font-semibold">GitHub Inc.</span> per
@@ -202,7 +247,8 @@
                         target="_blank" rel="noopener noreferrer"
                         class="inline-flex items-center gap-1.5 text-sm text-sky-700 underline underline-offset-2 break-all">
                         Informativa Privacy di <span class="font-semibold">GitHub Inc.</span>
-                        <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <path d="M6 3H3v10h10v-3M9 2h5v5M14 2 8 8" />
                         </svg>
                     </a>
@@ -210,9 +256,11 @@
             </section>
 
             <!-- 6. Procedura di iscrizione -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">6. Procedura di Iscrizione</span>
@@ -226,11 +274,8 @@
                     <div class="border border-slate-300 bg-slate-50 px-4 py-3 text-sm mb-4">
                         <p class="font-semibold" x-text="$store.programStore.externalProvider.name"></p>
                         <p x-html="$store.programStore.externalProvider.address"></p>
-                        <a 
-                            :href="$store.programStore.externalProvider.websiteUrl" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            class="text-sky-700 underline underline-offset-2 break-all">
+                        <a :href="$store.programStore.externalProvider.websiteUrl" target="_blank"
+                            rel="noopener noreferrer" class="text-sky-700 underline underline-offset-2 break-all">
                             <span x-text="$store.programStore.externalProvider.websiteUrl"></span>
                         </a>
                     </div>
@@ -238,35 +283,45 @@
                     <p class="text-sm leading-relaxed mb-3">
                         Cliccando sul pulsante di iscrizione presente su questo
                         sito, l'utente viene reindirizzato alla piattaforma di
-                        <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span>, che opera come 
+                        <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span>, che
+                        opera come
                         <span class="font-semibold">titolare autonomo del
-                        trattamento</span> dei dati raccolti durante il processo
+                            trattamento</span> dei dati raccolti durante il processo
                         di iscrizione. I dati che possono essere richiesti dalla
                         piattaforma esterna includono, a titolo esemplificativo:
                     </p>
 
                     <ul class="text-sm space-y-1.5 mb-4">
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati anagrafici (nome, cognome)</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Indirizzo e-mail</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Qualifica professionale e ordine di appartenenza</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati di pagamento (ove previsto)</li>
-                        <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati necessari all'attribuzione dei crediti ECM</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati anagrafici (nome,
+                            cognome)</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Indirizzo e-mail</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Qualifica professionale e
+                            ordine di appartenenza</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati di pagamento (ove
+                            previsto)</li>
+                        <li class="flex items-center gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>Dati necessari
+                            all'attribuzione dei crediti ECM</li>
                     </ul>
 
                     <p class="text-sm leading-relaxed mb-3">
                         Si invita l'utente a prendere visione dell'informativa
-                        sulla privacy di <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span> prima di procedere con la
+                        sulla privacy di <span class="font-semibold"
+                            x-text="$store.programStore.externalProvider.name"></span> prima di procedere con la
                         compilazione del modulo di iscrizione:
                     </p>
 
-                    <a 
-                        :href="$store.programStore.externalProvider.privacyUrl" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
+                    <a :href="$store.programStore.externalProvider.privacyUrl" target="_blank" rel="noopener noreferrer"
                         class="inline-flex items-center gap-1.5 text-sm text-sky-700 underline underline-offset-2 break-all">
-                        Informativa Privacy di <span class="font-semibold" x-text="$store.programStore.externalProvider.name">
+                        Informativa Privacy di <span class="font-semibold"
+                            x-text="$store.programStore.externalProvider.name">
                         </span>
-                        <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                            stroke-width="2">
                             <path d="M6 3H3v10h10v-3M9 2h5v5M14 2 8 8" />
                         </svg>
                     </a>
@@ -274,9 +329,11 @@
             </section>
 
             <!-- 7. Base giuridica -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">7. Base Giuridica del Trattamento</span>
@@ -314,7 +371,8 @@
                         <p class="text-sm leading-relaxed mb-3">
                             I dati personali raccolti durante la procedura di
                             iscrizione al convegno sono trattati esclusivamente
-                            da <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span>, titolare autonomo del
+                            da <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span>,
+                            titolare autonomo del
                             trattamento, sulla base delle seguenti basi giuridiche:
                         </p>
                         <ul class="text-sm space-y-2 mb-4">
@@ -349,9 +407,11 @@
             </section>
 
             <!-- 8. Conservazione -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">8. Periodo di Conservazione</span>
@@ -361,15 +421,18 @@
                         Il Titolare non conserva alcun dato personale. Per i dati
                         tecnici raccolti da <span class="font-semibold">GitHub Inc.</span> si rimanda alla
                         loro informativa. Per i dati di iscrizione
-                        trattati da <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span> si rimanda alla loro informativa.
+                        trattati da <span class="font-semibold"
+                            x-text="$store.programStore.externalProvider.name"></span> si rimanda alla loro informativa.
                     </p>
                 </div>
             </section>
 
             <!-- 9. Diritti -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">9. Diritti dell'Interessato</span>
@@ -379,19 +442,32 @@
                         Ai sensi del <span class="font-semibold">GDPR</span>, l'utente ha il diritto di:
                     </p>
                     <ul class="text-sm space-y-2 mb-4">
-                        <li class="flex items-start gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Accesso (art. 15) — ottenere conferma che non vengono trattati dati personali che lo riguardano</li>
-                        <li class="flex items-start gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Rettifica (art. 16) — richiedere la correzione di dati inesatti</li>
-                        <li class="flex items-start gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Cancellazione (art. 17) — richiedere la cancellazione dei propri dati</li>
-                        <li class="flex items-start gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Limitazione (art. 18) — richiedere la limitazione del trattamento</li>
-                        <li class="flex items-start gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Portabilità (art. 20) — ricevere i propri dati in formato strutturato e leggibile</li>
-                        <li class="flex items-start gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Opposizione (art. 21) — opporsi al trattamento dei propri dati</li>
+                        <li class="flex items-start gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Accesso (art. 15) —
+                            ottenere conferma che non vengono trattati dati personali che lo riguardano</li>
+                        <li class="flex items-start gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Rettifica (art. 16) —
+                            richiedere la correzione di dati inesatti</li>
+                        <li class="flex items-start gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Cancellazione (art.
+                            17) — richiedere la cancellazione dei propri dati</li>
+                        <li class="flex items-start gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Limitazione (art. 18)
+                            — richiedere la limitazione del trattamento</li>
+                        <li class="flex items-start gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Portabilità (art. 20)
+                            — ricevere i propri dati in formato strutturato e leggibile</li>
+                        <li class="flex items-start gap-2"><span
+                                class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0 mt-1.5"></span>Opposizione (art. 21)
+                            — opporsi al trattamento dei propri dati</li>
                     </ul>
                     <div class="border-l-2 border-slate-200 pl-3">
                         <p class="text-sm  leading-relaxed">
                             Per l'esercizio dei diritti relativi ai propri dati, l'utente dovrà rivolgersi
-                            direttamente a 
-                                <span class="font-semibold">GitHub Inc.</span> o 
-                                <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span> tramite i recapiti indicati
+                            direttamente a
+                            <span class="font-semibold">GitHub Inc.</span> o
+                            <span class="font-semibold" x-text="$store.programStore.externalProvider.name"></span>
+                            tramite i recapiti indicati
                             nella loro informativa sulla privacy.
                         </p>
                     </div>
@@ -399,9 +475,11 @@
             </section>
 
             <!-- 10. Reclamo -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">10. Diritto di Reclamo</span>
@@ -423,9 +501,11 @@
             </section>
 
             <!-- 11. Modifiche -->
-            <section class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
+            <section
+                class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden min-w-0">
                 <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-300">
-                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                        aria-hidden="true">
                         <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
                     </svg>
                     <span class="text-sm font-semibold tracking-wide uppercase">11. Modifiche</span>
@@ -454,11 +534,13 @@
         <!-- ── Footer ────────────────────────────────────────── -->
         <footer class="px-6 md:px-12 pb-10 text-center" x-data x-cloak>
             <p class="text-[14px]  tracking-wide">
-                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html" class="text-sky-700 underline-offset-2">Privacy policy</a>
+                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html"
+                    class="text-sky-700 underline-offset-2">Privacy policy</a>
             </p>
         </footer>
 
     </main>
 
 </body>
+
 </html>

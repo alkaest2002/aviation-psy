@@ -17,16 +17,17 @@
     <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
 
         <!-- ── Hero ─────────────────────────────────────────── -->
-        <header 
-            x-data="header"
-            x-bind="homeLink"
-            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer"
-        >
-            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl"></div>
-            <div class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl"></div>
+        <header x-data="header" x-bind="homeLink"
+            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer">
+            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl">
+            </div>
+            <div
+                class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl">
+            </div>
 
             <div class="relative w-full">
-                <p class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
+                <p
+                    class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
                     III Convegno
                 </p>
 
@@ -36,24 +37,37 @@
 
                 <div class="mt-6 grid gap-2 text-sm text-sky-100/95">
                     <span class="inline-flex items-center gap-2">
-                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                            <path d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
                         </svg>
                         27 e 28 ottobre 2026 · Milano
                     </span>
                     <span class="inline-flex items-center gap-2">
-                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                            <path d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
                         </svg>
                         ECM · professioni sanitarie
                     </span>
+                    <a href="mailto:aeropsy@am.difesa.it"
+                        class="inline-flex items-center gap-2 hover:text-white transition-colors" @click.stop>
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M2 4.5A1.5 1.5 0 0 1 3.5 3h9A1.5 1.5 0 0 1 14 4.5v.072l-6 3.6-6-3.6V4.5Zm0 1.742V11.5A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5V6.242l-5.724 3.434a.5.5 0 0 1-.552 0L2 6.242Z" />
+                        </svg>
+                        aeropsy@am.difesa.it
+                    </a>
                 </div>
             </div>
         </header>
-        
+
         <!-- ── Nav links ─────────────────────────────────────── -->
         <nav class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-3" aria-label="Link principali">
-            
+
             <!--
             <a 
                 href="/locandina.pdf" 
@@ -78,110 +92,89 @@
                 />
             </a>
             -->
-            
-             <a 
-                href="/pages/info.html"
-                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100"
-            >
+
+            <a href="/pages/info.html"
+                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100">
                 <div class="flex gap-1 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M8 13.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m1-9.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-.25 3a.75.75 0 0 0-1.5 0V11a.75.75 0 0 0 1.5 0z" clip-rule="evenodd"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M8 13.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m1-9.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-.25 3a.75.75 0 0 0-1.5 0V11a.75.75 0 0 0 1.5 0z"
+                            clip-rule="evenodd" />
+                    </svg>
                     <span>In breve</span>
                 </div>
-                <svg 
-                    x-show="shouldShowRegularIcon"
-                    class="h-4 w-4 " viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg x-show="shouldShowRegularIcon" class="h-4 w-4 " viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img 
-                    src="/i-spinner.svg" 
-                    alt="spinner" 
-                    class="h-5 w-5  animate-spin" 
-                    x-show="shouldShowSpinner" 
-                />
+                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5  animate-spin" x-show="shouldShowSpinner" />
             </a>
 
-            <a 
-                href="/pages/programma.html"
-                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100"
-            >
+            <a href="/pages/programma.html"
+                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100">
                 <div class="flex gap-1 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M5.25 5.497a.75.75 0 0 1-.75-.75V4A1.5 1.5 0 0 0 3 5.5v1h10v-1A1.5 1.5 0 0 0 11.5 4v.75a.75.75 0 0 1-1.5 0V4H6v.747a.75.75 0 0 1-.75.75M10 2.5H6v-.752a.75.75 0 1 0-1.5 0V2.5a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3v-.75a.75.75 0 0 0-1.5 0zM3 8v3.5A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5V8z" clip-rule="evenodd"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M5.25 5.497a.75.75 0 0 1-.75-.75V4A1.5 1.5 0 0 0 3 5.5v1h10v-1A1.5 1.5 0 0 0 11.5 4v.75a.75.75 0 0 1-1.5 0V4H6v.747a.75.75 0 0 1-.75.75M10 2.5H6v-.752a.75.75 0 1 0-1.5 0V2.5a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3v-.75a.75.75 0 0 0-1.5 0zM3 8v3.5A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5V8z"
+                            clip-rule="evenodd" />
+                    </svg>
                     <span>Programma</span>
                 </div>
-                <svg 
-                    x-show="shouldShowRegularIcon"
-                    class="h-4 w-4 " viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg x-show="shouldShowRegularIcon" class="h-4 w-4 " viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img 
-                    src="/i-spinner.svg" 
-                    alt="spinner" 
-                    class="h-5 w-5  animate-spin" 
-                    x-show="shouldShowSpinner" 
-                />
+                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5  animate-spin" x-show="shouldShowSpinner" />
             </a>
 
-            <a 
-                href="/pages/iscrizione.html"
-                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100"
-            >
+            <a href="/pages/iscrizione.html"
+                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100">
                 <div class="flex gap-1 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M12.238 3.64a1.854 1.854 0 0 0-1.629-1.628l-.8.8a3.37 3.37 0 0 1 1.63 1.628zM4.74 7.88l3.87-3.868a1.854 1.854 0 0 1 1.628 1.629L6.369 9.51a1.5 1.5 0 0 1-.814.418l-1.48.247.247-1.48a1.5 1.5 0 0 1 .418-.814M9.72.78l-2 2-4.04 4.04a3 3 0 0 0-.838 1.628L2.48 10.62a1 1 0 0 0 1.151 1.15l2.17-.36a3 3 0 0 0 1.629-.839l4.04-4.04 2-2c.18-.18.28-.423.28-.677A3.353 3.353 0 0 0 10.397.5c-.254 0-.498.1-.678.28M2.75 13a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5z" clip-rule="evenodd"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M12.238 3.64a1.854 1.854 0 0 0-1.629-1.628l-.8.8a3.37 3.37 0 0 1 1.63 1.628zM4.74 7.88l3.87-3.868a1.854 1.854 0 0 1 1.628 1.629L6.369 9.51a1.5 1.5 0 0 1-.814.418l-1.48.247.247-1.48a1.5 1.5 0 0 1 .418-.814M9.72.78l-2 2-4.04 4.04a3 3 0 0 0-.838 1.628L2.48 10.62a1 1 0 0 0 1.151 1.15l2.17-.36a3 3 0 0 0 1.629-.839l4.04-4.04 2-2c.18-.18.28-.423.28-.677A3.353 3.353 0 0 0 10.397.5c-.254 0-.498.1-.678.28M2.75 13a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5z"
+                            clip-rule="evenodd" />
+                    </svg>
                     <span>Iscrizione</span>
                 </div>
-                <svg 
-                    x-show="shouldShowRegularIcon"
-                    class="h-4 w-4 " viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg x-show="shouldShowRegularIcon" class="h-4 w-4 " viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img 
-                    src="/i-spinner.svg" 
-                    alt="spinner" 
-                    class="h-5 w-5  animate-spin" 
-                    x-show="shouldShowSpinner" 
-                />
+                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5  animate-spin" x-show="shouldShowSpinner" />
             </a>
 
-            <a 
-                href="/pages/sponsor.html"
-                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100"
-            >
+            <a href="/pages/sponsor.html"
+                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100">
                 <div class="flex gap-1 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="currentColor" d="M13 10a.75.75 0 0 1 .725.556 2.37 2.37 0 0 0 1.72 1.72.75.75 0 0 1 0 1.449 2.37 2.37 0 0 0-1.72 1.72.75.75 0 0 1-1.45 0 2.37 2.37 0 0 0-1.72-1.72.75.75 0 0 1 0-1.45 2.37 2.37 0 0 0 1.72-1.72l.043-.117A.75.75 0 0 1 13 10M7 0a1.5 1.5 0 0 1 1.48 1.253c.242 1.455.696 2.364 1.3 2.968.603.603 1.512 1.057 2.967 1.3a1.5 1.5 0 0 1 0 2.958c-1.455.243-2.364.697-2.968 1.3-.603.604-1.057 1.513-1.3 2.968a1.5 1.5 0 0 1-2.958 0c-.243-1.455-.697-2.364-1.3-2.968-.604-.603-1.513-1.057-2.968-1.3a1.5 1.5 0 0 1 0-2.958c1.455-.243 2.364-.697 2.968-1.3.603-.604 1.057-1.513 1.3-2.968l.028-.133A1.5 1.5 0 0 1 7 0m0 1.5C6.45 4.8 4.8 6.45 1.5 7c3.3.55 4.95 2.2 5.5 5.5.55-3.3 2.2-4.95 5.5-5.5C9.2 6.45 7.55 4.8 7 1.5"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M13 10a.75.75 0 0 1 .725.556 2.37 2.37 0 0 0 1.72 1.72.75.75 0 0 1 0 1.449 2.37 2.37 0 0 0-1.72 1.72.75.75 0 0 1-1.45 0 2.37 2.37 0 0 0-1.72-1.72.75.75 0 0 1 0-1.45 2.37 2.37 0 0 0 1.72-1.72l.043-.117A.75.75 0 0 1 13 10M7 0a1.5 1.5 0 0 1 1.48 1.253c.242 1.455.696 2.364 1.3 2.968.603.603 1.512 1.057 2.967 1.3a1.5 1.5 0 0 1 0 2.958c-1.455.243-2.364.697-2.968 1.3-.603.604-1.057 1.513-1.3 2.968a1.5 1.5 0 0 1-2.958 0c-.243-1.455-.697-2.364-1.3-2.968-.604-.603-1.513-1.057-2.968-1.3a1.5 1.5 0 0 1 0-2.958c1.455-.243 2.364-.697 2.968-1.3.603-.604 1.057-1.513 1.3-2.968l.028-.133A1.5 1.5 0 0 1 7 0m0 1.5C6.45 4.8 4.8 6.45 1.5 7c3.3.55 4.95 2.2 5.5 5.5.55-3.3 2.2-4.95 5.5-5.5C9.2 6.45 7.55 4.8 7 1.5" />
+                    </svg>
                     <span>Sponsor</span>
                 </div>
-                <svg 
-                    x-show="shouldShowRegularIcon"
-                    class="h-4 w-4 " viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg x-show="shouldShowRegularIcon" class="h-4 w-4 " viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img 
-                    src="/i-spinner.svg" 
-                    alt="spinner" 
-                    class="h-5 w-5  animate-spin" 
-                    x-show="shouldShowSpinner" 
-                />
+                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5  animate-spin" x-show="shouldShowSpinner" />
             </a>
 
-            <a 
-                href="/pages/privacy.html"
-                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100"
-            >
+            <a href="/pages/privacy.html"
+                class="flex items-center justify-between bg-white  px-5 py-4 text-sm font-semibold tracking-wide uppercase shadow-lg active:bg-slate-50 active:scale-[0.99] transition-all duration-100">
                 <div class="flex gap-1 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="m3.003 4.702 4.22-2.025a1.8 1.8 0 0 1 1.554 0l4.22 2.025a.89.89 0 0 1 .503.8V6a8.55 8.55 0 0 1-3.941 7.201l-.986.631a1.06 1.06 0 0 1-1.146 0l-.986-.63A8.55 8.55 0 0 1 2.5 6v-.498c0-.341.196-.652.503-.8m3.57-3.377L2.354 3.35A2.39 2.39 0 0 0 1 5.502V6a10.05 10.05 0 0 0 4.632 8.465l.986.63a2.56 2.56 0 0 0 2.764 0l.986-.63A10.05 10.05 0 0 0 15 6v-.498c0-.918-.526-1.755-1.354-2.152l-4.22-2.025a3.3 3.3 0 0 0-2.852 0M11.1 6.45a.75.75 0 1 0-1.2-.9L7.419 8.858 6.03 7.47a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.13-.08z" clip-rule="evenodd"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="m3.003 4.702 4.22-2.025a1.8 1.8 0 0 1 1.554 0l4.22 2.025a.89.89 0 0 1 .503.8V6a8.55 8.55 0 0 1-3.941 7.201l-.986.631a1.06 1.06 0 0 1-1.146 0l-.986-.63A8.55 8.55 0 0 1 2.5 6v-.498c0-.341.196-.652.503-.8m3.57-3.377L2.354 3.35A2.39 2.39 0 0 0 1 5.502V6a10.05 10.05 0 0 0 4.632 8.465l.986.63a2.56 2.56 0 0 0 2.764 0l.986-.63A10.05 10.05 0 0 0 15 6v-.498c0-.918-.526-1.755-1.354-2.152l-4.22-2.025a3.3 3.3 0 0 0-2.852 0M11.1 6.45a.75.75 0 1 0-1.2-.9L7.419 8.858 6.03 7.47a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.13-.08z"
+                            clip-rule="evenodd" />
+                    </svg>
                     <span>Privacy</span>
                 </div>
-                <svg 
-                    x-show="shouldShowRegularIcon"
-                    class="h-4 w-4 " viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2">
+                <svg x-show="shouldShowRegularIcon" class="h-4 w-4 " viewBox="0 0 16 16" fill="none"
+                    stroke="currentColor" stroke-width="2.2">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-                <img 
-                    src="/i-spinner.svg" 
-                    alt="spinner" 
-                    class="h-5 w-5  animate-spin" 
-                    x-show="shouldShowSpinner" 
-                />
+                <img src="/i-spinner.svg" alt="spinner" class="h-5 w-5  animate-spin" x-show="shouldShowSpinner" />
             </a>
 
         </nav>
@@ -189,7 +182,8 @@
         <!-- ── Footer ────────────────────────────────────────── -->
         <footer class="px-6 md:px-12 pb-10 text-center" x-data x-cloak>
             <p class="text-[14px]  tracking-wide">
-                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html" class="text-sky-700 underline-offset-2">Privacy policy</a>
+                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html"
+                    class="text-sky-700 underline-offset-2">Privacy policy</a>
             </p>
         </footer>
 
