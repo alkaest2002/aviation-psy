@@ -81,7 +81,7 @@
             "type": "public",
             "date": "28/10/2026",
             "startTime": "08:00",
-            "timeWindow": null,
+            "timeWindow": "08:00 - 14:30",
             "venue": {
                 "name": "Veneranda Biblioteca Ambrosiana",
                 "address": "Piazza Pio XI, 2<br/>20123 Milano (MI)"
@@ -133,7 +133,7 @@
                     "talks": null
                 },
                 {
-                    "timeWindow": null,
+                    "timeWindow": "09:50 - 10:45",
                     "duration": 55,
                     "title": "Panel 1 — Knowledge",
                     "description": null,
@@ -193,7 +193,7 @@
                     ]
                 },
                 {
-                    "timeWindow": null,
+                    "timeWindow": "10:45 - 11:40",
                     "duration": 75,
                     "title": "Panel 2 — Research",
                     "description": null,
