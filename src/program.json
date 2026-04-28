@@ -87,9 +87,21 @@
         },
         {
             "title": "Magg.",
+            "name": "Nardo A.",
+            "affiliation": "IMA Milano · Sezione Psichiatria",
+            "role": "Capo Sezione"
+        },
+        {
+            "title": "Magg.",
             "name": "Buonaiuto G.",
             "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
             "role": "Capo Sezione"
+        },
+         {
+            "title": "Cap.",
+            "name": "Erario R.",
+            "affiliation": "IMA Milano · Sezione Psichiatria",
+            "role": "Addetto"
         }
     ],
     "days": [
@@ -297,7 +309,7 @@
                         {
                             "timeWindow": "11:15 - 11:30",
                             "duration": 15,
-                            "title": "Stimolazione transcranica nei piloti militari: una proposta di ricerca",
+                            "title": "Neuromodulazione e human performance enhancement nel pilotaggio militare",
                             "description": null,
                             "authors": [
                                 {
