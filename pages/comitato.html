@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="it" class="w-full">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informazioni · III Convegno di Psicologia dell'Aviazione</title>
+    <meta name="color-scheme" content="light only">
+    <meta name="description"
+        content="III Convegno di Psicologia dell'Aviazione - Milano, 27 e 28 ottobre 2026. Iscrizioni entro 31/08/2026." />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="/src/main.js" type="module"></script>
+</head>
+
+<body class="min-h-dvh w-full overflow-x-hidden" x-data="spa" x-cloak>
+
+    <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
+
+        <!-- ── Hero ─────────────────────────────────────────── -->
+        <header x-data="header" x-bind="homeLink"
+            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer">
+            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl">
+            </div>
+            <div
+                class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl">
+            </div>
+
+            <div class="relative w-full">
+                <p
+                    class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
+                    III Convegno
+                </p>
+
+                <h1 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-white leading-tight">
+                    Psicologia dell'Aviazione
+                </h1>
+
+                <div class="mt-6 grid gap-2 text-sm text-sky-100/95">
+                    <span class="inline-flex items-center gap-2">
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
+                        </svg>
+                        27 e 28 ottobre 2026 · Milano
+                    </span>
+                    <span class="inline-flex items-center gap-2">
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
+                        </svg>
+                        ECM · professioni sanitarie
+                    </span>
+                    <a href="mailto:aeropsy@am.difesa.it"
+                        class="inline-flex items-center gap-2 hover:text-white transition-colors" @click.stop>
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M2 4.5A1.5 1.5 0 0 1 3.5 3h9A1.5 1.5 0 0 1 14 4.5v.072l-6 3.6-6-3.6V4.5Zm0 1.742V11.5A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5V6.242l-5.724 3.434a.5.5 0 0 1-.552 0L2 6.242Z" />
+                        </svg>
+                        aeropsy@am.difesa.it
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ── Content ───────────────────────────────────────── -->
+        <div class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-8" x-data="map">
+
+            <!-- Back link -->
+            <a href="/index.html"
+                class="inline-flex items-center gap-1.5 font-semibold uppercase active:opacity-70 transition-opacity text-sky-800">
+                <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                    stroke-width="2.4">
+                    <path d="M13 8H3M7 4l-4 4 4 4" />
+                </svg>
+                Home
+            </a>
+
+            <!-- ══ Comitato Scientifico ══ -->
+            <section class="flex flex-col gap-4">
+                <div
+                    class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+
+                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
+                        <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
+                        </svg>
+                        <span class="text-sm font-semibold uppercase">Comitato Scientifico</span>
+                    </div>
+
+                    <div class="divide-y divide-slate-100">
+                        <template x-for="(member, memberIndex) in $store.programStore.scientificCommittee"
+                            :key="memberIndex">
+                            <div class="px-5 py-4 flex items-start gap-2">
+                                <div
+                                    class="flex items-center justify-center bg-sky-50 border border-sky-200 rounded-full w-9 h-9 shrink-0 mt-0.5">
+                                    <svg class="h-4 w-4 text-sky-600" viewBox="0 0 16 16" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5 5.5a5 5 0 0 1 10 0 .75.75 0 0 1-.75.75H3.75A.75.75 0 0 1 3 13.5Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-0.5 min-w-0">
+                                    <p class="font-semibold leading-snug">
+                                        <span x-text="member.title"></span>
+                                        <span x-text="member.name"></span>
+                                    </p>
+                                    <p class="text-sm text-slate-500 leading-snug" x-text="`${member.affiliation} (member.role)`"></p>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- ── Footer ────────────────────────────────────────── -->
+        <footer class="px-6 md:px-12 pb-10 text-center" x-data x-cloak>
+            <p class="text-[14px] ">
+                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html"
+                    class="text-sky-700 underline-offset-2">Privacy policy</a>
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
