@@ -146,10 +146,15 @@
                                                     <div class="mt-2 flex flex-col gap-0.5 text-sm text-slate-500">
                                                         <template x-for="(author, ai) in talk.authors" :key="ai">
                                                             <div>
-                                                                <span class="font-semibold"
-                                                                    x-text="author.title ? author.title + ' ' + author.name : author.name"></span>
-                                                                <template x-if="author.affiliation">
-                                                                    <span x-text="'· ' + author.affiliation"></span>
+                                                                <span
+                                                                    class="font-semibold"
+                                                                    x-text="author.title ? author.title + ' ' + author.name : author.name"
+                                                                ></span>
+                                                                <template x-if="author.role">
+                                                                    <span x-text="`· (${author.role} ${author.affiliation})`"></span>
+                                                                </template>
+                                                                <template x-if="!author.role">
+                                                                    <span x-text="`· (${author.affiliation})`"></span>
                                                                 </template>
                                                             </div>
                                                         </template>
@@ -185,8 +190,11 @@
                                                     <div>
                                                         <span class="font-semibold"
                                                             x-text="author.title ? author.title + ' ' + author.name : author.name"></span>
-                                                        <template x-if="author.affiliation">
-                                                            <span x-text="'· ' + author.affiliation"></span>
+                                                        <template x-if="author.role">
+                                                            <span x-text="`· (${author.role} ${author.affiliation})`"></span>
+                                                        </template>
+                                                        <template x-if="!author.role">
+                                                            <span x-text="`· (${author.affiliation})`"></span>
                                                         </template>
                                                     </div>
                                                 </template>
