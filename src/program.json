@@ -57,7 +57,7 @@
         "maxParticipants": 100,
         "currentParticipants": 35,
         "ecm": {
-            "amount": 5,
+            "amount": 4,
             "validFor": [
                 "Medici",
                 "Psicologi",
@@ -295,7 +295,7 @@
                                     "title": "Prof.",
                                     "name": "Piccardi L.",
                                     "affiliation": "Università Sapienza Roma",
-                                    "role": "DipartimeWindownto di Psicologia"
+                                    "role": "Dipartimento di Psicologia"
                                 },
                                 {
                                     "title": "Col.",
@@ -353,7 +353,7 @@
                                     "title": "Prof.",
                                     "name": "Bruno G.",
                                     "affiliation": "Università Sapienza Roma",
-                                    "role": "DipartimeWindownto di Neuroscienze Umane"
+                                    "role": "Dipartimento di Neuroscienze Umane"
                                 }
                             ]
                         },
