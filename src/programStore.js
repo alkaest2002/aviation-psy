@@ -1,5 +1,8 @@
 import programJSON from "./program.json"
 
+// delete invitations
+delete programJSON.invitations;
+
 const _timeRangeFromEvents = (events) => {
     return `${events.at(0).timeWindow.split(" - ")[0]} - ${events.at(-1).timeWindow.split(" - ")[1]}`;
 };
