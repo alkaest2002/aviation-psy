@@ -246,6 +246,7 @@
                                     "email": null
                                 }
                             ],
+                            "status": "toBeConfirmed"
                         },
                         {
                             "eventType": "talk",
