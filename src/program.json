@@ -246,7 +246,7 @@
                                     "email": null
                                 }
                             ],
-                            "status": "toBeConfirmed"
+                            "status": "toBeDefined"
                         },
                         {
                             "eventType": "talk",
@@ -380,7 +380,7 @@
                             "eventType": "talk",
                             "timeWindow": "12:00 - 12:15",
                             "duration": 15,
-                            "title": "Titolo provvisorio per possibile contributo neuroscienze",
+                            "title": "Titolo da definire per possibile contributo neuroscienze",
                             "description": null,
                             "authors": [
                                 {
