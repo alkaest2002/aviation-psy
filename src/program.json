@@ -49,7 +49,7 @@
         "maxParticipants": 100,
         "currentParticipants": 35,
         "ecm": {
-            "amount": 4,
+            "amount": 5,
             "validFor": [
                 "Medici",
                 "Psicologi",
@@ -127,6 +127,12 @@
             "email": "emanuele.garzia@aeronautica.difesa.it"
         }
     ],
+    "paperExpirationDates": {
+        "submissionPersonalInfoDate": "30/06/2026",
+        "submissionAbstractDate": "30/06/2026",
+        "submissionFullPaperDate": "15/09/2026",
+        "submissionECMQuestionsDate": "15/09/2026"
+    },
     "days": [
         {
             "type": "invite-only",
@@ -151,28 +157,20 @@
                     "eventType": "check-in",
                     "timeWindow": "18:00 - 18:30",
                     "duration": 30,
-                    "title": "Accoglienza invitati",
-                    "description": null,
-                    "authors": null,
-                    "talks": null
+                    "title": "Accoglienza invitati"
                 },
                 {
-                    "eventType": "panel",
+                    "eventType": "symposium",
                     "timeWindow": "18:30 - 19:30",
                     "duration": 60,
                     "title": "Tavola rotonda",
-                    "description": "Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare.",
-                    "authors": null,
-                    "talks": null
+                    "description": "Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare."
                 },
                 {
                     "eventType": "dinner",
                     "timeWindow": "19:30 - 22:00",
                     "duration": 150,
-                    "title": "Cena di gala",
-                    "description": null,
-                    "authors": null,
-                    "talks": null
+                    "title": "Cena di gala"
                 }
             ]
         },
@@ -204,26 +202,19 @@
                     "eventType": "check-in",
                     "timeWindow": "08:00 - 08:50",
                     "duration": 50,
-                    "title": "Registrazione partecipanti",
-                    "description": null,
-                    "authors": null,
-                    "talks": null
+                    "title": "Registrazione partecipanti"
                 },
                 {
                     "eventType": "opening",
                     "timeWindow": "08:50 - 09:20",
                     "duration": 30,
-                    "title": "Saluti Autorità",
-                    "description": null,
-                    "authors": null,
-                    "talks": null
+                    "title": "Saluti Autorità"
                 },
                 {
-                    "eventType": "keynote",
+                    "eventType": "talk",
                     "timeWindow": "09:20 - 09:50",
                     "duration": 30,
                     "title": "Lectio Magistralis",
-                    "description": null,
                     "authors": [
                         {
                             "title": null,
@@ -233,15 +224,13 @@
                             "email": null
                         }
                     ],
-                    "talks": null
+                    "draft": true
                 },
                 {
                     "eventType": "panel",
                     "timeWindow": "09:50 - 10:45",
                     "duration": 55,
                     "title": "Panel 1 — Knowledge",
-                    "description": null,
-                    "authors": null,
                     "talks": [
                         {
                             "eventType": "talk",
@@ -256,7 +245,8 @@
                                     "role": null,
                                     "email": null
                                 }
-                            ]
+                            ],
+                            "draft": true
                         },
                         {
                             "eventType": "talk",
@@ -266,12 +256,13 @@
                             "authors": [
                                 {
                                     "title": "Dott.",
-                                    "name": "Furia A.",
+                                    "name": "Furia Antonello",
                                     "affiliation": "ENAC",
                                     "role": "Responsabile AMS",
                                     "email": "a.furia@enac.gov.it"
                                 }
-                            ]
+                            ],
+                            "draft": false
                         },
                         {
                             "eventType": "talk",
@@ -281,26 +272,26 @@
                             "authors": [
                                 {
                                     "title": "Ten. Col.",
-                                    "name": "Calanna P.",
+                                    "name": "Calanna Pierpaolo",
                                     "affiliation": "IMA Milano",
                                     "role": "Capo Sezione Psicologia Clinica",
                                     "email": "pierpaolo.calanna@aeronautica.difesa.it"
                                 },
                                 {
                                     "title": "Magg.",
-                                    "name": "Buonaiuto G.",
+                                    "name": "Buonaiuto Gaetano",
                                     "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
                                     "role": "Capo Sezione",
                                     "email": "gaetano.buonaiuto@aeronautica.difesa.it"
                                 }
-                            ]
+                            ],
+                            "draft": false
                         },
                         {
-                            "eventType": "talk",
+                            "eventType": "questionTime",
                             "timeWindow": "10:35 - 10:45",
                             "duration": 10,
-                            "title": "Question time panel",
-                            "authors": null
+                            "title": "Question time panel"
                         }
                     ]
                 },
@@ -309,71 +300,67 @@
                     "timeWindow": "10:45 - 11:40",
                     "duration": 75,
                     "title": "Panel 2 — Research",
-                    "description": null,
-                    "authors": null,
                     "talks": [
                         {
                             "eventType": "talk",
                             "timeWindow": "10:45 - 11:00",
                             "duration": 15,
                             "title": "Esiti del questionario OSES-2: La percezione della Safety Culture e della Fatica Operazionale nei reparti di volo",
-                            "description": null,
                             "authors": [
                                 {
                                     "title": "Gen.",
-                                    "name": "Tarantino P.",
+                                    "name": "Tarantino Paolo",
                                     "affiliation": "Ispettorato Sicurezza Volo",
                                     "role": "Comandante",
                                     "email": "paolo.tarantino@aeronautica.difesa.it"
                                 }
-                            ]
+                            ],
+                            "draft": false
                         },
                         {
                             "eventType": "talk",
                             "timeWindow": "11:00 - 11:15",
                             "duration": 15,
                             "title": "Titolo da definire per possibile contributo neuroscienze",
-                            "description": null,
                             "authors": [
                                 {
-                                    "title": "Prof.",
-                                    "name": "Piccardi L.",
+                                    "title": "Prof.ssa",
+                                    "name": "Piccardi Laura",
                                     "affiliation": "Università Sapienza Roma",
                                     "role": "Dipartimento di Psicologia",
                                     "email": "laura.piccardi@uniroma1.it"
                                 },
                                 {
                                     "title": "Col.",
-                                    "name": "Verde P.",
+                                    "name": "Verde Paola",
                                     "affiliation": "RMAS Pratica di Mare",
                                     "role": "Capo Reparto Medicina Aeronautica e Spaziale",
                                     "email": "paola.verde@aeronautica.difesa.it"
                                 }
-                            ]
+                            ],
+                            "draft": true
                         },
                         {
                             "eventType": "talk",
                             "timeWindow": "11:15 - 11:30",
                             "duration": 15,
                             "title": "Neuromodulazione e human performance enhancement nel pilotaggio militare",
-                            "description": null,
                             "authors": [
                                 {
                                     "title": "Sten.",
-                                    "name": "Silvestri M. C.",
+                                    "name": "Silvestri Maria Catena",
                                     "affiliation": "Centro Psicologia AM · Ufficio Areale Sud",
                                     "role": "Addetto Sezione Psicologia Clinica",
                                     "email": "maria.silverstri@aeronautica.difesa.it"
                                 }
-                            ]
+                            ],
+                            "draft": false
                         },
                         {
-                            "eventType": "talk",
+                            "eventType": "questionTime",
                             "timeWindow": "11:30 - 11:40",
                             "duration": 10,
-                            "title": "Question time panel",
-                            "description": null,
-                            "authors": null
+                            "title": "Question time panel"
                         }
                     ]
                 },
@@ -381,18 +368,13 @@
                     "eventType": "break",
                     "timeWindow":  "11:40 - 12:00",
                     "duration": 20,
-                    "title": "Pausa caffè",
-                    "description": null,
-                    "authors": null,
-                    "talks": null   
+                    "title": "Pausa caffè"
                 },
                 {
                     "eventType": "panel",
                     "timeWindow": "12:00 - 13:30",
                     "duration": 90,
                     "title": "Panel 3 — Applications",
-                    "description": null,
-                    "authors": null,
                     "talks": [
                         {
                             "eventType": "talk",
@@ -403,12 +385,13 @@
                             "authors": [
                                 {
                                     "title": "Prof.",
-                                    "name": "Bruno G.",
+                                    "name": "Bruno Giuseppe",
                                     "affiliation": "Università Sapienza Roma",
                                     "role": "Dipartimento di Neuroscienze Umane",
                                     "email": "giuseppe.bruno@uniroma1.it"
                                 }
-                            ]
+                            ],
+                            "draft": true
                         },
                         {
                             "eventType": "talk",
@@ -419,19 +402,20 @@
                             "authors": [
                                 {
                                     "title": "Cap.",
-                                    "name": "Palermo I.",
+                                    "name": "Palermo Irene",
                                     "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
                                     "role": "Addetto",
                                     "email": "irene1.palermo@aeronautica.difesa.it"
                                 },
                                 {
                                     "title": "Cap.",
-                                    "name": "D'Angelo A.",
+                                    "name": "D'Angelo Angelica",
                                     "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
                                     "role": "Addetto",
                                     "email": "angelica.dangelo@aeronautica.difesa.it"
                                 }
-                            ]
+                            ],
+                            "draft": false
                         },
                         {
                             "eventType": "talk",
@@ -442,44 +426,42 @@
                             "authors": [
                                 {
                                     "title": "Cap.",
-                                    "name": "Giua E.",
+                                    "name": "Giua Eleonora",
                                     "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
                                     "role": "Addetto",
                                     "email": "eleonora.giua@aeronautica.difesa.it"
                                 }
-                            ]
+                            ],
+                            "draft": false
                         },
                         {
                             "eventType": "talk",
                             "timeWindow": "12:45 - 13:00",
                             "duration": 15,
                             "title": "Il Fattore umano nelle evacuazioni mediche aeree con pazienti a disabilità non motoria",
-                            "description": null,
                             "authors": [
                                 {
                                     "title": "Cap.",
-                                    "name": "Ceci V.",
+                                    "name": "Ceci Valeria",
                                     "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
                                     "role": "Addetto",
                                     "email":"valeria.ceci@aeronautica.difesa.it"
                                 },
                                 {
                                     "title": "STen.",
-                                    "name": "Busà C.",
+                                    "name": "Busà Chiara",
                                     "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
                                     "role": "Addetto",
                                     "email": "chiara.busa@aeronautica.difesa.it"
                                 }
-                            ]
+                            ],
+                            "draft": false
                         },
                         {
                             "eventType": "questionTime",
                             "timeWindow": "13:00 - 13:30",
                             "duration": 30,
-                            "title": "Question time panel",
-                            "description": null,
-                            "authors": null,
-                            "talks": null
+                            "title": "Question time panel"
                         }
                     ]
                 },
@@ -487,10 +469,7 @@
                     "eventType": "conclusion",
                     "timeWindow": "13:30 - 14:30",
                     "duration": 60,
-                    "title": "Conclusione convegno + ECM",
-                    "description": null,
-                    "authors": null,
-                    "talks": null
+                    "title": "Conclusione convegno + ECM"
                 }
             ]
         }

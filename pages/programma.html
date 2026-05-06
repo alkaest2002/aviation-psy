@@ -150,12 +150,14 @@
                                                                     class="font-semibold"
                                                                     x-text="author.title ? author.title + ' ' + author.name : author.name"
                                                                 ></span>
-                                                                <template x-if="author.role">
-                                                                    <span x-text="`· (${author.role} ${author.affiliation})`"></span>
-                                                                </template>
-                                                                <template x-if="!author.role">
-                                                                    <span x-text="`· (${author.affiliation})`"></span>
-                                                                </template>
+                                                                <span x-show="author.affiliation">
+                                                                    <template x-if="author.role">
+                                                                        <span x-text="`· (${author.role} ${author.affiliation})`"></span>
+                                                                    </template>
+                                                                    <template x-if="!author.role">
+                                                                        <span x-text="`· (${author.affiliation})`"></span>
+                                                                    </template>
+                                                                </span>
                                                             </div>
                                                         </template>
                                                     </div>
@@ -189,13 +191,16 @@
                                                 <template x-for="(author, ai) in event.authors" :key="ai">
                                                     <div>
                                                         <span class="font-semibold"
-                                                            x-text="author.title ? author.title + ' ' + author.name : author.name"></span>
-                                                        <template x-if="author.role">
-                                                            <span x-text="`· (${author.role} ${author.affiliation})`"></span>
-                                                        </template>
-                                                        <template x-if="!author.role">
-                                                            <span x-text="`· (${author.affiliation})`"></span>
-                                                        </template>
+                                                            x-text="author.title ? author.title + ' ' + author.name : author.name">
+                                                        </span>
+                                                        <span x-show="author.affiliation">
+                                                            <template x-if="author.role">
+                                                                <span x-text="`· (${author.role} ${author.affiliation})`"></span>
+                                                            </template>
+                                                            <template x-if="!author.role">
+                                                                <span x-text="`· (${author.affiliation})`"></span>
+                                                            </template>
+                                                        </span>
                                                     </div>
                                                 </template>
                                             </div>
