@@ -219,12 +219,12 @@
                         {
                             "title": null,
                             "name": "Autore da definire",
-                            "affiliation": "",
+                            "affiliation": null,
                             "role": null,
                             "email": null
                         }
                     ],
-                    "draft": true
+                    "status": "toBeDefined"
                 },
                 {
                     "eventType": "panel",
@@ -246,7 +246,6 @@
                                     "email": null
                                 }
                             ],
-                            "draft": true
                         },
                         {
                             "eventType": "talk",
@@ -262,7 +261,7 @@
                                     "email": "a.furia@enac.gov.it"
                                 }
                             ],
-                            "draft": false
+                            "status": "toBeConfirmed"
                         },
                         {
                             "eventType": "talk",
@@ -285,7 +284,7 @@
                                     "email": "gaetano.buonaiuto@aeronautica.difesa.it"
                                 }
                             ],
-                            "draft": false
+                            "status": "final"
                         },
                         {
                             "eventType": "questionTime",
@@ -315,7 +314,7 @@
                                     "email": "paolo.tarantino@aeronautica.difesa.it"
                                 }
                             ],
-                            "draft": false
+                            "status": "toBeConfirmed"
                         },
                         {
                             "eventType": "talk",
@@ -338,7 +337,7 @@
                                     "email": "paola.verde@aeronautica.difesa.it"
                                 }
                             ],
-                            "draft": true
+                            "status": "toBeDefined"
                         },
                         {
                             "eventType": "talk",
@@ -354,7 +353,7 @@
                                     "email": "maria.silverstri@aeronautica.difesa.it"
                                 }
                             ],
-                            "draft": false
+                            "status": "final"
                         },
                         {
                             "eventType": "questionTime",
@@ -391,7 +390,7 @@
                                     "email": "giuseppe.bruno@uniroma1.it"
                                 }
                             ],
-                            "draft": true
+                            "status": "toBeDefined"
                         },
                         {
                             "eventType": "talk",
@@ -415,7 +414,7 @@
                                     "email": "angelica.dangelo@aeronautica.difesa.it"
                                 }
                             ],
-                            "draft": false
+                            "status": "toBeConfirmed"
                         },
                         {
                             "eventType": "talk",
@@ -432,7 +431,7 @@
                                     "email": "eleonora.giua@aeronautica.difesa.it"
                                 }
                             ],
-                            "draft": false
+                            "status": "toBeConfirmed"
                         },
                         {
                             "eventType": "talk",
@@ -455,7 +454,7 @@
                                     "email": "chiara.busa@aeronautica.difesa.it"
                                 }
                             ],
-                            "draft": false
+                            "status": "toBeConfirmed"
                         },
                         {
                             "eventType": "questionTime",
