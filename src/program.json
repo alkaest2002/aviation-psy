@@ -163,8 +163,7 @@
                     "eventType": "symposium",
                     "timeWindow": "18:30 - 19:30",
                     "duration": 60,
-                    "title": "Tavola rotonda",
-                    "description": "Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare."
+                    "title": "Tavola rotonda: Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare."
                 },
                 {
                     "eventType": "dinner",
@@ -381,7 +380,6 @@
                             "timeWindow": "12:00 - 12:15",
                             "duration": 15,
                             "title": "Titolo da definire per possibile contributo neuroscienze",
-                            "description": null,
                             "authors": [
                                 {
                                     "title": "Prof.",
@@ -398,7 +396,6 @@
                             "timeWindow": "12:15 - 12:30",
                             "duration": 15,
                             "title": "Lo psicologo dell'aviazione nei trasporti medici umanitari da aree di conflitto",
-                            "description": null,
                             "authors": [
                                 {
                                     "title": "Cap.",
@@ -422,7 +419,6 @@
                             "timeWindow": "12:30 - 12:45",
                             "duration": 15,
                             "title": "Il ruolo dello psicologo nella revisione del profilo professionale dei piloti militari",
-                            "description": null,
                             "authors": [
                                 {
                                     "title": "Cap.",
