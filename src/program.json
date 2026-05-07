@@ -37,13 +37,13 @@
         "startDate": "03/08/2026",
         "endDate": "30/09/2026",
         "fee": {
-            "earlyBird": {
+            "military": {
                 "amount": "0,00 EUR",
-                "deadline": "31/08/2026"
+                "deadline": "30/09/2026"
             },
-            "regular": {
-                "amount": "0,00 EUR",
-                "deadline": "15/09/2026"
+            "civil": {
+                "amount": "50,00 EUR",
+                "deadline": "30/09/2026"
             }
         },
         "maxParticipants": 100,

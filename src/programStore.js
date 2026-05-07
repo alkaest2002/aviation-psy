@@ -40,6 +40,7 @@ export const programStore = () => ({
             let cursor = day.startTime;
 
             day.events.forEach(event => {
+                
                 if (event.talks?.length) {
 
                     let talkCursor = cursor;
