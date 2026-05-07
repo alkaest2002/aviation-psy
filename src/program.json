@@ -163,7 +163,7 @@
                     "eventType": "symposium",
                     "timeWindow": "18:30 - 19:30",
                     "duration": 60,
-                    "title": "Tavola rotonda: Verso il futuro del settore: novità normative, organizzative e convergenze strategiche tra mondo civile e militare."
+                    "title": "Tavola rotonda: Verso il futuro del settore: nuovi assetti, nuovi strumenti, nuove prospettive."
                 },
                 {
                     "eventType": "dinner",
@@ -199,19 +199,19 @@
             "events": [
                 {
                     "eventType": "check-in",
-                    "timeWindow": "08:00 - 08:50",
-                    "duration": 50,
+                    "timeWindow": "08:00 - 08:30",
+                    "duration": 30,
                     "title": "Registrazione partecipanti"
                 },
                 {
                     "eventType": "opening",
-                    "timeWindow": "08:50 - 09:20",
+                    "timeWindow": "08:30 - 09:00",
                     "duration": 30,
                     "title": "Saluti Autorità"
                 },
                 {
                     "eventType": "talk",
-                    "timeWindow": "09:20 - 09:50",
+                    "timeWindow": "09:00 - 09:30",
                     "duration": 30,
                     "title": "Lectio Magistralis",
                     "authors": [
@@ -227,13 +227,13 @@
                 },
                 {
                     "eventType": "panel",
-                    "timeWindow": "09:50 - 10:45",
-                    "duration": 55,
+                    "timeWindow": "09:30 - 10:30",
+                    "duration": 60,
                     "title": "Panel 1 — Knowledge",
                     "talks": [
                         {
                             "eventType": "talk",
-                            "timeWindow": "09:50 - 10:05",
+                            "timeWindow": "09:30 - 09:45",
                             "duration": 15,
                             "title": "Psicologia dell'aviazione: formare i professionisti del cielo, tra evidenza scientifica e pratica operativa",
                             "authors": [
@@ -249,7 +249,7 @@
                         },
                         {
                             "eventType": "talk",
-                            "timeWindow": "10:05 - 10:20",
+                            "timeWindow": "09:45 - 10:00",
                             "duration": 15,
                             "title": "Definire gli standard professionali dello psicologo dell'aviazione",
                             "authors": [
@@ -265,7 +265,7 @@
                         },
                         {
                             "eventType": "talk",
-                            "timeWindow": "10:20 - 10:35",
+                            "timeWindow": "10:00 - 10:15",
                             "duration": 15,
                             "title": "Aviation Psychology: traiettorie tematiche nella letteratura scientifica. Un approccio di topic extraction modelling mediante BERTopic",
                             "authors": [
@@ -288,21 +288,27 @@
                         },
                         {
                             "eventType": "questionTime",
-                            "timeWindow": "10:35 - 10:45",
-                            "duration": 10,
+                            "timeWindow": "10:15 - 10:30",
+                            "duration": 15,
                             "title": "Question time panel"
                         }
                     ]
                 },
                 {
+                    "eventType": "break",
+                    "timeWindow":  "10:30 - 11:00",
+                    "duration": 30,
+                    "title": "Pausa caffè"
+                },
+                {
                     "eventType": "panel",
-                    "timeWindow": "10:45 - 11:40",
+                    "timeWindow": "11:00 - 12:00",
                     "duration": 75,
                     "title": "Panel 2 — Research",
                     "talks": [
                         {
                             "eventType": "talk",
-                            "timeWindow": "10:45 - 11:00",
+                            "timeWindow": "11:00 - 11:15",
                             "duration": 15,
                             "title": "Esiti del questionario OSES-2: La percezione della Safety Culture e della Fatica Operazionale nei reparti di volo",
                             "authors": [
@@ -318,7 +324,7 @@
                         },
                         {
                             "eventType": "talk",
-                            "timeWindow": "11:00 - 11:15",
+                            "timeWindow": "11:15 - 11:30",
                             "duration": 15,
                             "title": "Titolo da definire per possibile contributo neuroscienze",
                             "authors": [
@@ -341,7 +347,7 @@
                         },
                         {
                             "eventType": "talk",
-                            "timeWindow": "11:15 - 11:30",
+                            "timeWindow": "11:30 - 11:45",
                             "duration": 15,
                             "title": "Neuromodulazione e human performance enhancement nel pilotaggio militare",
                             "authors": [
@@ -357,27 +363,27 @@
                         },
                         {
                             "eventType": "questionTime",
-                            "timeWindow": "11:30 - 11:40",
-                            "duration": 10,
+                            "timeWindow": "11:45 - 12:00",
+                            "duration": 15,
                             "title": "Question time panel"
                         }
                     ]
                 },
                 {
                     "eventType": "break",
-                    "timeWindow":  "11:40 - 12:00",
-                    "duration": 20,
+                    "timeWindow":  "12:00 - 12:30",
+                    "duration": 30,
                     "title": "Pausa caffè"
                 },
                 {
                     "eventType": "panel",
-                    "timeWindow": "12:00 - 13:30",
-                    "duration": 90,
+                    "timeWindow": "12:30 - 13:45",
+                    "duration": 75,
                     "title": "Panel 3 — Applications",
                     "talks": [
                         {
                             "eventType": "talk",
-                            "timeWindow": "12:00 - 12:15",
+                            "timeWindow": "12:30 - 12:45",
                             "duration": 15,
                             "title": "Titolo da definire per possibile contributo neuroscienze",
                             "authors": [
@@ -393,7 +399,7 @@
                         },
                         {
                             "eventType": "talk",
-                            "timeWindow": "12:15 - 12:30",
+                            "timeWindow": "12:45 - 13:00",
                             "duration": 15,
                             "title": "Lo psicologo dell'aviazione nei trasporti medici umanitari da aree di conflitto",
                             "authors": [
@@ -416,7 +422,7 @@
                         },
                         {
                             "eventType": "talk",
-                            "timeWindow": "12:30 - 12:45",
+                            "timeWindow": "13:00 - 13:15",
                             "duration": 15,
                             "title": "Il ruolo dello psicologo nella revisione del profilo professionale dei piloti militari",
                             "authors": [
@@ -432,7 +438,7 @@
                         },
                         {
                             "eventType": "talk",
-                            "timeWindow": "12:45 - 13:00",
+                            "timeWindow": "13:15 - 13:30",
                             "duration": 15,
                             "title": "Il Fattore umano nelle evacuazioni mediche aeree con pazienti a disabilità non motoria",
                             "authors": [
@@ -462,16 +468,16 @@
                         },
                         {
                             "eventType": "questionTime",
-                            "timeWindow": "13:00 - 13:30",
-                            "duration": 30,
+                            "timeWindow": "13:30 - 13:45",
+                            "duration": 15,
                             "title": "Question time panel"
                         }
                     ]
                 },
                 {
                     "eventType": "conclusion",
-                    "timeWindow": "13:30 - 14:30",
-                    "duration": 60,
+                    "timeWindow": "13:45 - 14:30",
+                    "duration": 45,
                     "title": "Conclusione convegno + ECM"
                 }
             ]
