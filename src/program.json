@@ -385,7 +385,7 @@
                             "eventType": "talk",
                             "timeWindow": "12:30 - 12:45",
                             "duration": 15,
-                            "title": "Titolo da definire per possibile contributo neuroscienze",
+                            "title": "Il funzionamento cognitivo e le sue implicazioni sulle performance operative in aviazione",
                             "authors": [
                                 {
                                     "title": "Prof.",
@@ -395,7 +395,7 @@
                                     "email": "giuseppe.bruno@uniroma1.it"
                                 }
                             ],
-                            "status": "toBeDefined"
+                            "status": "toBeConfirmed"
                         },
                         {
                             "eventType": "talk",
