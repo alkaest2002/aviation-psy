@@ -13,7 +13,9 @@ export const map = () => ({
     },
 
     mapLabel() {
-        return this.isIOS ? 'apri in apple maps' : 'apri in google maps'
+        return this.isIOS 
+            ? 'apri in apple maps' 
+            : 'apri in google maps'
     }
 
 })
