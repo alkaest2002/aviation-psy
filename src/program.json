@@ -67,31 +67,31 @@
         {
             "title": "Ten. Col. CSArs",
             "name": "Deiana S.",
-            "affiliation": "Ufficio Psicologia Areale Centro",
-            "role": "Capo Sezione"
+            "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
+            "role": "Capo"
         },
         {
             "title": "Ten. Col. CSArs",
             "name": "Calanna P.",
-            "affiliation": "IMA Milano · Sezione Psicologia Clinica",
-            "role": "Capo Sezione"
+            "affiliation": "Sezione Psicologia Clinica · IMA Milano",
+            "role": "Capo"
         },
         {
             "title": "Magg CSArn",
             "name": "Nardo A.",
-            "affiliation": "IMA Milano · Sezione Psichiatria",
-            "role": "Capo Sezione"
+            "affiliation": "Sezione Psichiatria · IMA Milano",
+            "role": "Capo"
         },
         {
             "title": "Magg. CSArs",
             "name": "Buonaiuto G.",
-            "affiliation": "Ufficio Psicologia Areale Nord",
-            "role": "Capo Sezione"
+            "affiliation": "Ufficio Areale Nord · Centro di Psicologia AM",
+            "role": "Capo"
         },
          {
             "title": "Cap. CSArn",
             "name": "Erario R.",
-            "affiliation": "IMA Milano · Sezione Psichiatria",
+            "affiliation": "Sezione Psichiatria · IMA Milano",
             "role": "Addetto"
         }
     ],
@@ -112,7 +112,7 @@
             "name": "Achille Fernando Cazzaniga Cazzaniga",
             "mode": "formal",
             "organization": "Comando Logistico AM",
-            "role": "Capo del Servizio Sanitario AM",
+            "role": "Comandante",
             "address": "Viale dell'Università, 4 - 00185 Roma (RM)",
             "email": "achille.cazzaniga@aeronautica.difesa.it"
         },
@@ -122,7 +122,7 @@
             "mode": "informal",
             "name": "Emanuele Garzia",
             "organization": "Servizio Sanitario AM",
-            "role": "Capo del Servizio Sanitario AM",
+            "role": "Capo",
             "address": "Viale dell'Università, 4 - 00185 Roma (RM)",
             "email": "emanuele.garzia@aeronautica.difesa.it"
         }
@@ -272,14 +272,14 @@
                                 {
                                     "title": "Ten. Col.",
                                     "name": "Calanna Pierpaolo",
-                                    "affiliation": "IMA Milano",
-                                    "role": "Capo Sezione Psicologia Clinica",
+                                    "affiliation": "Sezione Psicologia Clinica · IMA Milano",
+                                    "role": "Capo",
                                     "email": "pierpaolo.calanna@aeronautica.difesa.it"
                                 },
                                 {
                                     "title": "Magg.",
                                     "name": "Buonaiuto Gaetano",
-                                    "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
+                                    "affiliation": "Ufficio Areale Nord · Centro di Psicologia AM",
                                     "role": "Capo Sezione",
                                     "email": "gaetano.buonaiuto@aeronautica.difesa.it"
                                 }
@@ -331,15 +331,15 @@
                                 {
                                     "title": "Prof.ssa",
                                     "name": "Piccardi Laura",
-                                    "affiliation": "Università Sapienza Roma",
-                                    "role": "Dipartimento di Psicologia",
+                                    "affiliation": "Dipartimento di Psicologia · Università Sapienza Roma",
+                                    "role": null,
                                     "email": "laura.piccardi@uniroma1.it"
                                 },
                                 {
                                     "title": "Col.",
                                     "name": "Verde Paola",
-                                    "affiliation": "RMAS Pratica di Mare",
-                                    "role": "Capo Reparto Medicina Aeronautica e Spaziale",
+                                    "affiliation": "Reparto Medicina Aeronautica e Spaziale · RMAS Pratica di Mare",
+                                    "role": "Capo",
                                     "email": "paola.verde@aeronautica.difesa.it"
                                 }
                             ],
@@ -354,7 +354,7 @@
                                 {
                                     "title": "STen.",
                                     "name": "Silvestri Maria Catena",
-                                    "affiliation": "Centro Psicologia AM · Ufficio Areale Sud",
+                                    "affiliation": "Ufficio Areale Sud · Centro di Psicologia AM",
                                     "role": "Addetto",
                                     "email": "maria.silverstri@aeronautica.difesa.it"
                                 }
@@ -390,8 +390,8 @@
                                 {
                                     "title": "Prof.",
                                     "name": "Bruno Giuseppe",
-                                    "affiliation": "Università Sapienza Roma",
-                                    "role": "Dipartimento di Neuroscienze Umane",
+                                    "affiliation": "Dipartimento di Neuroscienze Umane · Università Sapienza Roma",
+                                    "role": null,
                                     "email": "giuseppe.bruno@uniroma1.it"
                                 }
                             ],
@@ -406,14 +406,14 @@
                                 {
                                     "title": "Cap.",
                                     "name": "Palermo Irene",
-                                    "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
+                                    "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
                                     "role": "Addetto",
                                     "email": "irene1.palermo@aeronautica.difesa.it"
                                 },
                                 {
                                     "title": "Cap.",
                                     "name": "D'Angelo Angelica",
-                                    "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
+                                    "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
                                     "role": "Addetto",
                                     "email": "angelica.dangelo@aeronautica.difesa.it"
                                 }
@@ -429,7 +429,7 @@
                                 {
                                     "title": "Cap.",
                                     "name": "Giua Eleonora",
-                                    "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
+                                    "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
                                     "role": "Addetto",
                                     "email": "eleonora.giua@aeronautica.difesa.it"
                                 }
@@ -445,21 +445,21 @@
                                 {
                                     "title": "Cap.",
                                     "name": "Ceci Valeria",
-                                    "affiliation": "Centro Psicologia AM · Ufficio Areale Centro",
+                                    "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
                                     "role": "Addetto",
                                     "email":"valeria.ceci@aeronautica.difesa.it"
                                 },
                                 {
                                     "title": "STen.",
                                     "name": "Busà Chiara",
-                                    "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
+                                    "affiliation": "Ufficio Areale Nord · Centro di Psicologia AM",
                                     "role": "Addetto",
                                     "email": "chiara.busa@aeronautica.difesa.it"
                                 },
                                 {
                                     "title": "STen.",
                                     "name": "Testa Francesca",
-                                    "affiliation": "Centro Psicologia AM · Ufficio Areale Nord",
+                                    "affiliation": "Ufficio Areale Nord · Centro di Psicologia AM",
                                     "role": "Addetto",
                                     "email": "francesca.testa@aeronautica.difesa.it"
                                 }
