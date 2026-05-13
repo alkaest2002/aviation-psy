@@ -137,8 +137,8 @@
         {
             "type": "invite-only",
             "date": "27/10/2026",
-            "startTime": "18:00",
-            "timeWindow": "18:00 - 22:00",
+            "startTime": "15:00",
+            "timeWindow": "15:00 - 22:00",
             "venue": {
                 "name": "Comando Squadra Aerea",
                 "address": "Piazza Ermete Novelli, 1<br/>20129 Milano"
@@ -148,16 +148,16 @@
                 "dress code militari": "uniforme ordinaria"
             },
             "eventsBrief": [
-                "Accoglienza invitati",
+                "Accoglienza invitati ed evento culturale di benvenuto",
                 "Tavola rotonda",
                 "Cena di gala"
             ],
             "events": [
                 {
                     "eventType": "check-in",
-                    "timeWindow": "18:00 - 18:30",
-                    "duration": 30,
-                    "title": "Accoglienza invitati"
+                    "timeWindow": "15:00 - 18:30",
+                    "duration": 210,
+                    "title": "Accoglienza invitati ed evento culturale di benvenuto"
                 },
                 {
                     "eventType": "symposium",
