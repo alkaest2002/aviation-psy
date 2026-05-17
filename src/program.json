@@ -31,7 +31,7 @@
         "websiteUrl": "https://www.achelois.eu",
         "privacyUrl": "https://www.achelois.eu/privacy-cookie-policy/",
         "registrationUrl": "https://www.achelois.eu/",
-        "address": "Sede legale: Via Larga, 8 · 20122 Milano<br>Sede operativa: Via Residenza Portici 2, Milano2 · Segrate (MI)<br>P. IVA e C.F. 08655300963"
+        "address": "Sede legale: Via Larga, 8 · 20122 Milano<br />Sede operativa: Via Residenza Portici 2, Milano · Segrate (MI)<br />P. IVA e C.F. 08655300963"
     },
     "registration": {
         "startDate": "03/08/2026",
@@ -141,7 +141,7 @@
             "timeWindow": "15:00 - 22:00",
             "venue": {
                 "name": "Comando Squadra Aerea",
-                "address": "Piazza Ermete Novelli, 1<br/>20129 Milano"
+                "address": "Piazza Ermete Novelli, 1<br />20129 Milano"
             },
             "dressCode": {
                 "dress code civili": "abito da sera",
@@ -180,7 +180,7 @@
             "timeWindow": "08:00 - 14:30",
             "venue": {
                 "name": "Veneranda Biblioteca Ambrosiana",
-                "address": "Piazza Pio XI, 2<br/>20123 Milano"
+                "address": "Piazza Pio XI, 2<br />20123 Milano"
             },
             "dressCode": {
                 "dress code civili": "suggerito business casual",
