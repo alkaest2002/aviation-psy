@@ -25,7 +25,7 @@ const _assertTimeWindow = (entity, computed) => {
             `  found:    "${entity.timeWindow}"\n` +
             `  computed: "${computed}"\n`,
             entity
-        );
+        )
     }
 };
 
@@ -40,7 +40,7 @@ export const programStore = () => ({
             let cursor = day.startTime;
 
             day.events.forEach(event => {
-                
+
                 if (event.talks?.length) {
 
                     let talkCursor = cursor;
