@@ -11,6 +11,16 @@ export const spa = () => ({
             const a = e.target.closest("a[href]");
             if (!a || a.origin !== location.origin || a.target || e.metaKey
                 || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+
+            // Let the browser handle downloads and explicitly-external links.
+            if (a.hasAttribute("download") || a.rel === "external") return;
+
+            // In-page anchors (same path + query, differing only by hash)
+            // should scroll natively without a fetch + DOM swap.
+            const url = new URL(a.href, location.origin);
+            if (url.hash && url.pathname === location.pathname
+                && url.search === location.search) return;
+
             e.preventDefault();
             this._go(a.href, true);
         };
@@ -36,8 +46,8 @@ export const spa = () => ({
     },
 
     shouldShowSpinner() {
-        return this.isLoading
-            && this.href?.includes(this.$el.closest("a").getAttribute("href"));
+        const link = this.$el.closest("a");
+        return this.isLoading && !!link && this.href?.includes(link.getAttribute("href"));
     },
 
     shouldShowRegularIcon() {
