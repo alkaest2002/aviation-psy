@@ -139,9 +139,10 @@
             "date": "27/10/2026",
             "startTime": "15:00",
             "timeWindow": "15:00 - 22:00",
+            "maxParticipants": 50,
             "venue": {
-                "name": "Air Squadron Command",
-                "address": "Piazza Ermete Novelli, 1<br />20129 Milan"
+                "name": "To be defined",
+                "address": "address not available"
             },
             "dressCode": {
                 "dress code civili": "evening attire",
@@ -178,9 +179,10 @@
             "date": "28/10/2026",
             "startTime": "08:00",
             "timeWindow": "08:00 - 14:30",
+            "maxParticipants": 100,
             "venue": {
-                "name": "Veneranda Biblioteca Ambrosiana",
-                "address": "Piazza Pio XI, 2<br />20123 Milan"
+                "name": "To be defined",
+                "address": "address not available"
             },
             "dressCode": {
                 "dress code civili": "business casual recommended",
@@ -216,9 +218,9 @@
                     "title": "Lectio Magistralis",
                     "authors": [
                         {
-                            "title": null,
-                            "name": "Author to be defined",
-                            "affiliation": null,
+                            "title": "Professor",
+                            "name": "",
+                            "affiliation": "Catholic University of the Sacred Heart",
                             "role": null,
                             "email": null
                         }
@@ -238,9 +240,9 @@
                             "title": "Aviation psychology: training the professionals of the sky, between scientific evidence and operational practice",
                             "authors": [
                                 {
-                                    "title": null,
-                                    "name": "Author to be defined",
-                                    "affiliation": null,
+                                    "title": "Professor",
+                                    "name": "",
+                                    "affiliation": "Catholic University of the Sacred Heart",
                                     "role": null,
                                     "email": null
                                 }

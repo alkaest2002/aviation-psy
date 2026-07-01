@@ -6,9 +6,13 @@ export const spa = () => ({
     listenerController: null,
 
     init() {
-        
+
         this.onClick = e => {
+
+            // Get the closest anchor element.
             const a = e.target.closest("a[href]");
+
+            // Ignore non-anchor clicks, external links, and in-page anchors.
             if (!a || a.origin !== location.origin || a.target || e.metaKey
                 || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
 
@@ -51,18 +55,18 @@ export const spa = () => ({
     },
 
     shouldShowRegularIcon() {
-        return !this.shouldShowSpinner(); 
+        return !this.shouldShowSpinner();
     },
 
     async _go(url, push) {
-        
+
         this._abortNavigation();
         const controller = this.controller = new AbortController();
         this.href = url;
         this.isLoading = true;
 
         try {
-            
+
             const res = await fetch(url, {
                 signal: controller.signal,
                 headers: { "X-Requested-With": "fetch" },
@@ -96,7 +100,7 @@ export const spa = () => ({
             location.assign(url);
         } finally {
             (this.controller === controller) && this._clearAll();
-        }  
+        }
     },
 
     _scrollToHashOrTop(url) {
@@ -108,11 +112,11 @@ export const spa = () => ({
         }
 
         const id = decodeURIComponent(hash.slice(1));
-        const target = document.getElementById(id) 
+        const target = document.getElementById(id)
             ?? document.querySelector(`[name="${CSS.escape(id)}"]`);
 
-        target 
-            ? target.scrollIntoView({ block: "start" }) 
+        target
+            ? target.scrollIntoView({ block: "start" })
             : scrollTo(0, 0);
     },
 
