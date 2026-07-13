@@ -108,35 +108,6 @@
                         </template>
                     </div>
 
-                    <!-- Activities card -->
-                    <div
-                        class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
-
-                        <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
-                            <div class="flex items-center gap-2">
-                                <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
-                                    <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
-                                </svg>
-                                <span x-text="`Attività (${day.timeWindow})`" class="text-sm font-semibold uppercase">
-                                </span>
-                            </div>
-                            <a :href="`/pages/programma.html#day${dayIndex+1}`"
-                                class="inline-flex items-center gap-1 text-xs font-semibold text-sky-700 underline underline-offset-2 active:opacity-70 transition-opacity shrink-0">
-                                vedi dettagli
-                            </a>
-                        </div>
-
-                        <div class="p-6 flex flex-col gap-1">
-                            <template x-for="(activity, activityIndex) in day.eventsBrief" :key="activityIndex">
-                                <div class="flex items-center gap-2">
-                                    <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
-                                    <span x-text="activity"></span>
-                                </div>
-                            </template>
-                        </div>
-
-                    </div>
-
                     <!-- Venue + dress code card -->
                     <div
                         class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
@@ -174,6 +145,36 @@
                         </div>
 
                     </div>
+
+                    <!-- Activities card -->
+                    <div
+                        class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+
+                        <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                            <div class="flex items-center gap-2">
+                                <svg class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M2 4h12v1.5H2V4Zm0 3.5h9V9H2V7.5Zm0 3.5h6v1.5H2V11Z" />
+                                </svg>
+                                <span x-text="`Attività (${day.timeWindow})`" class="text-sm font-semibold uppercase">
+                                </span>
+                            </div>
+                            <a :href="`/pages/programma.html#day${dayIndex+1}`"
+                                class="inline-flex items-center gap-1 text-xs font-semibold text-sky-700 underline underline-offset-2 active:opacity-70 transition-opacity shrink-0">
+                                vedi dettagli
+                            </a>
+                        </div>
+
+                        <div class="p-6 flex flex-col gap-1">
+                            <template x-for="(activity, activityIndex) in day.eventsBrief" :key="activityIndex">
+                                <div class="flex items-center gap-2">
+                                    <span class="h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                                    <span x-text="activity"></span>
+                                </div>
+                            </template>
+                        </div>
+
+                    </div>
+
                 </section>
             </template>
 
