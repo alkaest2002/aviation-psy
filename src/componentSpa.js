@@ -1,133 +1,142 @@
 export const spa = () => ({
+  isLoading: false,
+  href: null,
+  controller: null,
+  listenerController: null,
 
-    isLoading: false,
-    href: null,
-    controller: null,
-    listenerController: null,
+  init() {
+    this.onClick = (e) => {
+      // Get the closest anchor element.
+      const a = e.target.closest("a[href]");
 
-    init() {
+      // Ignore non-anchor clicks, external links, and in-page anchors.
+      if (
+        !a ||
+        a.origin !== location.origin ||
+        a.target ||
+        e.metaKey ||
+        e.ctrlKey ||
+        e.shiftKey ||
+        e.altKey ||
+        e.button
+      )
+        return;
 
-        this.onClick = e => {
+      // Let the browser handle downloads and explicitly-external links.
+      if (a.hasAttribute("download") || a.rel === "external") return;
 
-            // Get the closest anchor element.
-            const a = e.target.closest("a[href]");
+      // In-page anchors (same path + query, differing only by hash)
+      // should scroll natively without a fetch + DOM swap.
+      const url = new URL(a.href, location.origin);
+      if (
+        url.hash &&
+        url.pathname === location.pathname &&
+        url.search === location.search
+      )
+        return;
 
-            // Ignore non-anchor clicks, external links, and in-page anchors.
-            if (!a || a.origin !== location.origin || a.target || e.metaKey
-                || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+      e.preventDefault();
+      this._go(a.href, true);
+    };
 
-            // Let the browser handle downloads and explicitly-external links.
-            if (a.hasAttribute("download") || a.rel === "external") return;
+    this.onPop = () => {
+      this._go(location.href, false);
+    };
 
-            // In-page anchors (same path + query, differing only by hash)
-            // should scroll natively without a fetch + DOM swap.
-            const url = new URL(a.href, location.origin);
-            if (url.hash && url.pathname === location.pathname
-                && url.search === location.search) return;
+    // Use an AbortController tied to the component lifetime so
+    // we have a single place to remove both listeners on destroy.
+    this.listenerController = new AbortController();
+    const { signal } = this.listenerController;
 
-            e.preventDefault();
-            this._go(a.href, true);
-        };
+    addEventListener("click", this.onClick, { capture: true, signal });
+    addEventListener("popstate", this.onPop, { signal });
+  },
 
-        this.onPop = () => {
-            this._go(location.href, false);
-        };
+  destroy() {
+    // Removes both DOM listeners in one shot - no need to keep
+    // references to the handler functions for removeEventListener.
+    this.listenerController?.abort();
+    this._abortNavigation();
+  },
 
-        // Use an AbortController tied to the component lifetime so
-        // we have a single place to remove both listeners on destroy.
-        this.listenerController = new AbortController();
-        const { signal } = this.listenerController;
+  shouldShowSpinner() {
+    const link = this.$el.closest("a");
+    return (
+      this.isLoading && !!link && this.href?.includes(link.getAttribute("href"))
+    );
+  },
 
-        addEventListener("click", this.onClick, { capture: true, signal });
-        addEventListener("popstate", this.onPop, { signal });
-    },
+  shouldShowRegularIcon() {
+    return !this.shouldShowSpinner();
+  },
 
-    destroy() {
-        // Removes both DOM listeners in one shot - no need to keep
-        // references to the handler functions for removeEventListener.
-        this.listenerController?.abort();
-        this._abortNavigation();
-    },
+  async _go(url, push) {
+    this._abortNavigation();
+    const controller = (this.controller = new AbortController());
+    this.href = url;
+    this.isLoading = true;
 
-    shouldShowSpinner() {
-        const link = this.$el.closest("a");
-        return this.isLoading && !!link && this.href?.includes(link.getAttribute("href"));
-    },
+    try {
+      const res = await fetch(url, {
+        signal: controller.signal,
+        headers: { "X-Requested-With": "fetch" },
+      });
 
-    shouldShowRegularIcon() {
-        return !this.shouldShowSpinner();
-    },
+      if (!res.ok)
+        throw new Error(`Navigation failed: ${res.status} ${res.statusText}`);
 
-    async _go(url, push) {
+      const html = await res.text();
+      const doc = new DOMParser().parseFromString(html, "text/html");
 
-        this._abortNavigation();
-        const controller = this.controller = new AbortController();
-        this.href = url;
-        this.isLoading = true;
+      document.title = doc.title;
+      push && history.pushState({ url }, "", url);
 
-        try {
+      const currentMain = this.$el.querySelector(":scope > main");
+      const incomingMain = doc.querySelector("main");
 
-            const res = await fetch(url, {
-                signal: controller.signal,
-                headers: { "X-Requested-With": "fetch" },
-            });
+      if (!currentMain || !incomingMain) {
+        location.assign(url);
+        return;
+      }
 
-            if (!res.ok) throw new Error(`Navigation failed: ${res.status} ${res.statusText}`);
+      Alpine.destroyTree(currentMain);
+      currentMain.innerHTML = incomingMain.innerHTML;
+      Alpine.initTree(currentMain);
 
-            const html = await res.text();
-            const doc = new DOMParser().parseFromString(html, "text/html");
+      this._scrollToHashOrTop(url);
+    } catch (e) {
+      if (e.name === "AbortError") return;
+      this.$dispatch("spa-error", { url, error: e });
+      location.assign(url);
+    } finally {
+      this.controller === controller && this._clearAll();
+    }
+  },
 
-            document.title = doc.title;
-            push && history.pushState({ url }, "", url);
+  _scrollToHashOrTop(url) {
+    const hash = new URL(url, location.origin).hash;
 
-            const currentMain  = this.$el.querySelector(":scope > main");
-            const incomingMain = doc.querySelector("main");
+    if (!hash) {
+      scrollTo(0, 0);
+      return;
+    }
 
-            if (!currentMain || !incomingMain) {
-                location.assign(url);
-                return;
-            }
+    const id = decodeURIComponent(hash.slice(1));
+    const target =
+      document.getElementById(id) ??
+      document.querySelector(`[name="${CSS.escape(id)}"]`);
 
-            Alpine.destroyTree(currentMain);
-            currentMain.innerHTML = incomingMain.innerHTML;
-            Alpine.initTree(currentMain);
+    target ? target.scrollIntoView({ block: "start" }) : scrollTo(0, 0);
+  },
 
-            this._scrollToHashOrTop(url);
+  _abortNavigation() {
+    this.controller?.abort();
+    this.controller = null;
+  },
 
-        } catch (e) {
-            if (e.name === "AbortError") return;
-            this.$dispatch("spa-error", { url, error: e });
-            location.assign(url);
-        } finally {
-            (this.controller === controller) && this._clearAll();
-        }
-    },
-
-    _scrollToHashOrTop(url) {
-        const hash = new URL(url, location.origin).hash;
-
-        if (!hash) {
-            scrollTo(0, 0);
-            return;
-        }
-
-        const id = decodeURIComponent(hash.slice(1));
-        const target = document.getElementById(id)
-            ?? document.querySelector(`[name="${CSS.escape(id)}"]`);
-
-        target
-            ? target.scrollIntoView({ block: "start" })
-            : scrollTo(0, 0);
-    },
-
-    _abortNavigation() {
-        this.controller?.abort();
-        this.controller = null;
-    },
-
-    _clearAll() {
-        this.controller = null;
-        this.href = null;
-        this.isLoading = false;
-    },
-})
+  _clearAll() {
+    this.controller = null;
+    this.href = null;
+    this.isLoading = false;
+  },
+});
