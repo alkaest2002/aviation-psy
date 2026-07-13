@@ -1,4 +1,4 @@
-import Alpine from "alpinejs"
+import Alpine from "alpinejs";
 import { programStore } from "./programStore.js";
 import { spa } from "./componentSpa.js";
 import { header } from "./componentHeader.js";
@@ -6,14 +6,14 @@ import { map } from "./componentMap.js";
 import { ecm } from "./componentEcm.js";
 import { calendarReminder } from "./calendarReminder.js";
 
-window.Alpine = Alpine
+window.Alpine = Alpine;
 
-Alpine.store("programStore", programStore())
+Alpine.store("programStore", programStore());
 
-Alpine.data("spa", spa)
-Alpine.data("header", header)
-Alpine.data("map", map)
-Alpine.data("ecm", ecm)
-Alpine.data("calendarReminder", calendarReminder)
+Alpine.data("spa", spa);
+Alpine.data("header", header);
+Alpine.data("map", map);
+Alpine.data("ecm", ecm);
+Alpine.data("calendarReminder", calendarReminder);
 
-Alpine.start()
+Alpine.start();

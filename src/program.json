@@ -50,11 +50,7 @@
     "currentParticipants": 35,
     "ecm": {
       "amount": 5,
-      "validFor": [
-        "Medici",
-        "Psicologi",
-        "AME (Aero Medical Examiner)"
-      ],
+      "validFor": ["Medici", "Psicologi", "AME (Aero Medical Examiner)"],
       "showQuestionnaireLink": true,
       "questionnaire": [
         {

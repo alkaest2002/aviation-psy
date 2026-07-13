@@ -50,11 +50,7 @@
     "currentParticipants": 35,
     "ecm": {
       "amount": 5,
-      "validFor": [
-        "Physicians",
-        "Psychologists",
-        "AME (Aero Medical Examiner)"
-      ]
+      "validFor": ["Physicians", "Psychologists", "AME (Aero Medical Examiner)"]
     }
   },
   "scientificCommittee": [
