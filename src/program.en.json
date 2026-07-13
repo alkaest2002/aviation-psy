@@ -1,488 +1,488 @@
 {
-    "title": "III National Conference on Aviation Psychology",
-    "description": "<p>The III National Conference on Aviation Psychology is an event dedicated to dialogue between academia, civil institutions, and military organisations on the topics of aviation and aerospace psychology. The third edition follows the path traced by the previous editions held in Rome and Florence, building on the accumulated experience while opening up to new perspectives.</p> <p>The rapid evolution of the aeronautical sector &mdash; marked by increasing automation of systems, the integration of advanced digital technologies, and emerging challenges related to the human factor &mdash; requires ever more dynamic and interdisciplinary approaches. Milan, a privileged hub of technological innovation and scientific research, confirms itself as a natural venue for a conference that aims to bring together diverse expertise and promote an up-to-date reflection on the state of the discipline.</p> <p>The proceedings are structured around <em>three</em> thematic panels, each dedicated to a specific dimension of aviation psychology, in a journey that moves from theoretical and regulatory foundations to operational implications in professional practice.</p> <p>The <strong><em>Knowledge panel</em></strong> explores the epistemological, historical, and regulatory foundations of aviation psychology. The scientific roots of the discipline and its evolution in parallel with the aeronautical sector are reviewed, with particular attention to the national and international regulatory frameworks that define its professional boundaries. Ample space is given to the topic of accreditation and training of aviation psychologists &mdash; an area still being defined at the national level &mdash; on which the conference aims to foster a constructive dialogue among institutions, practitioners, and academia.</p> <p>The <strong><em>Research panel</em></strong> is dedicated to the presentation and discussion of the most recent scientific contributions in the field of aviation psychology. Research spans multiple areas of inquiry: from pilot psychophysiology under stress conditions to cognitive dynamics in highly automated cockpits, from crew resilience assessment to emergency management, through to applications of cognitive neuroscience to flight safety. The panel also provides an opportunity for methodological comparison across the plurality of approaches &mdash; quantitative, qualitative, experimental, clinical, and organisational &mdash; that characterise scientific output in the sector.</p> <p>The <strong><em>Applications panel</em></strong> is dedicated to operational practices and tools through which aviation psychology translates into the daily work of psychologists, physicians, instructors, and safety managers. Models for the psychological selection and assessment of aeronautical personnel are discussed, with attention to new emerging professional profiles and methodologies for evaluating transversal competencies such as workload management, decision-making, and team communication. Space is also given to psychological support programmes, mental health prevention, and wellbeing promotion in aeronautical organisations, in light of the most recent international regulations on mental health in high-risk work environments.</p>",
-    "objectives": [
-        "<strong>Consolidate the identity of the discipline</strong>, by exploring the epistemological, historical, and regulatory principles that define its scientific foundations",
-        "<strong>Review the national and international regulatory framework</strong> governing the profession, highlighting established areas and those still to be developed",
-        "<strong>Contribute to the definition of an accreditation/training system</strong> for aviation psychologists, still being developed at the national level",
-        "<strong>Present and discuss the most recent research in the field</strong>, promoting methodological comparison across different approaches",
-        "<strong>Showcase operational practices</strong>, comparing models and tools used in the selection, assessment, and support of aeronautical personnel",
-        "<strong>Foster interdisciplinary dialogue</strong> between academia, civil institutions, and military organisations on topics in aeronautical psychology"
-    ],
-    "recipients": [
-        "Psychologists",
-        "Psychiatrists",
+  "title": "III National Conference on Aviation Psychology",
+  "description": "<p>The III National Conference on Aviation Psychology is an event dedicated to dialogue between academia, civil institutions, and military organisations on the topics of aviation and aerospace psychology. The third edition follows the path traced by the previous editions held in Rome and Florence, building on the accumulated experience while opening up to new perspectives.</p> <p>The rapid evolution of the aeronautical sector &mdash; marked by increasing automation of systems, the integration of advanced digital technologies, and emerging challenges related to the human factor &mdash; requires ever more dynamic and interdisciplinary approaches. Milan, a privileged hub of technological innovation and scientific research, confirms itself as a natural venue for a conference that aims to bring together diverse expertise and promote an up-to-date reflection on the state of the discipline.</p> <p>The proceedings are structured around <em>three</em> thematic panels, each dedicated to a specific dimension of aviation psychology, in a journey that moves from theoretical and regulatory foundations to operational implications in professional practice.</p> <p>The <strong><em>Knowledge panel</em></strong> explores the epistemological, historical, and regulatory foundations of aviation psychology. The scientific roots of the discipline and its evolution in parallel with the aeronautical sector are reviewed, with particular attention to the national and international regulatory frameworks that define its professional boundaries. Ample space is given to the topic of accreditation and training of aviation psychologists &mdash; an area still being defined at the national level &mdash; on which the conference aims to foster a constructive dialogue among institutions, practitioners, and academia.</p> <p>The <strong><em>Research panel</em></strong> is dedicated to the presentation and discussion of the most recent scientific contributions in the field of aviation psychology. Research spans multiple areas of inquiry: from pilot psychophysiology under stress conditions to cognitive dynamics in highly automated cockpits, from crew resilience assessment to emergency management, through to applications of cognitive neuroscience to flight safety. The panel also provides an opportunity for methodological comparison across the plurality of approaches &mdash; quantitative, qualitative, experimental, clinical, and organisational &mdash; that characterise scientific output in the sector.</p> <p>The <strong><em>Applications panel</em></strong> is dedicated to operational practices and tools through which aviation psychology translates into the daily work of psychologists, physicians, instructors, and safety managers. Models for the psychological selection and assessment of aeronautical personnel are discussed, with attention to new emerging professional profiles and methodologies for evaluating transversal competencies such as workload management, decision-making, and team communication. Space is also given to psychological support programmes, mental health prevention, and wellbeing promotion in aeronautical organisations, in light of the most recent international regulations on mental health in high-risk work environments.</p>",
+  "objectives": [
+    "<strong>Consolidate the identity of the discipline</strong>, by exploring the epistemological, historical, and regulatory principles that define its scientific foundations",
+    "<strong>Review the national and international regulatory framework</strong> governing the profession, highlighting established areas and those still to be developed",
+    "<strong>Contribute to the definition of an accreditation/training system</strong> for aviation psychologists, still being developed at the national level",
+    "<strong>Present and discuss the most recent research in the field</strong>, promoting methodological comparison across different approaches",
+    "<strong>Showcase operational practices</strong>, comparing models and tools used in the selection, assessment, and support of aeronautical personnel",
+    "<strong>Foster interdisciplinary dialogue</strong> between academia, civil institutions, and military organisations on topics in aeronautical psychology"
+  ],
+  "recipients": [
+    "Psychologists",
+    "Psychiatrists",
+    "Physicians",
+    "AME (Aero Medical Examiner)",
+    "Nurses",
+    "Pilots and flight crew",
+    "Air traffic controllers",
+    "Aeronautical sector professionals",
+    "Aviation safety professionals",
+    "Researchers and trainees interested in aviation psychology"
+  ],
+  "patronage": [
+    "National Council of the Order of Psychologists (CNOP)",
+    "National Civil Aviation Authority (ENAC)",
+    "National Air Navigation Services (ENAV)"
+  ],
+  "externalProvider": {
+    "name": "Achelois",
+    "websiteUrl": "https://www.achelois.eu",
+    "privacyUrl": "https://www.achelois.eu/privacy-cookie-policy/",
+    "registrationUrl": "https://www.achelois.eu/",
+    "address": "Registered office: Via Larga, 8 · 20122 Milan<br />Operational office: Via Residenza Portici 2, Milan · Segrate (MI)<br />VAT No. 08655300963"
+  },
+  "registration": {
+    "startDate": "03/08/2026",
+    "endDate": "30/09/2026",
+    "fee": {
+      "military": {
+        "amount": "0.00 EUR",
+        "deadline": "30/09/2026"
+      },
+      "civil": {
+        "amount": "50.00 EUR",
+        "deadline": "30/09/2026"
+      }
+    },
+    "maxParticipants": 100,
+    "currentParticipants": 35,
+    "ecm": {
+      "amount": 5,
+      "validFor": [
         "Physicians",
-        "AME (Aero Medical Examiner)",
-        "Nurses",
-        "Pilots and flight crew",
-        "Air traffic controllers",
-        "Aeronautical sector professionals",
-        "Aviation safety professionals",
-        "Researchers and trainees interested in aviation psychology"
-    ],
-    "patronage": [
-        "National Council of the Order of Psychologists (CNOP)",
-        "National Civil Aviation Authority (ENAC)",
-        "National Air Navigation Services (ENAV)"
-    ],
-    "externalProvider": {
-        "name": "Achelois",
-        "websiteUrl": "https://www.achelois.eu",
-        "privacyUrl": "https://www.achelois.eu/privacy-cookie-policy/",
-        "registrationUrl": "https://www.achelois.eu/",
-        "address": "Registered office: Via Larga, 8 · 20122 Milan<br />Operational office: Via Residenza Portici 2, Milan · Segrate (MI)<br />VAT No. 08655300963"
+        "Psychologists",
+        "AME (Aero Medical Examiner)"
+      ]
+    }
+  },
+  "scientificCommittee": [
+    {
+      "title": "Col. CSArs",
+      "name": "Mastrorilli A.",
+      "affiliation": "AM Psychology Centre",
+      "role": "Director"
     },
-    "registration": {
-        "startDate": "03/08/2026",
-        "endDate": "30/09/2026",
-        "fee": {
-            "military": {
-                "amount": "0.00 EUR",
-                "deadline": "30/09/2026"
-            },
-            "civil": {
-                "amount": "50.00 EUR",
-                "deadline": "30/09/2026"
+    {
+      "title": "Lt. Col. CSArs",
+      "name": "Deiana S.",
+      "affiliation": "Central Area Office · AM Psychology Centre",
+      "role": "Head"
+    },
+    {
+      "title": "Lt. Col. CSArs",
+      "name": "Calanna P.",
+      "affiliation": "Clinical Psychology Section · IMA Milan",
+      "role": "Head"
+    },
+    {
+      "title": "Maj. CSArn",
+      "name": "Nardo A.",
+      "affiliation": "Psychiatry Section · IMA Milan",
+      "role": "Head"
+    },
+    {
+      "title": "Maj. CSArs",
+      "name": "Buonaiuto G.",
+      "affiliation": "Northern Area Office · AM Psychology Centre",
+      "role": "Head"
+    },
+    {
+      "title": "Capt. CSArn",
+      "name": "Erario R.",
+      "affiliation": "Psychiatry Section · IMA Milan",
+      "role": "Officer"
+    }
+  ],
+  "invitations": [
+    {
+      "title": "Gen. S.A.",
+      "name": "Antonio Conserva",
+      "mode": "extremely_formal",
+      "appellation": "Dear General Conserva",
+      "organization": "Office of the Chief of Staff of the Air Force",
+      "role": "Chief of Staff of the Italian Air Force",
+      "address": "Viale dell'Università, 4 - 00185 Rome (RM)",
+      "email": "antonio.conserva@aeronautica.difesa.it"
+    },
+    {
+      "title": "Gen. S.A.",
+      "appellation": "Dear General Cazzaniga",
+      "name": "Achille Fernando Cazzaniga Cazzaniga",
+      "mode": "formal",
+      "organization": "Air Force Logistics Command",
+      "role": "Commander",
+      "address": "Viale dell'Università, 4 - 00185 Rome (RM)",
+      "email": "achille.cazzaniga@aeronautica.difesa.it"
+    },
+    {
+      "title": "Gen. B.A.",
+      "appellation": "Dear Emanuele",
+      "mode": "informal",
+      "name": "Emanuele Garzia",
+      "organization": "Air Force Medical Service",
+      "role": "Head",
+      "address": "Viale dell'Università, 4 - 00185 Rome (RM)",
+      "email": "emanuele.garzia@aeronautica.difesa.it"
+    }
+  ],
+  "paperExpirationDates": {
+    "submissionPersonalInfoDate": "15/07/2026",
+    "submissionAbstractDate": "15/07/2026",
+    "submissionFullPaperDate": "15/09/2026",
+    "submissionECMQuestionsDate": "15/09/2026"
+  },
+  "days": [
+    {
+      "type": "inviteOnly",
+      "date": "27/10/2026",
+      "startTime": "15:00",
+      "timeWindow": "15:00 - 22:00",
+      "maxParticipants": 50,
+      "venue": {
+        "name": "To be defined",
+        "address": "address not available"
+      },
+      "dressCode": {
+        "dress code civili": "evening attire",
+        "dress code militari": "service dress uniform"
+      },
+      "eventsBrief": [
+        "Guest reception and welcome cultural event",
+        "Round table",
+        "Gala dinner"
+      ],
+      "events": [
+        {
+          "eventType": "check-in",
+          "timeWindow": "15:00 - 18:30",
+          "duration": 210,
+          "title": "Guest reception and welcome cultural event"
+        },
+        {
+          "eventType": "symposium",
+          "timeWindow": "18:30 - 19:30",
+          "duration": 60,
+          "title": "Round table: Towards the future of the sector: new structures, new tools, new perspectives."
+        },
+        {
+          "eventType": "dinner",
+          "timeWindow": "19:30 - 22:00",
+          "duration": 150,
+          "title": "Gala dinner"
+        }
+      ]
+    },
+    {
+      "type": "public",
+      "date": "28/10/2026",
+      "startTime": "08:00",
+      "timeWindow": "08:00 - 14:30",
+      "maxParticipants": 100,
+      "venue": {
+        "name": "To be defined",
+        "address": "address not available"
+      },
+      "dressCode": {
+        "dress code civili": "business casual recommended",
+        "dress code militari · partecipanti": "duty uniform",
+        "dress code militari · relatori": "service dress uniform"
+      },
+      "eventsBrief": [
+        "Participant registration",
+        "Opening remarks",
+        "Lectio magistralis",
+        "Panel 1 — Knowledge",
+        "Panel 2 — Research",
+        "Panel 3 — Applications",
+        "Conference closing + CME"
+      ],
+      "events": [
+        {
+          "eventType": "check-in",
+          "timeWindow": "08:00 - 08:30",
+          "duration": 30,
+          "title": "Participant registration"
+        },
+        {
+          "eventType": "opening",
+          "timeWindow": "08:30 - 09:00",
+          "duration": 30,
+          "title": "Opening remarks"
+        },
+        {
+          "eventType": "talk",
+          "timeWindow": "09:00 - 09:30",
+          "duration": 30,
+          "title": "Lectio Magistralis: Self-Regulation in Highly Cognitively Complex Activities",
+          "authors": [
+            {
+              "title": "Prof.",
+              "name": "Antonietti Alessandro",
+              "affiliation": "Università Cattolica del Sacro Cuore",
+              "role": "Dean of the Faculty of Psychology",
+              "email": "alessandro.antonietti@unicatt.it"
             }
-        },
-        "maxParticipants": 100,
-        "currentParticipants": 35,
-        "ecm": {
-            "amount": 5,
-            "validFor": [
-                "Physicians",
-                "Psychologists",
-                "AME (Aero Medical Examiner)"
-            ]
-        }
-    },
-    "scientificCommittee": [
-        {
-            "title": "Col. CSArs",
-            "name": "Mastrorilli A.",
-            "affiliation": "AM Psychology Centre",
-            "role": "Director"
+          ],
+          "status": "toBeDefined"
         },
         {
-            "title": "Lt. Col. CSArs",
-            "name": "Deiana S.",
-            "affiliation": "Central Area Office · AM Psychology Centre",
-            "role": "Head"
-        },
-        {
-            "title": "Lt. Col. CSArs",
-            "name": "Calanna P.",
-            "affiliation": "Clinical Psychology Section · IMA Milan",
-            "role": "Head"
-        },
-        {
-            "title": "Maj. CSArn",
-            "name": "Nardo A.",
-            "affiliation": "Psychiatry Section · IMA Milan",
-            "role": "Head"
-        },
-        {
-            "title": "Maj. CSArs",
-            "name": "Buonaiuto G.",
-            "affiliation": "Northern Area Office · AM Psychology Centre",
-            "role": "Head"
-        },
-        {
-            "title": "Capt. CSArn",
-            "name": "Erario R.",
-            "affiliation": "Psychiatry Section · IMA Milan",
-            "role": "Officer"
-        }
-    ],
-    "invitations": [
-        {
-            "title": "Gen. S.A.",
-            "name": "Antonio Conserva",
-            "mode": "extremely_formal",
-            "appellation": "Dear General Conserva",
-            "organization": "Office of the Chief of Staff of the Air Force",
-            "role": "Chief of Staff of the Italian Air Force",
-            "address": "Viale dell'Università, 4 - 00185 Rome (RM)",
-            "email": "antonio.conserva@aeronautica.difesa.it"
-        },
-        {
-            "title": "Gen. S.A.",
-            "appellation": "Dear General Cazzaniga",
-            "name": "Achille Fernando Cazzaniga Cazzaniga",
-            "mode": "formal",
-            "organization": "Air Force Logistics Command",
-            "role": "Commander",
-            "address": "Viale dell'Università, 4 - 00185 Rome (RM)",
-            "email": "achille.cazzaniga@aeronautica.difesa.it"
-        },
-        {
-            "title": "Gen. B.A.",
-            "appellation": "Dear Emanuele",
-            "mode": "informal",
-            "name": "Emanuele Garzia",
-            "organization": "Air Force Medical Service",
-            "role": "Head",
-            "address": "Viale dell'Università, 4 - 00185 Rome (RM)",
-            "email": "emanuele.garzia@aeronautica.difesa.it"
-        }
-    ],
-    "paperExpirationDates": {
-        "submissionPersonalInfoDate": "15/07/2026",
-        "submissionAbstractDate": "15/07/2026",
-        "submissionFullPaperDate": "15/09/2026",
-        "submissionECMQuestionsDate": "15/09/2026"
-    },
-    "days": [
-        {
-            "type": "inviteOnly",
-            "date": "27/10/2026",
-            "startTime": "15:00",
-            "timeWindow": "15:00 - 22:00",
-            "maxParticipants": 50,
-            "venue": {
-                "name": "To be defined",
-                "address": "address not available"
-            },
-            "dressCode": {
-                "dress code civili": "evening attire",
-                "dress code militari": "service dress uniform"
-            },
-            "eventsBrief": [
-                "Guest reception and welcome cultural event",
-                "Round table",
-                "Gala dinner"
-            ],
-            "events": [
+          "eventType": "panel",
+          "timeWindow": "09:30 - 10:30",
+          "duration": 60,
+          "title": "Panel 1 — Knowledge",
+          "talks": [
+            {
+              "eventType": "talk",
+              "timeWindow": "09:30 - 09:45",
+              "duration": 15,
+              "title": "The Training of the Aviation Psychologist to Operate in Complex Systems: Between Multidisciplinarity and Specialization",
+              "authors": [
                 {
-                    "eventType": "check-in",
-                    "timeWindow": "15:00 - 18:30",
-                    "duration": 210,
-                    "title": "Guest reception and welcome cultural event"
-                },
-                {
-                    "eventType": "symposium",
-                    "timeWindow": "18:30 - 19:30",
-                    "duration": 60,
-                    "title": "Round table: Towards the future of the sector: new structures, new tools, new perspectives."
-                },
-                {
-                    "eventType": "dinner",
-                    "timeWindow": "19:30 - 22:00",
-                    "duration": 150,
-                    "title": "Gala dinner"
+                  "title": "Dr.",
+                  "name": "Biassoni Federica",
+                  "affiliation": "Università Cattolica del Sacro Cuore",
+                  "role": "Researcher",
+                  "email": "federica.biassoni@unicatt.it"
                 }
-            ]
+              ],
+              "status": "toBeDefined"
+            },
+            {
+              "eventType": "talk",
+              "timeWindow": "09:45 - 10:00",
+              "duration": 15,
+              "title": "The Professional Standards of the Aviation Psychologist. The State of the Art in the Civilian Sector",
+              "authors": [
+                {
+                  "title": "Dr.",
+                  "name": "Furia Antonello",
+                  "affiliation": "ENAC",
+                  "role": "AMS Manager",
+                  "email": "a.furia@enac.gov.it"
+                }
+              ],
+              "status": "toBeConfirmed"
+            },
+            {
+              "eventType": "talk",
+              "timeWindow": "10:00 - 10:15",
+              "duration": 15,
+              "title": "Aviation Psychology: thematic trajectories in the scientific literature. A topic extraction modelling approach using BERTopic",
+              "authors": [
+                {
+                  "title": "Lt. Col.",
+                  "name": "Calanna Pierpaolo",
+                  "affiliation": "Clinical Psychology Section · IMA Milan",
+                  "role": "Head",
+                  "email": "pierpaolo.calanna@aeronautica.difesa.it"
+                },
+                {
+                  "title": "Maj.",
+                  "name": "Buonaiuto Gaetano",
+                  "affiliation": "Northern Area Office · AM Psychology Centre",
+                  "role": "Section Head",
+                  "email": "gaetano.buonaiuto@aeronautica.difesa.it"
+                }
+              ],
+              "status": "final"
+            },
+            {
+              "eventType": "questionTime",
+              "timeWindow": "10:15 - 10:30",
+              "duration": 15,
+              "title": "Panel Q&A"
+            }
+          ]
         },
         {
-            "type": "public",
-            "date": "28/10/2026",
-            "startTime": "08:00",
-            "timeWindow": "08:00 - 14:30",
-            "maxParticipants": 100,
-            "venue": {
-                "name": "To be defined",
-                "address": "address not available"
-            },
-            "dressCode": {
-                "dress code civili": "business casual recommended",
-                "dress code militari · partecipanti": "duty uniform",
-                "dress code militari · relatori": "service dress uniform"
-            },
-            "eventsBrief": [
-                "Participant registration",
-                "Opening remarks",
-                "Lectio magistralis",
-                "Panel 1 — Knowledge",
-                "Panel 2 — Research",
-                "Panel 3 — Applications",
-                "Conference closing + CME"
-            ],
-            "events": [
+          "eventType": "break",
+          "timeWindow": "10:30 - 11:00",
+          "duration": 30,
+          "title": "Coffee break"
+        },
+        {
+          "eventType": "panel",
+          "timeWindow": "11:00 - 12:00",
+          "duration": 75,
+          "title": "Panel 2 — Research",
+          "talks": [
+            {
+              "eventType": "talk",
+              "timeWindow": "11:00 - 11:15",
+              "duration": 15,
+              "title": "Results of the OSES-2 questionnaire: Perception of Safety Culture and Operational Fatigue in flight units",
+              "authors": [
                 {
-                    "eventType": "check-in",
-                    "timeWindow": "08:00 - 08:30",
-                    "duration": 30,
-                    "title": "Participant registration"
-                },
-                {
-                    "eventType": "opening",
-                    "timeWindow": "08:30 - 09:00",
-                    "duration": 30,
-                    "title": "Opening remarks"
-                },
-                {
-                    "eventType": "talk",
-                    "timeWindow": "09:00 - 09:30",
-                    "duration": 30,
-                    "title": "Lectio Magistralis",
-                    "authors": [
-                        {
-                            "title": "Professor",
-                            "name": "",
-                            "affiliation": "Catholic University of the Sacred Heart",
-                            "role": null,
-                            "email": null
-                        }
-                    ],
-                    "status": "toBeDefined"
-                },
-                {
-                    "eventType": "panel",
-                    "timeWindow": "09:30 - 10:30",
-                    "duration": 60,
-                    "title": "Panel 1 — Knowledge",
-                    "talks": [
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "09:30 - 09:45",
-                            "duration": 15,
-                            "title": "Aviation psychology: training the professionals of the sky, between scientific evidence and operational practice",
-                            "authors": [
-                                {
-                                    "title": "Professor",
-                                    "name": "",
-                                    "affiliation": "Catholic University of the Sacred Heart",
-                                    "role": null,
-                                    "email": null
-                                }
-                            ],
-                            "status": "toBeDefined"
-                        },
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "09:45 - 10:00",
-                            "duration": 15,
-                            "title": "The Professional Standards of the Aviation Psychologist. The State of the Art in the Civilian Sector",
-                            "authors": [
-                                {
-                                    "title": "Dr.",
-                                    "name": "Furia Antonello",
-                                    "affiliation": "ENAC",
-                                    "role": "AMS Manager",
-                                    "email": "a.furia@enac.gov.it"
-                                }
-                            ],
-                            "status": "toBeConfirmed"
-                        },
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "10:00 - 10:15",
-                            "duration": 15,
-                            "title": "Aviation Psychology: thematic trajectories in the scientific literature. A topic extraction modelling approach using BERTopic",
-                            "authors": [
-                                {
-                                    "title": "Lt. Col.",
-                                    "name": "Calanna Pierpaolo",
-                                    "affiliation": "Clinical Psychology Section · IMA Milan",
-                                    "role": "Head",
-                                    "email": "pierpaolo.calanna@aeronautica.difesa.it"
-                                },
-                                {
-                                    "title": "Maj.",
-                                    "name": "Buonaiuto Gaetano",
-                                    "affiliation": "Northern Area Office · AM Psychology Centre",
-                                    "role": "Section Head",
-                                    "email": "gaetano.buonaiuto@aeronautica.difesa.it"
-                                }
-                            ],
-                            "status": "final"
-                        },
-                        {
-                            "eventType": "questionTime",
-                            "timeWindow": "10:15 - 10:30",
-                            "duration": 15,
-                            "title": "Panel Q&A"
-                        }
-                    ]
-                },
-                {
-                    "eventType": "break",
-                    "timeWindow": "10:30 - 11:00",
-                    "duration": 30,
-                    "title": "Coffee break"
-                },
-                {
-                    "eventType": "panel",
-                    "timeWindow": "11:00 - 12:00",
-                    "duration": 75,
-                    "title": "Panel 2 — Research",
-                    "talks": [
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "11:00 - 11:15",
-                            "duration": 15,
-                            "title": "Results of the OSES-2 questionnaire: Perception of Safety Culture and Operational Fatigue in flight units",
-                            "authors": [
-                                {
-                                    "title": "Gen.",
-                                    "name": "Tarantino Paolo",
-                                    "affiliation": "Flight Safety Inspectorate",
-                                    "role": "Commander",
-                                    "email": "paolo.tarantino@aeronautica.difesa.it"
-                                }
-                            ],
-                            "status": "toBeConfirmed"
-                        },
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "11:15 - 11:30",
-                            "duration": 15,
-                            "title": "Title to be defined for possible neuroscience contribution",
-                            "authors": [
-                                {
-                                    "title": "Prof.",
-                                    "name": "Piccardi Laura",
-                                    "affiliation": "Department of Psychology · Sapienza University of Rome",
-                                    "role": null,
-                                    "email": "laura.piccardi@uniroma1.it"
-                                },
-                                {
-                                    "title": "Col.",
-                                    "name": "Verde Paola",
-                                    "affiliation": "Aeronautical and Space Medicine Unit · RMAS Pratica di Mare",
-                                    "role": "Head",
-                                    "email": "paola.verde@aeronautica.difesa.it"
-                                }
-                            ],
-                            "status": "toBeDefined"
-                        },
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "11:30 - 11:45",
-                            "duration": 15,
-                            "title": "Neuromodulation and human performance enhancement in military piloting",
-                            "authors": [
-                                {
-                                    "title": "2nd Lt.",
-                                    "name": "Silvestri Maria Catena",
-                                    "affiliation": "Southern Area Office · AM Psychology Centre",
-                                    "role": "Officer",
-                                    "email": "maria.silverstri@aeronautica.difesa.it"
-                                }
-                            ],
-                            "status": "final"
-                        },
-                        {
-                            "eventType": "questionTime",
-                            "timeWindow": "11:45 - 12:00",
-                            "duration": 15,
-                            "title": "Panel Q&A"
-                        }
-                    ]
-                },
-                {
-                    "eventType": "break",
-                    "timeWindow": "12:00 - 12:30",
-                    "duration": 30,
-                    "title": "Coffee break"
-                },
-                {
-                    "eventType": "panel",
-                    "timeWindow": "12:30 - 13:45",
-                    "duration": 75,
-                    "title": "Panel 3 — Applications",
-                    "talks": [
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "12:30 - 12:45",
-                            "duration": 15,
-                            "title": "Cognitive functioning and its implications for operational performance in aviation",
-                            "authors": [
-                                {
-                                    "title": "Prof.",
-                                    "name": "Bruno Giuseppe",
-                                    "affiliation": "Department of Human Neuroscience · Sapienza University of Rome",
-                                    "role": null,
-                                    "email": "giuseppe.bruno@uniroma1.it"
-                                }
-                            ],
-                            "status": "toBeConfirmed"
-                        },
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "12:45 - 13:00",
-                            "duration": 15,
-                            "title": "The aviation psychologist in humanitarian medical air transport from conflict zones",
-                            "authors": [
-                                {
-                                    "title": "Capt.",
-                                    "name": "Palermo Irene",
-                                    "affiliation": "Central Area Office · AM Psychology Centre",
-                                    "role": "Officer",
-                                    "email": "irene1.palermo@aeronautica.difesa.it"
-                                },
-                                {
-                                    "title": "Capt.",
-                                    "name": "D'Angelo Angelica",
-                                    "affiliation": "Central Area Office · AM Psychology Centre",
-                                    "role": "Officer",
-                                    "email": "angelica.dangelo@aeronautica.difesa.it"
-                                }
-                            ],
-                            "status": "toBeConfirmed"
-                        },
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "13:00 - 13:15",
-                            "duration": 15,
-                            "title": "The role of the psychologist in reviewing the professional profile of military pilots",
-                            "authors": [
-                                {
-                                    "title": "Capt.",
-                                    "name": "Giua Eleonora",
-                                    "affiliation": "Central Area Office · AM Psychology Centre",
-                                    "role": "Officer",
-                                    "email": "eleonora.giua@aeronautica.difesa.it"
-                                }
-                            ],
-                            "status": "toBeConfirmed"
-                        },
-                        {
-                            "eventType": "talk",
-                            "timeWindow": "13:15 - 13:30",
-                            "duration": 15,
-                            "title": "Aerial rescue for people with non-motor disabilities: visual tools for more effective and inclusive rescue",
-                            "authors": [
-                                {
-                                    "title": "Capt.",
-                                    "name": "Ceci Valeria",
-                                    "affiliation": "Central Area Office · AM Psychology Centre",
-                                    "role": "Officer",
-                                    "email": "valeria.ceci@aeronautica.difesa.it"
-                                },
-                                {
-                                    "title": "Lt.",
-                                    "name": "Busà Chiara",
-                                    "affiliation": "Northern Area Office · AM Psychology Centre",
-                                    "role": "Officer",
-                                    "email": "chiara.busa@aeronautica.difesa.it"
-                                },
-                                {
-                                    "title": "Lt.",
-                                    "name": "Testa Francesca",
-                                    "affiliation": "Northern Area Office · AM Psychology Centre",
-                                    "role": "Officer",
-                                    "email": "francesca.testa@aeronautica.difesa.it"
-                                }
-                            ],
-                            "status": "toBeConfirmed"
-                        },
-                        {
-                            "eventType": "questionTime",
-                            "timeWindow": "13:30 - 13:45",
-                            "duration": 15,
-                            "title": "Panel Q&A"
-                        }
-                    ]
-                },
-                {
-                    "eventType": "conclusion",
-                    "timeWindow": "13:45 - 14:30",
-                    "duration": 45,
-                    "title": "Conference closing + CME"
+                  "title": "Gen.",
+                  "name": "Tarantino Paolo",
+                  "affiliation": "Flight Safety Inspectorate",
+                  "role": "Commander",
+                  "email": "paolo.tarantino@aeronautica.difesa.it"
                 }
-            ]
+              ],
+              "status": "toBeConfirmed"
+            },
+            {
+              "eventType": "talk",
+              "timeWindow": "11:15 - 11:30",
+              "duration": 15,
+              "title": "Title to be defined for possible neuroscience contribution",
+              "authors": [
+                {
+                  "title": "Prof.",
+                  "name": "Piccardi Laura",
+                  "affiliation": "Department of Psychology · Sapienza University of Rome",
+                  "role": null,
+                  "email": "laura.piccardi@uniroma1.it"
+                },
+                {
+                  "title": "Col.",
+                  "name": "Verde Paola",
+                  "affiliation": "Aeronautical and Space Medicine Unit · RMAS Pratica di Mare",
+                  "role": "Head",
+                  "email": "paola.verde@aeronautica.difesa.it"
+                }
+              ],
+              "status": "toBeDefined"
+            },
+            {
+              "eventType": "talk",
+              "timeWindow": "11:30 - 11:45",
+              "duration": 15,
+              "title": "Neuromodulation and human performance enhancement in military piloting",
+              "authors": [
+                {
+                  "title": "2nd Lt.",
+                  "name": "Silvestri Maria Catena",
+                  "affiliation": "Southern Area Office · AM Psychology Centre",
+                  "role": "Officer",
+                  "email": "maria.silverstri@aeronautica.difesa.it"
+                }
+              ],
+              "status": "final"
+            },
+            {
+              "eventType": "questionTime",
+              "timeWindow": "11:45 - 12:00",
+              "duration": 15,
+              "title": "Panel Q&A"
+            }
+          ]
+        },
+        {
+          "eventType": "break",
+          "timeWindow": "12:00 - 12:30",
+          "duration": 30,
+          "title": "Coffee break"
+        },
+        {
+          "eventType": "panel",
+          "timeWindow": "12:30 - 13:45",
+          "duration": 75,
+          "title": "Panel 3 — Applications",
+          "talks": [
+            {
+              "eventType": "talk",
+              "timeWindow": "12:30 - 12:45",
+              "duration": 15,
+              "title": "Cognitive functioning and its implications for operational performance in aviation",
+              "authors": [
+                {
+                  "title": "Prof.",
+                  "name": "Bruno Giuseppe",
+                  "affiliation": "Department of Human Neuroscience · Sapienza University of Rome",
+                  "role": null,
+                  "email": "giuseppe.bruno@uniroma1.it"
+                }
+              ],
+              "status": "toBeConfirmed"
+            },
+            {
+              "eventType": "talk",
+              "timeWindow": "12:45 - 13:00",
+              "duration": 15,
+              "title": "The aviation psychologist in humanitarian medical air transport from conflict zones",
+              "authors": [
+                {
+                  "title": "Capt.",
+                  "name": "Palermo Irene",
+                  "affiliation": "Central Area Office · AM Psychology Centre",
+                  "role": "Officer",
+                  "email": "irene1.palermo@aeronautica.difesa.it"
+                },
+                {
+                  "title": "Capt.",
+                  "name": "D'Angelo Angelica",
+                  "affiliation": "Central Area Office · AM Psychology Centre",
+                  "role": "Officer",
+                  "email": "angelica.dangelo@aeronautica.difesa.it"
+                }
+              ],
+              "status": "toBeConfirmed"
+            },
+            {
+              "eventType": "talk",
+              "timeWindow": "13:00 - 13:15",
+              "duration": 15,
+              "title": "The role of the psychologist in reviewing the professional profile of military pilots",
+              "authors": [
+                {
+                  "title": "Capt.",
+                  "name": "Giua Eleonora",
+                  "affiliation": "Central Area Office · AM Psychology Centre",
+                  "role": "Officer",
+                  "email": "eleonora.giua@aeronautica.difesa.it"
+                }
+              ],
+              "status": "toBeConfirmed"
+            },
+            {
+              "eventType": "talk",
+              "timeWindow": "13:15 - 13:30",
+              "duration": 15,
+              "title": "Aerial rescue for people with non-motor disabilities: visual tools for more effective and inclusive rescue",
+              "authors": [
+                {
+                  "title": "Capt.",
+                  "name": "Ceci Valeria",
+                  "affiliation": "Central Area Office · AM Psychology Centre",
+                  "role": "Officer",
+                  "email": "valeria.ceci@aeronautica.difesa.it"
+                },
+                {
+                  "title": "Lt.",
+                  "name": "Busà Chiara",
+                  "affiliation": "Northern Area Office · AM Psychology Centre",
+                  "role": "Officer",
+                  "email": "chiara.busa@aeronautica.difesa.it"
+                },
+                {
+                  "title": "Lt.",
+                  "name": "Testa Francesca",
+                  "affiliation": "Northern Area Office · AM Psychology Centre",
+                  "role": "Officer",
+                  "email": "francesca.testa@aeronautica.difesa.it"
+                }
+              ],
+              "status": "toBeConfirmed"
+            },
+            {
+              "eventType": "questionTime",
+              "timeWindow": "13:30 - 13:45",
+              "duration": 15,
+              "title": "Panel Q&A"
+            }
+          ]
+        },
+        {
+          "eventType": "conclusion",
+          "timeWindow": "13:45 - 14:30",
+          "duration": 45,
+          "title": "Conference closing + CME"
         }
-    ]
+      ]
+    }
+  ]
 }

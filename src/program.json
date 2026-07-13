@@ -215,14 +215,14 @@
           "eventType": "talk",
           "timeWindow": "09:00 - 09:30",
           "duration": 30,
-          "title": "Lectio Magistralis",
+          "title": "Lectio Magistralis: L'autoregolazione nelle attività ad alta complessità cognitiva",
           "authors": [
             {
-              "title": "Docente da definire",
-              "name": "",
+              "title": "Prof.",
+              "name": "Antonietti Alessandro",
               "affiliation": "Università Cattolica del Sacro Cuore",
-              "role": null,
-              "email": null
+              "role": "Preside Facoltà di Psicologia",
+              "email": "alessandro.antonietti@unicatt.it"
             }
           ],
           "status": "toBeDefined"
@@ -237,14 +237,14 @@
               "eventType": "talk",
               "timeWindow": "09:30 - 09:45",
               "duration": 15,
-              "title": "Psicologia dell'aviazione: formare i professionisti del cielo, tra evidenza scientifica e pratica operativa",
+              "title": "La formazione dello psicologo dell'aviazione per operare nei sistemi complessi: tra multidisciplinarietà e specializzazione",
               "authors": [
                 {
-                  "title": "Docente da definire",
-                  "name": "",
+                  "title": "Dott.ssa",
+                  "name": "Biassoni Federica",
                   "affiliation": "Università Cattolica del Sacro Cuore",
-                  "role": null,
-                  "email": null
+                  "role": "Ricercatrice",
+                  "email": "federica.biassoni@unicatt.it"
                 }
               ],
               "status": "toBeDefined"
