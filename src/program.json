@@ -55,6 +55,7 @@
         "Psicologi",
         "AME (Aero Medical Examiner)"
       ],
+      "showQuestionnaireLink": true,
       "questionnaire": [
         {
           "text": "Domanda 1 questionario ECM",
