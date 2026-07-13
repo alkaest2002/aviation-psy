@@ -54,6 +54,40 @@
         "Medici",
         "Psicologi",
         "AME (Aero Medical Examiner)"
+      ],
+      "questionnaire": [
+        {
+          "text": "Domanda 1 questionario ECM",
+          "optA": "Opzione di risposta A",
+          "optB": "Opzione di risposta B",
+          "optC": "Opzione di risposta C",
+          "optD": "Opzione di risposta D",
+          "key": "optA"
+        },
+        {
+          "text": "Domanda 2 questionario ECM",
+          "optA": "Opzione di risposta A",
+          "optB": "Opzione di risposta B",
+          "optC": "Opzione di risposta C",
+          "optD": "Opzione di risposta D",
+          "key": "optB"
+        },
+        {
+          "text": "Domanda 3 questionario ECM",
+          "optA": "Opzione di risposta A",
+          "optB": "Opzione di risposta B",
+          "optC": "Opzione di risposta C",
+          "optD": "Opzione di risposta D",
+          "key": "optC"
+        },
+        {
+          "text": "Domanda 4 questionario ECM",
+          "optA": "Opzione di risposta A",
+          "optB": "Opzione di risposta B",
+          "optC": "Opzione di risposta C",
+          "optD": "Opzione di risposta D",
+          "key": "optD"
+        }
       ]
     }
   },
