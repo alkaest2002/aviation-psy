@@ -1,43 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light only;
-  --anchor-offset: 10px;
+    color-scheme: light only;
+    --anchor-offset: 10px;
 }
 
 [x-cloak] {
-  display: none !important;
+    display: none !important;
 }
 
 html {
-  overflow-x: clip;
+    overflow-x: clip;
 }
 
 html,
 body {
-  min-height: 100%;
+    min-height: 100%;
 }
 
 body {
-  @apply antialiased text-slate-800
+    @apply antialiased text-slate-800;
 }
 
-@media (prefers-color-scheme: dark)   {
-  :root {
-    color-scheme: light;
-    background-color: var(--color-slate-50);
-    color: var(--color-slate-800);
-  }
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+        background-color: var(--color-slate-50);
+        color: var(--color-slate-800);
+    }
 }
 
 * {
-  forced-color-adjust: none;
+    forced-color-adjust: none;
 }
 
 [id] {
-  scroll-margin-top: var(--anchor-offset);
+    scroll-margin-top: var(--anchor-offset);
 }
 
 [name] {
-  scroll-margin-top: var(--anchor-offset);
+    scroll-margin-top: var(--anchor-offset);
 }
