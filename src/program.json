@@ -159,10 +159,10 @@
     }
   ],
   "paperExpirationDates": {
-    "submissionPersonalInfoDate": "31/07/2026",
-    "submissionAbstractDate": "31/07/2026",
-    "submissionFullPaperDate": "15/09/2026",
-    "submissionECMQuestionsDate": "15/09/2026"
+    "submissionPersonalInfoDate": "15/09/2026",
+    "submissionAbstractDate": "15/09/2026",
+    "submissionFullPaperDate": "15/10/2026",
+    "submissionECMQuestionsDate": "15/10/2026"
   },
   "days": [
     {
@@ -173,7 +173,8 @@
       "maxParticipants": 50,
       "venue": {
         "name": "Centro Logisto e Sportivo AM",
-        "address": "Viale Enrico Forlanini, 20054 Novegro-Tregarezzo MI"
+        "address": "Viale Enrico Forlanini, Novegro-Tregarezzo MI",
+        "shareLink": "https://maps.app.goo.gl/KmTJSQkrHKrEEQ4h6"
       },
       "dressCode": {
         "dress code civili": "abito da sera",
@@ -213,7 +214,8 @@
       "maxParticipants": 100,
       "venue": {
         "name": "Castello Sforzesco - Sala Bertarelli",
-        "address": "Piazza Castello, 20121 Milano MI"
+        "address": "Piazza Castello, Milano MI",
+        "shareLink": "https://maps.app.goo.gl/JSmZLpwjj54S3wNQ7"
       },
       "dressCode": {
         "dress code civili": "suggerito business casual",
@@ -256,7 +258,7 @@
               "email": "alessandro.antonietti@unicatt.it"
             }
           ],
-          "status": "toBeDefined"
+          "status": "final"
         },
         {
           "eventType": "panel",
@@ -278,7 +280,7 @@
                   "email": "federica.biassoni@unicatt.it"
                 }
               ],
-              "status": "toBeDefined"
+              "status": "final"
             },
             {
               "eventType": "talk",
@@ -294,7 +296,7 @@
                   "email": "a.furia@enac.gov.it"
                 }
               ],
-              "status": "toBeConfirmed"
+              "status": "final"
             },
             {
               "eventType": "talk",
@@ -451,7 +453,7 @@
                   "email": "angelica.dangelo@aeronautica.difesa.it"
                 }
               ],
-              "status": "toBeConfirmed"
+              "status": "final"
             },
             {
               "eventType": "talk",
@@ -467,7 +469,7 @@
                   "email": "eleonora.giua@aeronautica.difesa.it"
                 }
               ],
-              "status": "toBeConfirmed"
+              "status": "final"
             },
             {
               "eventType": "talk",
@@ -497,7 +499,7 @@
                   "email": "francesca.testa@aeronautica.difesa.it"
                 }
               ],
-              "status": "toBeConfirmed"
+              "status": "final"
             },
             {
               "eventType": "questionTime",
