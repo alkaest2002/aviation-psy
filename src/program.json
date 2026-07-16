@@ -388,9 +388,16 @@
                 {
                   "title": "Prof.",
                   "name": "Chirico Andrea",
-                  "affiliation": "Dipartimento di psicologia dei processi di sviluppo e di socializzazione · Università Sapienza Roma",
+                  "affiliation": "Dipartimento di Psicologia dei Processi di Sviluppo e di Socializzazione · Università Sapienza Roma",
                   "role": null,
                   "email": "andrea.chirico@uniroma1.it"
+                },
+                {
+                  "title": "Col.",
+                  "name": "Mastrorilli Andrea",
+                  "affiliation": "Centro di Psicologia AM",
+                  "role": "Direttore",
+                  "email": "andrea.mastrorilli@aeronautica.difesa.it"
                 }
               ],
               "status": "final"
