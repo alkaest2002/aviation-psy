@@ -22,11 +22,11 @@
     "Ricercatori e specializzandi interessati alla psicologia dell'aviazione"
   ],
   "patronage": [
-    "Consiglio Nazionale dell'Ordine degli Psicologi (CNOP)",
-    "Agenzia Spaziale Italiana (ASI)",
-    "Agenzia Nazionale Sicurezza del Volo (ANSV)",
     "Ente Nazionale per l'Aviazione Civile (ENAC)",
+    "Agenzia Nazionale Sicurezza del Volo (ANSV)",
+    "Agenzia Spaziale Italiana (ASI)",
     "Ente Nazionale per l'Assistenza ai Volo (ENAV)",
+    "Consiglio Nazionale dell'Ordine degli Psicologi (CNOP)",
     "Associazione Arma Aeronautica, Centro Studi Militari G. Douhet (CESMA)",
     "Associazione Italiana di Medicina Aeronautica e Spaziale (AIMAS)",
     "Comune di Milano"
@@ -55,7 +55,7 @@
     "currentParticipants": 35,
     "ecm": {
       "amount": 5,
-      "validFor": ["Medici", "Psicologi", "AME (Aero Medical Examiner)"],
+      "validFor": ["Medici", "Psicologi"],
       "showQuestionnaireLink": true,
       "questionnaire": [
         {
@@ -103,7 +103,7 @@
     {
       "title": "Ten. Col. CSArs",
       "name": "Deiana S.",
-      "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
+      "affiliation": "Sezione Coordinamento · Centro di Psicologia AM",
       "role": "Capo"
     },
     {
@@ -121,7 +121,7 @@
     {
       "title": "Magg. CSArs",
       "name": "Buonaiuto G.",
-      "affiliation": "Ufficio Areale Nord · Centro di Psicologia AM",
+      "affiliation": "Sezione Areale Nord · Centro di Psicologia AM",
       "role": "Capo"
     },
     {
@@ -188,7 +188,7 @@
       "eventsBrief": [
         "Accoglienza invitati ed evento culturale di benvenuto",
         "Tavola rotonda",
-        "Cena di gala"
+        "Evento sociale"
       ],
       "events": [
         {
@@ -207,7 +207,7 @@
           "eventType": "dinner",
           "timeWindow": "19:30 - 22:00",
           "duration": 150,
-          "title": "Cena di gala"
+          "title": "Evento sociale"
         }
       ]
     },
@@ -319,7 +319,7 @@
                 {
                   "title": "Cap.",
                   "name": "Buonaiuto Gaetano",
-                  "affiliation": "Ufficio Areale Nord · Centro di Psicologia AM",
+                  "affiliation": "Areale Nord · Centro di Psicologia AM",
                   "role": "Capo Sezione",
                   "email": "gaetano.buonaiuto@aeronautica.difesa.it"
                 }
@@ -372,8 +372,8 @@
                 {
                   "title": "Col.",
                   "name": "Verde Paola",
-                  "affiliation": "Reparto Medicina Aeronautica e Spaziale · RMAS Pratica di Mare",
-                  "role": "Capo",
+                  "affiliation": " · Comando Logistico AM",
+                  "role": "Medico sperimentatore di volo",
                   "email": "paola.verde@aeronautica.difesa.it"
                 }
               ],
@@ -411,7 +411,7 @@
                 {
                   "title": "STen.",
                   "name": "Silvestri Maria Catena",
-                  "affiliation": "Ufficio Areale Sud · Centro di Psicologia AM",
+                  "affiliation": "Sezione Areale Sud · Centro di Psicologia AM",
                   "role": "Addetto",
                   "email": "maria.silverstri@aeronautica.difesa.it"
                 }
@@ -434,29 +434,29 @@
         },
         {
           "eventType": "panel",
-          "timeWindow": "12:30 - 13:30",
-          "duration": 60,
+          "timeWindow": "12:30 - 13:45",
+          "duration": 75,
           "title": "Panel 3 — Applications",
           "talks": [
             {
               "eventType": "talk",
               "timeWindow": "12:30 - 12:45",
               "duration": 15,
-              "title": "Lo psicologo dell'aviazione nei trasporti medici umanitari da aree di conflitto",
+              "title": "Attitudine al pilotaggio di droni: tratti chiave e requisiti cognitivi",
               "authors": [
                 {
-                  "title": "Ten.",
-                  "name": "Palermo Irene",
-                  "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
-                  "role": "Addetto",
-                  "email": "irene1.palermo@aeronautica.difesa.it"
+                  "title": "Dott.",
+                  "name": "Gerald Klebacz",
+                  "affiliation": "Schuhfried · Mödling, Austria",
+                  "role": "Sales Partner",
+                  "email": "klebacz@schuhfried.at"
                 },
                 {
-                  "title": "Ten.",
-                  "name": "D'Angelo Angelica",
-                  "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
-                  "role": "Addetto",
-                  "email": "angelica.dangelo@aeronautica.difesa.it"
+                  "title": "Dott.",
+                  "name": "Brieber David",
+                  "affiliation": "Schuhfried · Mödling, Austria",
+                  "role": "Consultant",
+                  "email": "david.brieber@univie.ac.at"
                 }
               ],
               "status": "final"
@@ -465,14 +465,21 @@
               "eventType": "talk",
               "timeWindow": "12:45 - 13:00",
               "duration": 15,
-              "title": "Il ruolo dello psicologo nella revisione del profilo professionale dei piloti militari",
+              "title": "Lo psicologo dell'aviazione nei trasporti medici umanitari da aree di conflitto",
               "authors": [
                 {
                   "title": "Ten.",
-                  "name": "Giua Eleonora",
-                  "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
+                  "name": "Palermo Irene",
+                  "affiliation": "Sezione Areale Centro · Centro di Psicologia AM",
                   "role": "Addetto",
-                  "email": "eleonora.giua@aeronautica.difesa.it"
+                  "email": "irene1.palermo@aeronautica.difesa.it"
+                },
+                {
+                  "title": "Ten.",
+                  "name": "D'Angelo Angelica",
+                  "affiliation": "Sezione Psicologia Clinica · IMA Roma",
+                  "role": "Capo",
+                  "email": "angelica.dangelo@aeronautica.difesa.it"
                 }
               ],
               "status": "final"
@@ -481,26 +488,42 @@
               "eventType": "talk",
               "timeWindow": "13:00 - 13:15",
               "duration": 15,
+              "title": "Il ruolo dello psicologo nella revisione del profilo professionale dei piloti militari",
+              "authors": [
+                {
+                  "title": "Ten.",
+                  "name": "Giua Eleonora",
+                  "affiliation": "Sezione Coordinamento · Centro di Psicologia AM",
+                  "role": "Addetto",
+                  "email": "eleonora.giua@aeronautica.difesa.it"
+                }
+              ],
+              "status": "final"
+            },
+            {
+              "eventType": "talk",
+              "timeWindow": "13:15 - 13:30",
+              "duration": 15,
               "title": "Il soccorso aereo alle persone con disabilità non motoria: strumenti visivi per un soccorso più efficace e inclusivo",
               "authors": [
                 {
                   "title": "Cap.",
                   "name": "Ceci Valeria",
-                  "affiliation": "Ufficio Areale Centro · Centro di Psicologia AM",
+                  "affiliation": "Sezione Areale Centro · Centro di Psicologia AM",
                   "role": "Addetto",
                   "email": "valeria.ceci@aeronautica.difesa.it"
                 },
                 {
                   "title": "Ten.",
                   "name": "Busà Chiara",
-                  "affiliation": "Ufficio Areale Nord · Centro di Psicologia AM",
+                  "affiliation": "Sezione Areale Nord · Centro di Psicologia AM",
                   "role": "Addetto",
                   "email": "chiara.busa@aeronautica.difesa.it"
                 },
                 {
                   "title": "Ten.",
                   "name": "Testa Francesca",
-                  "affiliation": "Ufficio Areale Nord · Centro di Psicologia AM",
+                  "affiliation": "Sezione Areale Nord · Centro di Psicologia AM",
                   "role": "Addetto",
                   "email": "francesca.testa@aeronautica.difesa.it"
                 }
@@ -509,7 +532,7 @@
             },
             {
               "eventType": "questionTime",
-              "timeWindow": "13:15 - 13:30",
+              "timeWindow": "13:30 - 13:45",
               "duration": 15,
               "title": "Question time panel"
             }
@@ -517,8 +540,8 @@
         },
         {
           "eventType": "conclusion",
-          "timeWindow": "13:30 - 14:30",
-          "duration": 60,
+          "timeWindow": "13:45 - 14:30",
+          "duration": 45,
           "title": "Conclusione convegno + ECM"
         }
       ]
