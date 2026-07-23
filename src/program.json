@@ -57,7 +57,7 @@
     "ecm": {
       "amount": 5,
       "validFor": ["Medici", "Psicologi"],
-      "showQuestionnaireLink": true,
+      "showQuestionnaireLink": false,
       "questionnaire": [
         {
           "text": "Domanda 1 questionario ECM",
