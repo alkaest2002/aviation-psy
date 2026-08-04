@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="it" class="w-full">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>III Convegno di Aviation Psychology · Bus Navetta</title>
+    <meta name="color-scheme" content="light only">
+    <meta name="description"
+        content="Crono-programma Bus-Navetta · III Convegno di Aviation Psychology, Milano 27–28 ottobre 2026." />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script src="/src/main.js" type="module"></script>
+</head>
+
+<body class="min-h-dvh w-full overflow-x-hidden" x-data="spa" x-cloak>
+
+    <main class="flex flex-col min-h-dvh w-full overflow-x-hidden bg-slate-200">
+
+        <!-- ── Hero ─────────────────────────────────────────── -->
+        <header x-data="header" x-bind="homeLink"
+            class="relative overflow-hidden bg-sky-900 px-6 md:px-12 pt-12 pb-12 hover:cursor-pointer">
+            <div class="pointer-events-none absolute -top-20 -right-16 h-56 w-56 rounded-full bg-sky-300/10 blur-3xl">
+            </div>
+            <div
+                class="pointer-events-none absolute -bottom-24 -left-16 h-56 w-56 rounded-full bg-cyan-300/10 blur-3xl">
+            </div>
+
+            <div class="relative w-full">
+                <p
+                    class="inline-flex items-center rounded-md border border-sky-300/20 bg-white/5 px-2.5 py-1 text-[14px] font-bold tracking-[0.18em] uppercase text-sky-200">
+                    III Convegno
+                </p>
+
+                <h1 class="mt-4 text-3xl md:text-4xl font-black tracking-tight text-white leading-tight">
+                    Aviation Psychology
+                </h1>
+
+                <div class="mt-6 grid gap-2 text-sm text-sky-100/95">
+                    <span class="inline-flex items-center gap-2">
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M4.75 1a.75.75 0 0 1 .75.75V3h5V1.75a.75.75 0 0 1 1.5 0V3h.25A2.75 2.75 0 0 1 15 5.75v6.5A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25v-6.5A2.75 2.75 0 0 1 3.75 3H4V1.75A.75.75 0 0 1 4.75 1Zm7.5 5.5h-8.5a1.25 1.25 0 0 0-1.25 1.25v4.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-4.5c0-.69-.56-1.25-1.25-1.25Z" />
+                        </svg>
+                        27 e 28 ottobre 2026 · Milano
+                    </span>
+                    <span class="inline-flex items-center gap-2">
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M8 1.5a3 3 0 0 1 3 3V5h1.25A1.75 1.75 0 0 1 14 6.75v5.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-5.5C2 5.78 2.78 5 3.75 5H5v-.5a3 3 0 0 1 3-3Zm1.5 3a1.5 1.5 0 1 0-3 0V5h3v-.5Z" />
+                        </svg>
+                        ECM · professioni sanitarie
+                    </span>
+                    <a href="mailto:aeropsy@am.difesa.it"
+                        class="inline-flex items-center gap-2 hover:text-white transition-colors" @click.stop>
+                        <svg class="h-4 w-4 text-white shrink-0" viewBox="0 0 16 16" fill="currentColor"
+                            aria-hidden="true">
+                            <path
+                                d="M2 4.5A1.5 1.5 0 0 1 3.5 3h9A1.5 1.5 0 0 1 14 4.5v.072l-6 3.6-6-3.6V4.5Zm0 1.742V11.5A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5V6.242l-5.724 3.434a.5.5 0 0 1-.552 0L2 6.242Z" />
+                        </svg>
+                        aeropsy@am.difesa.it
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ── Content ───────────────────────────────────────── -->
+        <div class="flex-1 flex flex-col px-6 md:px-12 pt-8 pb-12 gap-8">
+
+            <!-- Back link -->
+            <a href="/index.html"
+                class="inline-flex items-center gap-1.5 font-semibold uppercase active:opacity-70 transition-opacity text-sky-800">
+                <svg class="h-3.5 w-3.5 shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                    stroke-width="2.4">
+                    <path d="M13 8H3M7 4l-4 4 4 4" />
+                </svg>
+                Home
+            </a>
+
+            <!-- Page title -->
+            <div>
+                <h2 class="text-xl font-black tracking-tight text-slate-900 uppercase">Servizio Bus Navetta</h2>
+            </div>
+
+            <!-- ── Fermate ──────────────────────────────────────── -->
+            <section>
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>
+                        <span class="text-sm font-semibold uppercase">Fermate del servizio navetta</span>
+                    </div>
+                    <ul class="px-5 py-4 flex flex-col gap-3">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                            <span class="text-sm leading-snug"><strong class="font-semibold">Stazione Centrale, Milano</strong> — punto di raccolta per chi arriva in treno</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                            <span class="text-sm leading-snug"><strong class="font-semibold">Comando 1ª Squadra Aerea, Novelli</strong> — alloggi militari</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                            <span class="text-sm leading-snug"><strong class="font-semibold">Aeroporto Militare, Linate</strong> — alloggi militari</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                            <span class="text-sm leading-snug"><strong class="font-semibold">Cenacolo Vinciano, Milano</strong> — sede evento culturale di benvenuto</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                            <span class="text-sm leading-snug"><strong class="font-semibold">Centro Logistico e Sportivo AM, Linate (CLSP)</strong> — sede congressuale 27/10 <em class="text-slate-500">(riservata agli invitati)</em></span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-sky-400 shrink-0"></span>
+                            <span class="text-sm leading-snug"><strong class="font-semibold">Castello Sforzesco – Sala Bertarelli, Milano</strong> — sede congressuale 28/10 <em class="text-slate-500">(aperta al pubblico)</em></span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ── Martedì 27 ottobre ──────────────────────────── -->
+            <section class="flex flex-col gap-4">
+                <!-- Day header -->
+                <div class="flex items-center gap-3">
+                    <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-16 h-18 shrink-0
+                            shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)] py-2">
+                        <span class="text-xs font-bold uppercase tracking-widest leading-none">OTT</span>
+                        <span class="text-xl font-semibold leading-none mt-0.5">27</span>
+                        <span class="text-xs font-semibold leading-none mt-0.5">MAR</span>
+                    </div>
+                    <span class="text-sm font-bold uppercase tracking-wide text-slate-700">Martedì 27 ottobre 2026</span>
+                </div>
+
+                <!-- Corsa 1 -->
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>
+                            <span class="text-sm font-semibold uppercase">Corsa 1</span>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Abito da viaggio</span>
+                    </div>
+                    <div class="divide-y divide-slate-100">
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">12:30</span>
+                            <span class="text-sm leading-snug">🚌 Partenza da <strong class="font-semibold">Stazione Centrale, Milano</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">13:00</span>
+                            <span class="text-sm leading-snug">🚌 Transito da <strong class="font-semibold">Comando 1ª Squadra Aerea, Novelli</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start bg-sky-50/60">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">13:30</span>
+                            <span class="text-sm leading-snug">🏁 Arrivo a <strong class="font-semibold">Aeroporto Militare, Linate</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corsa 2 -->
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>
+                            <span class="text-sm font-semibold uppercase">Corsa 2</span>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Business casual</span>
+                    </div>
+                    <div class="divide-y divide-slate-100">
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">15:00</span>
+                            <span class="text-sm leading-snug">🚌 Partenza da <strong class="font-semibold">Aeroporto Militare, Linate</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">15:15</span>
+                            <span class="text-sm leading-snug">🚌 Transito da <strong class="font-semibold">Centro Logistico e Sportivo AM</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">15:30</span>
+                            <span class="text-sm leading-snug">🚌 Transito da <strong class="font-semibold">Comando 1ª Squadra Aerea, Novelli</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start bg-sky-50/60">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">16:00</span>
+                            <span class="text-sm leading-snug">🏁 Arrivo al <strong class="font-semibold">Cenacolo Vinciano</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corsa 3 -->
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>
+                            <span class="text-sm font-semibold uppercase">Corsa 3</span>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Business casual</span>
+                    </div>
+                    <div class="divide-y divide-slate-100">
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">17:30</span>
+                            <span class="text-sm leading-snug">🚌 Partenza dal <strong class="font-semibold">Cenacolo Vinciano</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start bg-sky-50/60">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">18:30</span>
+                            <span class="text-sm leading-snug">🏁 Arrivo al <strong class="font-semibold">Centro Logistico e Sportivo AM</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corsa 4 -->
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>
+                            <span class="text-sm font-semibold uppercase">Corsa 4</span>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Business casual</span>
+                    </div>
+                    <div class="divide-y divide-slate-100">
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">22:00</span>
+                            <span class="text-sm leading-snug">🚌 Partenza dal <strong class="font-semibold">Centro Logistico e Sportivo AM</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">22:15</span>
+                            <span class="text-sm leading-snug">🚌 Transito da <strong class="font-semibold">Comando 1ª Squadra Aerea, Novelli</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start bg-sky-50/60">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">22:30</span>
+                            <span class="text-sm leading-snug">🏁 Arrivo a <strong class="font-semibold">Aeroporto Militare, Linate</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Mercoledì 28 ottobre ────────────────────────── -->
+            <section class="flex flex-col gap-4">
+                <!-- Day header -->
+                <div class="flex items-center gap-3">
+                    <div class="flex flex-col items-center justify-center bg-sky-900 text-white w-16 h-18 shrink-0
+                            shadow-[0_1px_2px_rgba(15,23,42,0.10),0_6px_12px_rgba(15,23,42,0.10)] py-2">
+                        <span class="text-xs font-bold uppercase tracking-widest leading-none">OTT</span>
+                        <span class="text-xl font-semibold leading-none mt-0.5">28</span>
+                        <span class="text-xs font-semibold leading-none mt-0.5">MER</span>
+                    </div>
+                    <span class="text-sm font-bold uppercase tracking-wide text-slate-700">Mercoledì 28 ottobre 2026</span>
+                </div>
+
+                <!-- Corsa 1 -->
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>
+                            <span class="text-sm font-semibold uppercase">Corsa 1</span>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Uniforme di servizio</span>
+                    </div>
+                    <div class="divide-y divide-slate-100">
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">06:50</span>
+                            <span class="text-sm leading-snug">🚌 Partenza da <strong class="font-semibold">Aeroporto Militare, Linate</strong> <em class="text-xs text-slate-400">vedi nota (1)</em></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">07:10</span>
+                            <span class="text-sm leading-snug">🚌 Transito da <strong class="font-semibold">Comando 1ª Squadra Aerea, Novelli</strong> <em class="text-xs text-slate-400">vedi nota (1)</em></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start bg-sky-50/60">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">08:00</span>
+                            <span class="text-sm leading-snug">🏁 Arrivo al <strong class="font-semibold">Castello Sforzesco</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corsa 2 -->
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>
+                            <span class="text-sm font-semibold uppercase">Corsa 2</span>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Uniforme di servizio</span>
+                    </div>
+                    <div class="divide-y divide-slate-100">
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">15:00</span>
+                            <span class="text-sm leading-snug">🚌 Partenza dal <strong class="font-semibold">Castello Sforzesco</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start bg-sky-50/60">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">15:45</span>
+                            <span class="text-sm leading-snug">🏁 Arrivo a <strong class="font-semibold">Aeroporto Militare, Linate</strong> <em class="text-xs text-slate-400">vedi nota (2)</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corsa 3 -->
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center justify-between gap-2 border-b border-slate-300">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>
+                            <span class="text-sm font-semibold uppercase">Corsa 3</span>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Abito da viaggio</span>
+                    </div>
+                    <div class="divide-y divide-slate-100">
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">16:45</span>
+                            <span class="text-sm leading-snug">🚌 Partenza da <strong class="font-semibold">Aeroporto Militare, Linate</strong></span>
+                        </div>
+                        <div class="grid grid-cols-[4.5rem_1fr] gap-x-3 px-4 py-3 items-start bg-sky-50/60">
+                            <span class="text-sm font-bold text-sky-700 tabular-nums">17:30</span>
+                            <span class="text-sm leading-snug">🏁 Arrivo a <strong class="font-semibold">Stazione Centrale, Milano</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ── Note ───────────────────────────────────────── -->
+            <section>
+                <div class="bg-white shadow-[0_1px_2px_rgba(15,23,42,0.06),0_6px_14px_rgba(15,23,42,0.06)] overflow-hidden">
+                    <div class="px-4 py-2.5 flex items-center gap-2 border-b border-slate-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-700 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                        <span class="text-sm font-semibold uppercase">Note</span>
+                    </div>
+                    <ol class="px-5 py-4 flex flex-col gap-3 list-decimal list-inside">
+                        <li class="text-sm leading-snug text-slate-700">Check-out alloggio già effettuato e bagaglio al seguito (custodito nel bus navetta).</li>
+                        <li class="text-sm leading-snug text-slate-700">Saranno messi a disposizione locali per il cambio d'abito prima della partenza per il rientro.</li>
+                    </ol>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ── Footer ────────────────────────────────────────── -->
+        <footer class="px-6 md:px-12 pb-10 text-center" x-data x-cloak>
+            <p class="text-[14px] tracking-wide">
+                © 2026 · Tutti i diritti riservati | <a href="/pages/privacy.html"
+                    class="text-sky-700 underline-offset-2">Privacy policy</a>
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
