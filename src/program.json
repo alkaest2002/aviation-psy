@@ -55,7 +55,7 @@
     "maxParticipants": 100,
     "currentParticipants": 35,
     "ecm": {
-      "amount": 5,
+      "amount": 4,
       "validFor": ["Medici", "Psicologi"],
       "showQuestionnaireLink": false,
       "questionnaire": [
