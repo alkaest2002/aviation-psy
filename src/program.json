@@ -97,39 +97,39 @@
   "scientificCommittee": [
     {
       "title": "Col. CSArs",
-      "name": "Mastrorilli A.",
+      "name": "Mastrorilli Andrea",
       "affiliation": "Centro di Psicologia AM",
       "role": "Direttore"
     },
     {
       "title": "Ten. Col. CSArs",
-      "name": "Deiana S.",
+      "name": "Deiana Simone",
       "affiliation": "Sezione Coordinamento · Centro di Psicologia AM",
       "role": "Capo"
     },
     {
       "title": "Ten. Col. CSArs",
-      "name": "Calanna P.",
+      "name": "Calanna Pierpaolo",
       "affiliation": "Sezione Psicologia Clinica · IMA Milano",
       "role": "Capo"
     },
     {
       "title": "Magg CSArn",
-      "name": "Nardo A.",
+      "name": "Nardo Alessia",
       "affiliation": "Sezione Psichiatria · IMA Milano",
       "role": "Capo"
     },
     {
-      "title": "Magg. CSArs",
-      "name": "Buonaiuto G.",
-      "affiliation": "Sezione Areale Nord · Centro di Psicologia AM",
-      "role": "Capo"
-    },
-    {
-      "title": "Cap. CSArn",
-      "name": "Erario R.",
+      "title": "Magg. CSArn",
+      "name": "Erario Raffaele",
       "affiliation": "Sezione Psichiatria · IMA Milano",
       "role": "Addetto"
+    },
+    {
+      "title": "Cap. CSArs",
+      "name": "Buonaiuto Gaetano",
+      "affiliation": "Sezione Areale Nord · Centro di Psicologia AM",
+      "role": "Capo"
     }
   ],
   "invitations": [
