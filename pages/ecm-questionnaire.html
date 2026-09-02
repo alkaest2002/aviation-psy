@@ -16,8 +16,8 @@
 <body class="min-h-dvh w-full overflow-x-hidden" x-data="spa">
 
     <!-- Loading indicator - shown while Alpine.js initializes -->
-    <div x-init="setTimeout(() => $el.style.opacity = '0', 50); setTimeout(() => $el.style.display = 'none', 300)"
-         class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-200 transition-opacity duration-300">
+    <div x-init="$nextTick(() => { setTimeout(() => { $el.style.opacity = '0'; setTimeout(() => $el.style.display = 'none', 500) }, 800) })"
+         class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-200 transition-opacity duration-500">
         <p class="text-sky-700 font-bold text-center">III Convegno di Aviation Psychology</p>
         <p class="text-sky-700 font-medium text-center mb-4">Milano, 27 e 28 Ottobre, 2026</p>
         <svg class="animate-spin h-8 w-8 text-sky-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
