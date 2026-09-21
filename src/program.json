@@ -308,7 +308,7 @@
               "eventType": "talk",
               "timeWindow": "10:00 - 10:15",
               "duration": 15,
-              "title": "Aviation Psychology: traiettorie tematiche nella letteratura scientifica. Un approccio di topic extraction modelling mediante BERTopic",
+              "title": "Aviation Psychology: traiettorie tematiche nella letteratura scientifica. Un approccio di topic extraction modeling mediante BERTopic",
               "authors": [
                 {
                   "title": "Ten. Col.",
