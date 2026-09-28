@@ -141,15 +141,21 @@
                     </div>
 
                     <div class="px-4 pt-3 pb-2">
-                        <span class="text-[11px] font-semibold uppercase tracking-wide ">Quota di
-                            partecipazione per Militari</span>
+                        <span class="text-[11px] font-semibold uppercase tracking-wide ">
+                            Sanità Militare (civili e militari)</span>
+                        <p x-text="$store.programStore.registration.fee.military.amount" class="font-semibold  mt-0.5">
+                        </p>
+                    </div>
+
+                    <div class="px-4 pb-2">
+                        <span class="text-[11px] font-semibold uppercase tracking-wide ">
+                            Personale Militare</span>
                         <p x-text="$store.programStore.registration.fee.military.amount" class="font-semibold  mt-0.5">
                         </p>
                     </div>
 
                      <div class="px-4 pb-2">
-                        <span class="text-[11px] font-semibold uppercase tracking-wide ">Quota di
-                            partecipazione per Civili</span>
+                        <span class="text-[11px] font-semibold uppercase tracking-wide ">Altre categorie</span>
                         <p x-text="$store.programStore.registration.fee.civil.amount" class="font-semibold  mt-0.5">
                         </p>
                     </div>
@@ -162,6 +168,9 @@
                                 x-text="$store.programStore.registration.maxParticipants - $store.programStore.registration.currentParticipants"></span>
                             /
                             <span x-text="$store.programStore.registration.maxParticipants"></span>
+                        </p>
+                        <p class="text-xs mt-1 text-muted">
+                            ultimo aggiornamento: <span x-text="$store.programStore.registration.currentPartipantsUpdate"></span>
                         </p>
                     </div>
 

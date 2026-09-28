@@ -53,7 +53,8 @@
       }
     },
     "maxParticipants": 100,
-    "currentParticipants": 35,
+    "currentParticipants": 45,
+    "currentPartipantsUpdate": "28/09/2026",
     "ecm": {
       "amount": 4,
       "validFor": ["Medici", "Psicologi"],
